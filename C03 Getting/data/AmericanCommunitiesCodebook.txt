@@ -1,0 +1,9258 @@
+DATA DICTIONARY - 2006 HOUSING
+RT
+
+1
+Record Type
+H .Housing Record or Group Quarters Unit
+
+SERIALNO
+7
+Housing unit/GQ person serial number
+0000001..9999999 .Unique identifier assigned within
+.state
+DIVISION
+1
+Division
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+PUMA
+
+code
+.Puerto Rico
+.New England (Northeast region)
+.Middle Atlantic (Northeast region)
+.East North Central (Midwest region)
+.West North Central (Midwest region)
+.South Atlantic (South region)
+.East South Central (South region)
+.West South Central (South Region)
+.Mountain (West region)
+.Pacific (West region)
+
+5
+Public use microdata area code (PUMA)
+Designates area of 100,000 or more population. Use with ST for unique
+code.
+00100..08200
+77777 .combination of 01801, 01802, and 01905 in Louisiana
+
+REGION
+1
+Region code
+1 .Northeast
+2 .Midwest
+3 .South
+4 .West
+9 .Puerto Rico
+ST
+
+2
+State Code
+01 .Alabama/AL
+02 .Alaska/AK
+04 .Arizona/AZ
+05 .Arkansas/AR
+06 .California/CA
+08 .Colorado/CO
+09 .Connecticut/CT
+10 .Delaware/DE
+11 .District of Columbia/DC
+12 .Florida/FL
+13 .Georgia/GA
+15 .Hawaii/HI
+16 .Idaho/ID
+17 .Illinois/IL
+18 .Indiana/IN
+19 .Iowa/IA
+20 .Kansas/KS
+21 .Kentucky/KY
+22 .Louisiana/LA
+23 .Maine/ME
+
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+44
+45
+46
+47
+48
+49
+50
+51
+53
+54
+55
+56
+72
+
+.Maryland/MD
+.Massachusetts/MA
+.Michigan/MI
+.Minnesota/MN
+.Mississippi/MS
+.Missouri/MO
+.Montana/MT
+.Nebraska/NE
+.Nevada/NV
+.New Hampshire/NH
+.New Jersey/NJ
+.New Mexico/NM
+.New York/NY
+.North Carolina/NC
+.North Dakota/ND
+.Ohio/OH
+.Oklahoma/OK
+.Oregon/OR
+.Pennsylvania/PA
+.Rhode Island/RI
+.South Carolina/SC
+.South Dakota/SD
+.Tennessee/TN
+.Texas/TX
+.Utah/UT
+.Vermont/VT
+.Virginia/VA
+.Washington/WA
+.West Virginia/WV
+.Wisconsin/WI
+.Wyoming/WY
+.Puerto Rico/PR
+
+ADJUST
+7
+Adjustment factor for dollar amounts (6 implied decimal places)
+1015675 .2006 factor (1.015675)
+WGTP
+
+4
+Housing Weight
+0001..9999 .Integer weight of housing unit
+
+NP
+
+2
+Number of person records following this housing record
+00 .Vacant unit
+01 .One person record (one person in household or
+.any person in group quarters)
+02..20 .Number of person records (number of persons in
+.household)
+
+TYPE
+
+1
+Type of unit
+1 .Housing unit
+2 .Institutional group quarters
+3 .Noninstitutional group quarters
+
+ACR
+
+1
+Lot size
+b
+1
+2
+3
+
+.N/A (GQ/not a one-family house or mobile home)
+.House on less than one acre
+.House on one to less than ten acres
+.House on ten or more acres
+
+AGS
+
+1
+Sales of Agriculture Products
+b .N/A (less than 1 acre/GQ/vacant/
+.2 or more units in structure)
+1 .None
+2 .$
+1 - $ 999
+3 .$ 1000 - $ 2499
+4 .$ 2500 - $ 4999
+5 .$ 5000 - $ 9999
+6 .$10000+
+
+BDS
+
+1
+Bedrooms
+b
+0
+1
+2
+3
+4
+5
+
+.N/A (GQ)
+.No bedrooms
+.1 Bedroom
+.2 Bedrooms
+.3 Bedrooms
+.4 Bedrooms
+.5 or more bedrooms
+
+BLD
+
+2
+Units in structure
+bb .N/A (GQ)
+01 .Mobile home or trailer
+02 .One-family house detached
+03 .One-family house attached
+04 .2 Apartments
+05 .3-4 Apartments
+06 .5-9 Apartments
+07 .10-19 Apartments
+08 .20-49 Apartments
+09 .50 or more apartments
+10 .Boat, RV, van, etc.
+
+BUS
+
+1
+Business
+b
+1
+2
+
+or medical office on property
+.N/A (GQ/not a one-family house or mobile home)
+.Yes
+.No
+
+CONP
+
+4
+Condo fee (monthly amount)
+bbbb .N/A (not owned or being bought/not
+.condo/GQ/vacant/no condo fee)
+0001..9999 .$1 - $9999 (Rounded and top-coded)
+
+ELEP
+
+3
+Electricity (monthly cost)
+bbb .N/A (GQ/vacant)
+001 .Included in rent or in condo fee
+002 .No charge or electricity not used
+003..999 .$3 to $999 (Rounded and top-coded)
+
+FS
+
+5
+Food stamp amount
+bbbbb .N/A (vacant)
+0 .None
+1..99999 .$1 to $99999
+
+FULP
+
+4
+
+House heating fuel (yearly cost)
+bbbb .N/A (GQ/vacant)
+0001 .Included in rent or in condo fee
+0002 .No charge or these fuels not used
+0003..9999 .$3 to $9999 (Rounded and top-coded)
+GASP
+
+3
+Gas (monthly cost)
+bbb .N/A (GQ/vacant)
+001 .Included in rent or in condo fee
+002 .Included in electricity payment
+003 .No charge or gas not used
+004..999 .$4 to $999 (Rounded and top-coded)
+
+HFL
+
+1
+House heating fuel
+b .N/A (GQ/vacant)
+1 .Utility gas
+2 .Bottled, tank, or LP gas
+3 .Electricity
+4 .Fuel oil, kerosene, etc.
+5 .Coal or coke
+6 .Wood
+7 .Solar energy
+8 .Other fuel
+9 .No fuel used
+
+INSP
+
+4
+Fire/hazard/flood insurance (yearly amount)
+bbbb .N/A (not owned or being bought/not a one
+.family house, mobile home, or
+.condo/GQ/vacant)
+0000 .None
+0001..9999 .$1 to $9999 (Rounded and top-coded)
+
+KIT
+
+1
+Complete
+b
+1
+2
+
+kitchen facilities
+.N/A (GQ)
+.Yes, has all three facilities
+.No
+
+MHP
+
+5
+Mobile home costs (yearly amount)
+bbbbb .N/A (GQ/vacant/not owned or being bought/
+.not mobile home/no costs)
+00000..99999 .$0 to $99999 (Rounded and top-coded)
+
+MRGI
+
+1
+Payment include fire/hazard/flood insurance
+b .N/A (GQ/vacant/not owned or being bought/
+.Not a one family house, MHT or condo/not
+.mortgaged/no regular mortgage payment)
+1 .Yes, insurance included in payment
+2 .No, insurance paid separately or no insurance
+
+MRGP
+
+5
+Mortgage payment (monthly amount)
+bbbbb .N/A (not owned or being bought/not a one
+.family house, mobile home, or
+.condo/GQ/vacant)
+00001..99999 .$1 to $99999 (Rounded and top-coded)
+
+MRGT
+
+1
+Payment include real estate taxes
+b .N/A (GQ/vacant/not owned or being bought/not a
+.one family house or condo/not mortgaged/
+.No regular mortgage payment)
+1 .Yes, taxes included in payment
+2 .No, taxes paid separately or taxes not required
+
+MRGX
+
+1
+Mortgage status
+b .N/A (not owned or being bought/not a one family
+.house, mobile home, or condo/GQ/vacant)
+1 .Mortgage deed of trust, or similar debt
+2 .Contract to purchase
+3 .None
+
+PLM
+
+1
+Complete
+b
+1
+2
+
+RMS
+
+plumbing facilities
+.N/A (GQ)
+.Yes, has all three facilities
+.No
+
+1
+Rooms
+b
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+.N/A (GQ)
+.1 Room
+.2 Rooms
+.3 Rooms
+.4 Rooms
+.5 Rooms
+.6 Rooms
+.7 Rooms
+.8 Rooms
+.9 or more rooms
+
+RNTM
+
+1
+Meals included in rent
+b .N/A (GQ/not a rental unit/rental-NCR)
+1 .Yes
+2 .No
+
+RNTP
+
+5
+Monthly rent
+bbbbb .N/A (GQ/not a rental unit)
+00001..99999 .$1 to $99999 (Rounded and top-coded)
+
+SMP
+
+5
+Second mortgage payment (monthly amount)
+bbbbb .N/A (GQ/vacant/condo/not owned or being
+.bought/not a one family house/not
+.mortgaged/ no second mortgage)
+00001..99999 .$1 to $99999 (Rounded and top-coded)
+
+TEL
+
+1
+Telephone in Unit
+b .N/A (GQ/vacant)
+1 .Yes
+2 .No
+
+TEN
+
+1
+
+Tenure
+b
+1
+2
+3
+4
+
+.N/A (GQ/vacant)
+.Owned with mortgage or loan
+.Owned free and clear
+.Rented for cash rent
+.No cash rent
+
+VACS
+
+1
+Vacancy status
+b .N/A (occupied/GQ)
+1 .For rent
+2 .Rented, not occupied
+3 .For sale only
+4 .Sold, not occupied
+5 .For seasonal/recreational/occasional use
+6 .For migratory workers
+7 .Other vacant
+
+VAL
+
+2
+Property value
+bb .N/A (GQ/rental unit/vacant, not for sale only)
+01 .Less than $ 10000
+02 .$ 10000 - $ 14999
+03 .$ 15000 - $ 19999
+04 .$ 20000 - $ 24999
+05 .$ 25000 - $ 29999
+06 .$ 30000 - $ 34999
+07 .$ 35000 - $ 39999
+08 .$ 40000 - $ 49999
+09 .$ 50000 - $ 59999
+10 .$ 60000 - $ 69999
+11 .$ 70000 - $ 79999
+12 .$ 80000 - $ 89999
+13 .$ 90000 - $ 99999
+14 .$100000 - $124999
+15 .$125000 - $149999
+16 .$150000 - $174999
+17 .$175000 - $199999
+18 .$200000 - $249999
+19 .$250000 - $299999
+20 .$300000 - $399999
+21 .$400000 - $499999
+22 .$500000 - $749999
+23 .$750000 - $999999
+24 .$1000000+
+
+VEH
+
+1
+Vehicles
+b
+0
+1
+2
+3
+4
+5
+6
+
+WATP
+
+(1 ton or less) available
+.N/A (GQ/vacant)
+.No vehicles
+.1 vehicle
+.2 vehicles
+.3 vehicles
+.4 vehicles
+.5 vehicles
+.6 or more vehicles
+
+4
+Water (yearly cost)
+bbbb .N/A (GQ/vacant)
+0001 .Included in rent or in condo fee
+
+0002 .No charge
+0003..9999 .$3 to $9999 (Rounded and top-coded)
+YBL
+
+1
+When structure first built
+b .N/A (GQ)
+1 .2005 or later
+2 .2000 to 2004
+3 .1990 to 1999
+4 .1980 to 1989
+5 .1970 to 1979
+6 .1960 to 1969
+7 .1950 to 1959
+8 .1940 to 1949
+9 .1939 or earlier
+
+FES
+
+1
+Family type and employment status
+b .N/A (GQ/vacant/not a family)
+1 .Married-couple family: Husband and wife in LF
+2 .Married-couple family: Husband in labor force, wife
+.not in LF
+3 .Married-couple family: Husband not in LF,
+.wife in LF
+4 .Married-couple family: Neither husband nor wife in
+.LF
+5 .Other family: Male householder, no wife present, in
+.LF
+6 .Other family: Male householder, no wife present,
+.not in LF
+7 .Other family: Female householder, no husband
+.present, in LF
+8 .Other family: Female householder, no husband
+.present, not in LF
+
+FINCP
+8
+Family income
+bbbbbbbb .N/A(GQ/vacant)
+00000000 .No family income
+-59999..99999999 .Total family income in dollars
+FPARC
+
+1
+Family presence and age of related children
+b .N/A (GQ/vacant/not a family)
+1 .With related children under 5 years only
+2 .With related children 5 to 17 years only
+3 .With related children under 5 years and 5 to 17
+.years
+4 .No related children
+
+GRNTP
+4
+Gross rent
+bbbb .N/A (GQ/vacant, not rented for cash rent)
+0001..9999 .$1 - $9999
+GRPIP
+3
+Gross rent as a percentage of household income past 12 months
+bbb .N/A (GQ/vacant/not rented for cash
+.rent/owner occupied/no household income)
+001..100 .1% to 100%
+101 .101% or more
+
+HHL
+
+1
+Household language
+b .N/A (GQ/vacant)
+1 .English only
+2 .Spanish
+3 .Other Indo-European language
+4 .Asian or Pacific Island language
+5 .Other language
+
+HHT
+
+1
+Household/family type
+b .N/A (GQ/vacant)
+1 .Married-couple family household
+.Other family household:
+2 .Male householder, no wife present
+3 .Female householder, no husband present
+.Nonfamily household:
+.Male householder:
+4 .Living alone
+5 .Not living alone
+.Female householder:
+6 .Living alone
+7 .Not living alone
+
+HINCP
+8
+Household income
+bbbbbbbb .N/A(GQ/vacant)
+00000000 .No household income
+-59999..99999999 .Total household income in dollars
+HUGCL
+
+HUPAC
+
+1
+Flag to
+b
+0
+1
+
+indicate grandchild living in housing unit
+.N/A (GQ/vacant)
+.HU does not contain grandchildren
+.HU does contain grandchildren
+
+1
+Family presence and age of children
+b .N/A (GQ/vacant)
+1 .With children under 6 years only
+2 .With children 6 to 17 years only
+3 .With children under 6 years and 6 to 17 years
+4 .No children
+
+HUPAOC
+1
+HH presence and age of own children
+b .N/A (GQ/vacant)
+1 .Presence of own children under 6 years only
+2 .Presence of own children 6 to 17 years only
+3 .Presence of own children under 6 years and 6 to 17 years
+4 .No own children present
+HUPARC
+1
+HH presence and age of related children
+b .N/A (GQ/vacant)
+1 .Presence of related children under 6 years only
+2 .Presence of related children 6 to 17 years only
+3 .Presence of related children under 6 years and 6 to 17 years
+4 .No related children present
+LNGI
+
+1
+
+Linguistic isolation
+b .N/A (GQ/vacant)
+1 .Not linguistically isolated
+2 .Linguistically isolated
+MV
+
+1
+When moved into this house or apartment
+b .N/A (GQ/vacant)
+1 .12 months or less
+2 .13 to 23 months
+3 .2 to 4 years
+4 .5 to 9 years
+5 .10 to 19 years
+6 .20 to 29 years
+7 .30 years or more
+
+NOC
+
+2
+Number of own
+bb
+00
+01..19
+
+NPF
+
+children in household (unweighted)
+.N/A(GQ/vacant)
+.No own children
+.Number of own children in household
+
+2
+Number of persons in family (unweighted)
+bb .N/A (GQ/vacant/non-family household)
+02..20 .Number of persons in family
+
+NPP
+
+1
+Grandparent headed household with no parent present
+b .N/A (GQ/vacant)
+0 .Not a grandparent headed household with no parent present
+1 .Grandparent headed household with no parent present
+
+NR
+
+1
+Presence of nonrelative in household
+b .N/A (GQ/vacant)
+0 .None
+1 .1 or more nonrelatives
+
+NRC
+
+2
+Number of related children in household (unweighted)
+bb .N/A (GQ/vacant)
+00 .No related children
+01..19 .Number of related children in household
+
+OCPIP
+3
+Selected monthly owner costs as a percentage of household
+income during the past 12 months
+bbb .N/A (not owned or being bought/not a one
+.family house, mobile home, or
+.condo/GQ/vacant/no HH income)
+001..100 .1% to 100%
+101 .101% or more
+PARTNER
+1
+Unmarried partner household
+b .N/A (GQ/vacant)
+0 .No unmarried partner in household
+1 .Male householder, male partner
+2 .Male householder, female partner
+
+3 .Female householder, male partner
+4 .Female householder, female partner
+PSF
+
+R18
+
+R60
+
+R65
+
+1
+Presence
+b
+0
+1
+
+of subfamilies in Household
+.N/A (GQ/vacant)
+.No subfamilies
+.1 or more subfamilies
+
+1
+Presence
+b
+0
+1
+
+of persons under 18 years in household (unweighted)
+.N/A (GQ/vacant)
+.No person under 18 in household
+.1 or more persons under 18 in household
+
+1
+Presence
+b
+0
+1
+2
+
+of persons 60 years and over in household (unweighted)
+.N/A (GQ/vacant)
+.No person 60 and over
+.1 person 60 and over
+.2 or more persons 60 and over
+
+1
+Presence
+b
+0
+1
+2
+
+of persons 65 years and over in household (unweighted)
+.N/A (GQ/vacant)
+.No person 65 and over
+.1 person 65 and over
+.2 or more persons 65 and over
+
+RESMODE
+1
+Response mode
+b .N/A (GQ)
+1 .Mail
+2 .CATI/CAPI
+SMOCP
+5
+Selected monthly owner costs
+bbbbb .N/A (not owned or being bought/not a one
+.family house, mobile home, or
+.condo/GQ/vacant/no costs )
+00000 .No costs
+00001..99999 .$1 - $99999
+SMX
+
+1
+Second mortgage or home equity loan status
+b .N/A (GQ/vacant/not owned or being bought/
+.not a one family house, mobile home, trailer or
+.condo/not mortgaged/no second mortgage)
+1 .Yes, a second mortgage
+2 .Yes, a home equity loan
+3 .No
+4 .Both a second mortgage and a home equity loan
+
+SRNT
+
+1
+Specified rent unit
+0 .Not specified rent unit
+1 .Specified rent unit
+
+SVAL
+
+1
+Specified value unit
+0 .Not specified owner unit
+
+1 .Specified value unit
+TAXP
+
+2
+Property taxes (yearly amount)
+bb .N/A (GQ/vacant/not owned or being bought/not a
+.one-family house, mobile home or trailer or
+.condo)
+01 .None
+02 .$
+1 - $ 49
+03 .$ 50 - $ 99
+04 .$ 100 - $ 149
+05 .$ 150 - $ 199
+06 .$ 200 - $ 249
+07 .$ 250 - $ 299
+08 .$ 300 - $ 349
+09 .$ 350 - $ 399
+10 .$ 400 - $ 449
+11 .$ 450 - $ 499
+12 .$ 500 - $ 549
+13 .$ 550 - $ 599
+14 .$ 600 - $ 649
+15 .$ 650 - $ 699
+16 .$ 700 - $ 749
+17 .$ 750 - $ 799
+18 .$ 800 - $ 849
+19 .$ 850 - $ 899
+20 .$ 900 - $ 949
+21 .$ 950 - $ 999
+22 .$1000 - $1099
+23 .$1100 - $1199
+24 .$1200 - $1299
+25 .$1300 - $1399
+26 .$1400 - $1499
+27 .$1500 - $1599
+28 .$1600 - $1699
+29 .$1700 - $1799
+30 .$1800 - $1899
+31 .$1900 - $1999
+32 .$2000 - $2099
+33 .$2100 - $2199
+34 .$2200 - $2299
+35 .$2300 - $2399
+36 .$2400 - $2499
+37 .$2500 - $2599
+38 .$2600 - $2699
+39 .$2700 - $2799
+40 .$2800 - $2899
+41 .$2900 - $2999
+42 .$3000 - $3099
+43 .$3100 - $3199
+44 .$3200 - $3299
+45 .$3300 - $3399
+46 .$3400 - $3499
+47 .$3500 - $3599
+48 .$3600 - $3699
+49 .$3700 - $3799
+50 .$3800 - $3899
+51 .$3900 - $3999
+52 .$4000 - $4099
+53 .$4100 - $4199
+54 .$4200 - $4299
+
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+WIF
+
+.$4300 .$4400 .$4500 .$4600 .$4700 .$4800 .$4900 .$5000 .$5500 .$6000 .$7000 .$8000 .$9000 .$10000+
+
+$4399
+$4499
+$4599
+$4699
+$4799
+$4899
+$4999
+$5499
+$5999
+$6999
+$7999
+$8999
+$9999
+
+1
+Workers in family during the past 12 months
+b .N/A (GQ/vacant/non-family household)
+0 .No workers
+1 .1 worker
+2 .2 workers
+3 .3 or more workers in family
+
+WKEXREL
+2
+Work experience of householder and spouse
+b .N/A (GQ/vacant/not a family)
+1 .Householder and spouse worked FT
+2 .Householder worked FT; spouse worked < FT
+3 .Householder worked FT; spouse did not work
+4 .Householder worked < FT; spouse worked FT
+5 .Householder worked < FT; spouse worked < FT
+6 .Householder worked < FT; spouse did not work
+7 .Householder did not work; spouse worked FT
+8 .Householder did not work; spouse worked < FT
+9 .Householder did not work; spouse did not work
+10 .Male householder worked FT; no spouse present
+11 .Male householder worked < FT; no spouse present
+12 .Male householder did not work; no spouse present
+13 .Female householder worked FT; no spouse present
+14 .Female householder worked < FT; no spouse present
+15 .Female householder did not work; no spouse present
+WORKSTAT
+2
+Work status of householder or spouse in family households
+bb .N/A (GQ/not a family household)
+1 .Husband and wife both in labor force, both employed or in
+.Armed Forces
+2 .Husband and wife both in labor force, husband employed or in
+.Armed Forces, wife unemployed
+3 .Husband in labor force and wife not in labor force, husband
+.employed or in Armed Forces
+4 .Husband and wife both in labor force, husband unemployed, wife
+.employed or in Armed Forces
+5 .Husband and wife both in labor force, husband unemployed, wife
+.unemployed
+6 .Husband in labor force, husband unemployed, wife not in labor
+.force
+7 .Husband not in labor force, wife in labor force, wife
+.employed or in Armed Forces
+8 .Husband not in labor force, wife in labor force, wife
+.unemployed
+
+9 .Neither husband nor wife in labor force
+10 .Male householder with no wife present, householder in
+.labor force, employed or in Armed Forces
+11 .Male householder with no wife present, householder in
+.labor force and unemployed
+12 .Male householder with no wife present, householder not in
+.labor force
+13 .Female householder with no husband present, householder in
+.labor force, employed or in Armed Forces
+14 .Female householder with no husband present, householder in
+.labor force and unemployed
+15 .Female householder with no husband present, householder not in
+.labor force
+FACRP
+1
+Lot size allocation
+0 .No
+1 .Yes
+FAGSP
+1
+Sales of Agricultural Products allocation
+0 .No
+1 .Yes
+FBDSP
+1
+Number of bedrooms allocation
+0 .No
+1 .Yes
+FBLDP
+1
+Units in structure allocation
+0 .No
+1 .Yes
+FBUSP
+1
+Business or medical office on property allocation
+0 .No
+1 .Yes
+FCONP
+1
+Condominium fee allocation
+0 .No
+1 .Yes
+FELEP
+1
+Electricity (monthly cost) allocation
+0 .No
+1 .Yes
+FFSP
+
+1
+Food stamp amount (yearly amount) allocation
+0 .No
+1 .Yes
+
+FFULP
+1
+House heating fuel (yearly cost) allocation
+0 .No
+1 .Yes
+FGASP
+1
+Gas (monthly cost) allocation
+
+0 .No
+1 .Yes
+FHFLP
+1
+House heating fuel allocation
+0 .No
+1 .Yes
+FINSP
+1
+Fire, hazard, flood insurance allocation
+0 .No
+1 .Yes
+FKITP
+1
+Complete kitchen facilities allocation
+0 .No
+1 .Yes
+FMHP
+
+1
+Mobile home costs allocation
+0 .No
+1 .Yes
+
+FMRGIP
+1
+Payment include fire, hazard, flood insurance
+allocation
+0 .No
+1 .Yes
+FMRGP
+1
+Regular mortgage payment allocation
+0 .No
+1 .Yes
+FMRGTP
+1
+Payment include real estate taxes allocation
+0 .No
+1 .Yes
+FMRGXP
+1
+Mortgage status allocation
+0 .No
+1 .Yes
+FMVYP
+1
+When moved into this house or apartment allocation
+0 .No
+1 .Yes
+FPLMP
+1
+Complete plumbing facilities allocation
+0 .No
+1 .Yes
+FRMSP
+1
+Rooms allocation
+0 .No
+1 .Yes
+FRNTMP
+1
+Meals included in rent allocation
+
+0 .No
+1 .Yes
+FRNTP
+1
+Monthly rent allocation
+0 .No
+1 .Yes
+FSMP
+
+1
+Second mortgage payment allocation
+0 .No
+1 .Yes
+
+FSMXHP
+1
+Home equity loan status allocation
+0 .No
+1 .Yes
+FSMXSP
+1
+Second mortgage status allocation
+0 .No
+1 .Yes
+FTAXP
+1
+Taxes on property allocation
+0 .No
+1 .Yes
+FTELP
+1
+Telephones in house allocation
+0 .No
+1 .Yes
+FTENP
+1
+Tenure allocation
+0 .No
+1 .Yes
+FVACSP
+1
+Vacancy status allocation
+0 .No
+1 .Yes
+FVALP
+1
+Value allocation
+0 .No
+1 .Yes
+FVEHP
+1
+Vehicles available by household allocation
+0 .No
+1 .Yes
+FWATP
+1
+Water (yearly cost) allocation
+0 .No
+1 .Yes
+FYBLP
+1
+When structure first built allocation
+0 .No
+
+1 .Yes
+WGTP1
+4
+Housing Weight replicate 1
+0001..9999 .Integer weight of housing unit
+WGTP2
+4
+Housing Weight replicate 2
+0001..9999 .Integer weight of housing unit
+WGTP3
+4
+Housing Weight replicate 3
+0001..9999 .Integer weight of housing unit
+WGTP4
+4
+Housing Weight replicate 4
+0001..9999 .Integer weight of housing unit
+WGTP5
+4
+Housing Weight replicate 5
+0001..9999 .Integer weight of housing unit
+WGTP6
+4
+Housing Weight replicate 6
+0001..9999 .Integer weight of housing unit
+WGTP7
+4
+Housing Weight replicate 7
+0001..9999 .Integer weight of housing unit
+WGTP8
+4
+Housing Weight replicate 8
+0001..9999 .Integer weight of housing unit
+WGTP9
+4
+Housing Weight replicate 9
+0001..9999 .Integer weight of housing unit
+WGTP10
+4
+Housing Weight replicate 10
+0001..9999 .Integer weight of housing unit
+WGTP11
+4
+Housing Weight replicate 11
+0001..9999 .Integer weight of housing unit
+WGTP12
+4
+Housing Weight replicate 12
+0001..9999 .Integer weight of housing unit
+WGTP13
+4
+Housing Weight replicate 13
+0001..9999 .Integer weight of housing unit
+WGTP14
+4
+Housing Weight replicate 14
+0001..9999 .Integer weight of housing unit
+WGTP15
+4
+Housing Weight replicate 15
+0001..9999 .Integer weight of housing unit
+
+WGTP16
+4
+Housing Weight replicate 16
+0001..9999 .Integer weight of housing unit
+WGTP17
+4
+Housing Weight replicate 17
+0001..9999 .Integer weight of housing unit
+WGTP18
+4
+Housing Weight replicate 18
+0001..9999 .Integer weight of housing unit
+WGTP19
+4
+Housing Weight replicate 19
+0001..9999 .Integer weight of housing unit
+WGTP20
+4
+Housing Weight replicate 20
+0001..9999 .Integer weight of housing unit
+WGTP21
+4
+Housing Weight replicate 21
+0001..9999 .Integer weight of housing unit
+WGTP22
+4
+Housing Weight replicate 22
+0001..9999 .Integer weight of housing unit
+WGTP23
+4
+Housing Weight replicate 23
+0001..9999 .Integer weight of housing unit
+WGTP24
+4
+Housing Weight replicate 24
+0001..9999 .Integer weight of housing unit
+WGTP25
+4
+Housing Weight replicate 25
+0001..9999 .Integer weight of housing unit
+WGTP26
+4
+Housing Weight replicate 26
+0001..9999 .Integer weight of housing unit
+WGTP27
+4
+Housing Weight replicate 27
+0001..9999 .Integer weight of housing unit
+WGTP28
+4
+Housing Weight replicate 28
+0001..9999 .Integer weight of housing unit
+WGTP29
+4
+Housing Weight replicate 29
+0001..9999 .Integer weight of housing unit
+WGTP30
+4
+Housing Weight replicate 30
+0001..9999 .Integer weight of housing unit
+WGTP31
+
+4
+
+Housing Weight replicate 31
+0001..9999 .Integer weight of housing unit
+WGTP32
+4
+Housing Weight replicate 32
+0001..9999 .Integer weight of housing unit
+WGTP33
+4
+Housing Weight replicate 33
+0001..9999 .Integer weight of housing unit
+WGTP34
+4
+Housing Weight replicate 34
+0001..9999 .Integer weight of housing unit
+WGTP35
+4
+Housing Weight replicate 35
+0001..9999 .Integer weight of housing unit
+WGTP36
+4
+Housing Weight replicate 36
+0001..9999 .Integer weight of housing unit
+WGTP37
+4
+Housing Weight replicate 37
+0001..9999 .Integer weight of housing unit
+WGTP38
+4
+Housing Weight replicate 38
+0001..9999 .Integer weight of housing unit
+WGTP39
+4
+Housing Weight replicate 39
+0001..9999 .Integer weight of housing unit
+WGTP40
+4
+Housing Weight replicate 40
+0001..9999 .Integer weight of housing unit
+WGTP41
+4
+Housing Weight replicate 41
+0001..9999 .Integer weight of housing unit
+WGTP42
+4
+Housing Weight replicate 42
+0001..9999 .Integer weight of housing unit
+WGTP43
+4
+Housing Weight replicate 43
+0001..9999 .Integer weight of housing unit
+WGTP44
+4
+Housing Weight replicate 44
+0001..9999 .Integer weight of housing unit
+WGTP45
+4
+Housing Weight replicate 45
+0001..9999 .Integer weight of housing unit
+WGTP46
+4
+Housing Weight replicate 46
+
+0001..9999 .Integer weight of housing unit
+WGTP47
+4
+Housing Weight replicate 47
+0001..9999 .Integer weight of housing unit
+WGTP48
+4
+Housing Weight replicate 48
+0001..9999 .Integer weight of housing unit
+WGTP49
+4
+Housing Weight replicate 49
+0001..9999 .Integer weight of housing unit
+WGTP50
+4
+Housing Weight replicate 50
+0001..9999 .Integer weight of housing unit
+WGTP51
+4
+Housing Weight replicate 51
+0001..9999 .Integer weight of housing unit
+WGTP52
+4
+Housing Weight replicate 52
+0001..9999 .Integer weight of housing unit
+WGTP53
+4
+Housing Weight replicate 53
+0001..9999 .Integer weight of housing unit
+WGTP54
+4
+Housing Weight replicate 54
+0001..9999 .Integer weight of housing unit
+WGTP55
+4
+Housing Weight replicate 55
+0001..9999 .Integer weight of housing unit
+WGTP56
+4
+Housing Weight replicate 56
+0001..9999 .Integer weight of housing unit
+WGTP57
+4
+Housing Weight replicate 57
+0001..9999 .Integer weight of housing unit
+WGTP58
+4
+Housing Weight replicate 58
+0001..9999 .Integer weight of housing unit
+WGTP59
+4
+Housing Weight replicate 59
+0001..9999 .Integer weight of housing unit
+WGTP60
+4
+Housing Weight replicate 60
+0001..9999 .Integer weight of housing unit
+WGTP61
+4
+Housing Weight replicate 61
+0001..9999 .Integer weight of housing unit
+
+WGTP62
+4
+Housing Weight replicate 62
+0001..9999 .Integer weight of housing unit
+WGTP63
+4
+Housing Weight replicate 63
+0001..9999 .Integer weight of housing unit
+WGTP64
+4
+Housing Weight replicate 64
+0001..9999 .Integer weight of housing unit
+WGTP65
+4
+Housing Weight replicate 65
+0001..9999 .Integer weight of housing unit
+WGTP66
+4
+Housing Weight replicate 66
+0001..9999 .Integer weight of housing unit
+WGTP67
+4
+Housing Weight replicate 67
+0001..9999 .Integer weight of housing unit
+WGTP68
+4
+Housing Weight replicate 68
+0001..9999 .Integer weight of housing unit
+WGTP69
+4
+Housing Weight replicate 69
+0001..9999 .Integer weight of housing unit
+WGTP70
+4
+Housing Weight replicate 70
+0001..9999 .Integer weight of housing unit
+WGTP71
+4
+Housing Weight replicate 71
+0001..9999 .Integer weight of housing unit
+WGTP72
+4
+Housing Weight replicate 72
+0001..9999 .Integer weight of housing unit
+WGTP73
+4
+Housing Weight replicate 73
+0001..9999 .Integer weight of housing unit
+WGTP74
+4
+Housing Weight replicate 74
+0001..9999 .Integer weight of housing unit
+WGTP75
+4
+Housing Weight replicate 75
+0001..9999 .Integer weight of housing unit
+WGTP76
+4
+Housing Weight replicate 76
+0001..9999 .Integer weight of housing unit
+WGTP77
+
+4
+
+Housing Weight replicate 77
+0001..9999 .Integer weight of housing unit
+WGTP78
+4
+Housing Weight replicate 78
+0001..9999 .Integer weight of housing unit
+WGTP79
+4
+Housing Weight replicate 79
+0001..9999 .Integer weight of housing unit
+WGTP80
+4
+Housing Weight replicate 80
+0001..9999 .Integer weight of housing unit
+DATA DICTIONARY - 2006 POPULATION
+RT
+
+1
+Record Type
+P .Person Record
+
+SERIALNO
+7
+Housing unit/GQ person serial number
+0000001..9999999 .Unique identifier assigned within
+.state
+SPORDER
+2
+Person number
+01..20 .Person number
+PUMA
+
+5
+Public use microdata area code (PUMA)
+Designates area of 100,000 or more population. Use with ST for unique
+code.
+00100..08200
+77777 .combination of 01801, 01802, and 01905 in Louisiana
+
+ST
+
+2
+State Code
+01 .Alabama/AL
+02 .Alaska/AK
+04 .Arizona/AZ
+05 .Arkansas/AR
+06 .California/CA
+08 .Colorado/CO
+09 .Connecticut/CT
+10 .Delaware/DE
+11 .District of Columbia/DC
+12 .Florida/FL
+13 .Georgia/GA
+15 .Hawaii/HI
+16 .Idaho/ID
+17 .Illinois/IL
+18 .Indiana/IN
+19 .Iowa/IA
+20 .Kansas/KS
+21 .Kentucky/KY
+22 .Louisiana/LA
+23 .Maine/ME
+24 .Maryland/MD
+25 .Massachusetts/MA
+
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+44
+45
+46
+47
+48
+49
+50
+51
+53
+54
+55
+56
+72
+
+.Michigan/MI
+.Minnesota/MN
+.Mississippi/MS
+.Missouri/MO
+.Montana/MT
+.Nebraska/NE
+.Nevada/NV
+.New Hampshire/NH
+.New Jersey/NJ
+.New Mexico/NM
+.New York/NY
+.North Carolina/NC
+.North Dakota/ND
+.Ohio/OH
+.Oklahoma/OK
+.Oregon/OR
+.Pennsylvania/PA
+.Rhode Island/RI
+.South Carolina/SC
+.South Dakota/SD
+.Tennessee/TN
+.Texas/TX
+.Utah/UT
+.Vermont/VT
+.Virginia/VA
+.Washington/WA
+.West Virginia/WV
+.Wisconsin/WI
+.Wyoming/WY
+.Puerto Rico/PR
+
+ADJUST
+7
+Adjustment factor for dollar amounts (6 implied decimal places)
+1015675 .2006 factor (1.015675)
+PWGTP
+4
+Person's weight
+0001..9999 .Integer weight of person
+AGEP
+
+2
+Age
+00 .Under 1 year
+01..99 .1 to 99 years (Top-coded***)
+
+CIT
+
+1
+Citizenship status
+1 .Born in the U.S.
+.Born in the U.S., Guam, the U.S. Virgin Islands, or the Northern
+.Marianas if current residence is Puerto Rico
+2 .Born in Puerto Rico, Guam, the U.S. Virgin Islands,
+.or the Northern Marianas
+.Born in Puerto Rico if current residence is Puerto Rico
+3 .Born abroad of American parents
+4 .U.S. citizen by naturalization
+5 .Not a citizen of the U.S.
+
+COW
+
+1
+Class of worker
+b .N/A (less than 16 years old/unemployed who
+.never worked/NILF who last worked more than 5 years
+.ago)
+
+1 .Employee of a private for profit company or
+.business or of an individual, for wages,
+.salary, or commissions
+2 .Employee of a private not-for-profit,
+.tax-exempt, or charitable organization
+3 .Local government employee (city, county, etc.)
+4 .State government employee
+5 .Federal government employee
+6 .Self-employed in own not incorporated
+.business, professional practice, or farm
+7 .Self-employed in own incorporated
+.business, professional practice or farm
+8 .Working without pay in family business or farm
+9 .Unemployed
+DDRS
+
+1
+Difficulty dressing
+b .N/A (Less than 5 years old)
+1 .Yes
+2 .No
+
+DEYE
+
+1
+Vision or hearing difficulty
+b .N/A (Less than 5 years old)
+1 .Yes
+2 .No
+
+DOUT
+
+1
+Difficulty going out
+b .N/A (Less than 16 years old)
+1 .Yes
+2 .No
+
+DPHY
+
+1
+Physical
+b
+1
+2
+
+difficulty
+.N/A (Less than 5 years old)
+.Yes
+.No
+
+DREM
+
+1
+Difficulty remembering
+b .N/A (Less than 5 years old)
+1 .Yes
+2 .No
+
+DWRK
+
+1
+Difficulty working
+b .N/A (Less than 16 years old)
+1 .Yes
+2 .No
+
+ENG
+
+1
+Ability to speak English
+b .N/A (less than 5 years old/speaks only English)
+1 .Very well
+2 .Well
+3 .Not well
+4 .Not at all
+
+FER
+
+1
+Child born within the past 12 months
+
+b .N/A (less than 15 years/greater than 50 years/
+.male)
+1 .Yes
+2 .No
+GCL
+
+1
+Grandchildren living in this house
+b .N/A (less than 30 years/institutional GQ)
+1 .Yes
+2 .No
+
+GCM
+
+1
+Months responsible for grandchildren
+b .N/A (less than 30 years/grandparent not responsible for
+.grandchild/institutional GQ)
+1 .Less than 6 months
+2 .6 to 11 months
+3 .1 to 2 years
+4 .3 to 4 years
+5 .5 or more years
+
+GCR
+
+1
+Responsible for grandchildren
+b .N/A (less than 30 years/grandchild not living in
+house/institutional GQ)
+1 .Yes
+2 .No
+INTP
+
+6
+Interest, dividends, and net rental income past 12 months (signed)
+bbbbbb .N/A (less than 15 years old)
+000000 .None
+-09999 .Loss of $9999 or more
+-00001..-09998 .Loss $1 to $9998
+000001 .$1 or breakeven
+000002..999999 .$2 to $999999 (Rounded and top-coded)
+
+JWMNP
+3
+Travel time to work
+bbb .N/A (not a worker or worker who worked at
+.home)
+001..200 .1 to 200 minutes to get to work (Top-coded)
+JWRIP
+2
+Vehicle occupancy
+bb .N/A (not a worker or worker whose means of
+.transportation to work was not car, truck,
+.or van)
+01 .Drove alone
+02 .In 2-person carpool
+03 .In 3-person carpool
+04 .In 4-person carpool
+05 .In 5-person carpool
+06 .In 6-person carpool
+07 .In 7-person carpool
+08 .In 8-person carpool
+09 .In 9-person carpool
+10 .In 10-person or more carpool
+JWTR
+
+2
+
+Means of transportation to work
+bb .N/A (not a worker--not in the labor force,
+.including persons under 16 years; unemployed;
+.employed, with a job but not at work; Armed
+.Forces, with a job but not at work)
+01 .Car, truck, or van
+02 .Bus or trolley bus
+03 .Streetcar or trolley car (carro publico in Puerto Rico)
+04 .Subway or elevated
+05 .Railroad
+06 .Ferryboat
+07 .Taxicab
+08 .Motorcycle
+09 .Bicycle
+10 .Walked
+11 .Worked at home
+12 .Other method
+LANX
+
+1
+Language
+b
+1
+2
+
+other than English at home
+.N/A (less than 5 years old)
+.Yes, speaks another language
+.No, speaks only English
+
+MAR
+
+1
+Marital status
+1 .Married
+2 .Widowed
+3 .Divorced
+4 .Separated
+5 .Never married or under 15 years old
+
+MIG
+
+1
+Mobility
+b
+1
+2
+
+status (lived here 1 year ago)
+.N/A(less than 1 year old)
+.Yes, same house (nonmovers)
+.No, outside US if current residence is US;
+.No, outside Puerto Rico and US if current residence is
+.Puerto Rico
+3 .No, different house in US if current residence is US;
+.No, different house in Puerto Rico is current residence is
+.Puerto Rico
+
+MIL
+
+1
+Military
+b
+1
+2
+3
+
+service
+.N/A (less than 17 years old)
+.Yes, now on active duty
+.Yes, on active duty during the last 12 months, but not now
+.Yes, on active duty in the past, but not during the last 12
+.months
+4 .No, training for Reserves/National Guard only
+5 .No, never served in the military
+
+MILY
+
+MLPA
+
+1
+Years of active duty military service
+b .N/A (less than 17 years/no active duty
+.military service)
+1 .Less than 2 years of service
+2 .2 years or more of service
+1
+
+Served September 2001 or later
+b .N/A (Less than 17 years old/no active duty)
+0 .Did not serve this period
+1 .Served this period
+MLPB
+
+1
+Served August 1990 - August 2001 (including Persian Gulf War)
+b .N/A (Less than 17 years old/no active duty)
+0 .Did not serve this period
+1 .Served this period
+
+MLPC
+
+1
+Served September 1980 - July 1990
+b .N/A (Less than 17 years old/no active duty)
+0 .Did not serve this period
+1 .Served this period
+
+MLPD
+
+1
+Served May 1975 - August 1980
+b .N/A (Less than 17 years old/no active duty)
+0 .Did not serve this period
+1 .Served this period
+
+MLPE
+
+1
+Served Vietnam era (August 1964 - April 1975)
+b .N/A (Less than 17 years old/no active duty)
+0 .Did not serve this period
+1 .Served this period
+
+MLPF
+
+1
+Served March 1961 - July 1964
+b .N/A (Less than 17 years old/no active duty)
+0 .Did not serve this period
+1 .Served this period
+
+MLPG
+
+1
+Served February 1955 - February 1961
+b .N/A (Less than 17 years old/no active duty)
+0 .Did not serve this period
+1 .Served this period
+
+MLPH
+
+1
+Served Korean War (July 1950 - January 1955)
+b .N/A (Less than 17 years old/no active duty)
+0 .Did not serve this period
+1 .Served this period
+
+MLPI
+
+1
+Served January 1947 - June 1950
+b .N/A (Less than 17 years old/no active duty)
+0 .Did not serve this period
+1 .Served this period
+
+MLPJ
+
+1
+Served World War II (December 1941 - December 1946)
+b .N/A (Less than 17 years old/no active duty)
+0 .Did not serve this period
+1 .Served this period
+
+MLPK
+
+1
+Served November 1941 or earlier
+
+b .N/A (Less than 17 years old/no active duty)
+0 .Did not serve this period
+1 .Served this period
+NWAB
+
+1
+Temporary absence from work
+b .N/A (less than 16 years old/at work/on layoff)
+1 .Yes
+2 .No
+3 .Did not report
+
+NWAV
+
+1
+Available for
+b .N/A
+1 .Yes
+2 .No,
+3 .No,
+4 .No,
+5 .Did
+
+work
+(less than 16 years/at work/not looking)
+temporarily ill
+other reasons
+unspecified
+not report
+
+NWLA
+
+1
+On layoff from work
+b .N/A (less than 16 years old/at work)
+1 .Yes
+2 .No
+3 .Did not report
+
+NWLK
+
+1
+Looking for work
+b .N/A (less than 16 years old/at work/temporarily
+.absent/informed of recall)
+1 .Yes
+2 .No
+3 .Did not report
+
+NWRE
+
+1
+Informed
+b
+1
+2
+3
+
+OIP
+
+of recall
+.N/A (less than 16 years old/at work/not on layoff)
+.Yes
+.No
+.Did not report
+
+6
+All other income past
+bbbbbb
+000000
+000001..999999
+
+12 months
+.N/A (less than 15 years old)
+.None
+.$1 to $999999 (Rounded and top-coded)
+
+PAP
+
+5
+Public assistance income past 12 months
+bbbbb .N/A (less than 15 years old)
+00000 .None
+00001..99999 .$1 to $99999 (Rounded)
+
+REL
+
+2
+Relationship
+00 .Reference person
+01 .Husband/wife
+02 .Son/daughter
+03 .Brother/sister
+04 .Father/mother
+
+05
+06
+07
+08
+09
+10
+11
+12
+13
+14
+
+.Grandchild
+.Inlaw
+.Other relative
+.Roomer/boarder
+.Housemate/roommate
+.Unmarried partner
+.Foster child
+.Other nonrelative
+.Institutionalized group quarters population
+.Noninstitutionalized group quarters population
+
+RETP
+
+6
+Retirement income past 12 months
+bbbbbb .N/A (less than 15 years old)
+000000 .None
+000001..999999 .$1 to $999999 (Rounded and top-coded)
+
+SCH
+
+1
+School enrollment
+b .N/A (less than 3 years old)
+1 .No, has not attended in the last 3 months
+2 .Yes, public school or public college
+3 .Yes, private school or private college
+
+SCHG
+
+1
+Grade level attending
+b .N/A (not attending school)
+1 .Nursery school/preschool
+2 .Kindergarten
+3 .Grade 1 to grade 4
+4 .Grade 5 to grade 8
+5 .Grade 9 to grade 12
+6 .College undergraduate
+7 .Graduate or professional school
+
+SCHL
+
+2
+Educational attainment
+bb .N/A (less than 3 years old)
+01 .No school completed
+02 .Nursery school to grade 4
+03 .Grade 5 or grade 6
+04 .Grade 7 or grade 8
+05 .Grade 9
+06 .Grade 10
+07 .Grade 11
+08 .Grade 12 no diploma
+09 .High school graduate
+10 .Some college, but less than 1 year
+11 .One or more years of college, no degree
+12 .Associate's degree
+13 .Bachelor's degree
+14 .Master's degree
+15 .Professional school degree
+16 .Doctorate degree
+
+SEMP
+
+6
+Self-employment income past 12 months (signed)
+bbbbbb .N/A (less than 15 years old)
+000000 .None
+-09999 .Loss of $9999 or more
+-00001..-09998 .Loss $1 to $9998
+
+000001 .$1 or breakeven
+000002..999999 .$2 to $999999 (Rounded and top-coded)
+SEX
+
+1
+Sex
+1 .Male
+2 .Female
+
+SSIP
+
+5
+Supplementary Security Income past 12 months
+bbbbb .N/A (less than 15 years old)
+00000 .None
+00001..99999 .$1 to $99999 (Rounded)
+
+SSP
+
+5
+Social security income past 12 months
+bbbbb .N/A (less than 15 years old)
+00000 .None
+00001..99999 .$1 to $99999 (Rounded)
+
+WAGP
+
+6
+Wages or salary income past 12 months
+bbbbbb .N/A (less than 15 years old)
+000000 .None
+000001..999999 .$1 to 999999 (Rounded and top-coded)
+
+WKHP
+
+2
+Usual hours worked per week past 12 months
+bb .N/A (less than 16 years old/did not work
+.during the past 12 months)
+01..98 .1 to 98 usual hours
+99 .99 or more usual hours
+
+WKL
+
+1
+When last worked
+b .N/A (less than 16 years old)
+1 .Within the past 12 months
+2 .1-5 years ago
+3 .Over 5 years ago or never worked
+
+WKW
+
+2
+Weeks worked past 12 months
+bb .N/A (less than 16 years old/did not work
+.during the past 12 months)
+01..52 .1 to 52 weeks worked past 12 months
+
+YOEP
+
+4
+Year of entry
+bbbb .Born in the US
+1919 .1919 or earlier
+1920 .1920
+1921 .1921
+1922 .1922
+1923 .1923
+1924 .1924
+1925 .1925
+1926 .1926
+1927 .1927
+1928 .1928
+1929 .1929
+1930 .1930
+
+1931
+1933
+1935
+1936
+1937
+1938
+1939
+1940
+1941
+1942
+1943
+1944
+1945
+1946
+1947
+1948
+1949
+1950
+1951
+1952
+1953
+1954
+1955
+1956
+1957
+1958
+1959
+1960
+1961
+1962
+1963
+1964
+1965
+1966
+1967
+1968
+1969
+1970
+1971
+1972
+1973
+1974
+1975
+1976
+1977
+1978
+1979
+1980
+1981
+1982
+1983
+1984
+1985
+1986
+1987
+1988
+1989
+1990
+1991
+1992
+1993
+
+.1931 or 1932
+.1933 or 1934
+.1935
+.1936
+.1937
+.1938
+.1939
+.1940
+.1941
+.1942
+.1943
+.1944
+.1945
+.1946
+.1947
+.1948
+.1949
+.1950
+.1951
+.1952
+.1953
+.1954
+.1955
+.1956
+.1957
+.1958
+.1959
+.1960
+.1961
+.1962
+.1963
+.1964
+.1965
+.1966
+.1967
+.1968
+.1969
+.1970
+.1971
+.1972
+.1973
+.1974
+.1975
+.1976
+.1977
+.1978
+.1979
+.1980
+.1981
+.1982
+.1983
+.1984
+.1985
+.1986
+.1987
+.1988
+.1989
+.1990
+.1991
+.1992
+.1993
+
+1994
+1995
+1996
+1997
+1998
+1999
+2000
+2001
+2002
+2003
+2004
+2005
+2006
+
+.1994
+.1995
+.1996
+.1997
+.1998
+.1999
+.2000
+.2001
+.2002
+.2003
+.2004
+.2005
+.2006
+
+UWRK
+
+1
+Worked last week
+b .N/A (less than 16 years/not reported)
+1 .Worked
+2 .Did not work
+
+ANC
+
+1
+Ancestry
+1
+2
+3
+4
+
+recode
+.Single
+.Multiple
+.Unclassified
+.Not reported
+
+ANC1P
+3
+Recoded Detailed Ancestry - first entry
+001 .Alsatian
+003 .Austrian
+005 .Basque
+008 .Belgian
+009 .Flemish
+011 .British
+012 .British Isles
+020 .Danish
+021 .Dutch
+022 .English
+024 .Finnish
+026 .French
+032 .German
+040 .Prussian
+046 .Greek
+049 .Icelander
+050 .Irish
+051 .Italian
+068 .Sicilian
+077 .Luxemburger
+078 .Maltese
+082 .Norwegian
+084 .Portuguese
+087 .Scotch Irish
+088 .Scottish
+089 .Swedish
+091 .Swiss
+097 .Welsh
+098 .Scandinavian
+099 .Celtic
+100 .Albanian
+102 .Belorussian
+
+103
+109
+111
+112
+114
+115
+122
+124
+125
+128
+129
+130
+142
+144
+148
+152
+153
+154
+170
+171
+176
+177
+178
+179
+183
+187
+190
+195
+200
+210
+211
+212
+213
+215
+218
+221
+222
+223
+224
+225
+226
+227
+231
+232
+233
+234
+235
+236
+237
+238
+239
+249
+250
+251
+252
+261
+271
+275
+290
+291
+295
+
+.Bulgarian
+.Croatian
+.Czech
+.Bohemian
+.Czechoslovakian
+.Estonian
+.German Russian
+.Rom
+.Hungarian
+.Latvian
+.Lithuanian
+.Macedonian
+.Polish
+.Romanian
+.Russian
+.Serbian
+.Slovak
+.Slovene
+.Georgia CIS
+.Ukrainian
+.Yugoslavian
+.Herzegovinian
+.Slavic
+.Slavonian
+.Northern European
+.Western European
+.Eastern European
+.European
+.Spaniard
+.Mexican
+.Mexican American
+.Mexicano
+.Chicano
+.Mexican American Indian
+.Mexican State
+.Costa Rican
+.Guatemalan
+.Honduran
+.Nicaraguan
+.Panamanian
+.Salvadoran
+.Central American
+.Argentinean
+.Bolivian
+.Chilean
+.Colombian
+.Ecuadorian
+.Paraguayan
+.Peruvian
+.Uruguayan
+.Venezuelan
+.South American
+.Latin American
+.Latin
+.Latino
+.Puerto Rican
+.Cuban
+.Dominican
+.Hispanic
+.Spanish
+.Spanish American
+
+300
+301
+302
+308
+310
+314
+322
+325
+329
+330
+331
+335
+336
+359
+360
+370
+400
+402
+406
+416
+417
+419
+421
+425
+429
+431
+434
+435
+442
+465
+483
+484
+490
+495
+496
+499
+508
+510
+522
+523
+529
+534
+541
+553
+564
+566
+568
+570
+576
+587
+598
+599
+600
+603
+609
+615
+618
+620
+650
+680
+690
+
+.Bahamian
+.Barbadian
+.Belizean
+.Jamaican
+.Dutch West Indian
+.Trinidadian Tobagonian
+.British West Indian
+.Antigua and Barbuda
+.Grenadian
+.Vincent-Grenadine Islander
+.St Lucia Islander
+.West Indian
+.Haitian
+.Other West Indian
+.Brazilian
+.Guyanese
+.Algerian
+.Egyptian
+.Moroccan
+.Iranian
+.Iraqi
+.Israeli
+.Jordanian
+.Lebanese
+.Syrian
+.Armenian
+.Turkish
+.Yemeni
+.Kurdish
+.Palestinian
+.Assyrian
+.Chaldean
+.Mideast
+.Arab
+.Arabic
+.Other Arab
+.Cameroon
+.Cape Verdean
+.Ethiopian
+.Eritrean
+.Ghanian
+.Kenyan
+.Liberian
+.Nigerian
+.Senegalese
+.Sierra Leonean
+.Somalian
+.South African
+.Sudanese
+.Other Subsaharan African
+.Western African
+.African
+.Afghan
+.Bangladeshi
+.Nepali
+.Asian Indian
+.Bengali
+.East Indian
+.Punjab
+.Pakistani
+.Sri Lankan
+
+700
+703
+706
+707
+712
+720
+730
+740
+748
+750
+765
+768
+770
+776
+782
+785
+793
+794
+795
+799
+800
+803
+808
+811
+814
+815
+820
+821
+822
+841
+850
+899
+900
+901
+902
+903
+904
+907
+913
+914
+917
+918
+919
+920
+921
+922
+924
+925
+927
+929
+931
+935
+936
+937
+939
+983
+994
+995
+996
+997
+998
+
+.Burmese
+.Cambodian
+.Chinese
+.Cantonese
+.Mongolian
+.Filipino
+.Indonesian
+.Japanese
+.Okinawan
+.Korean
+.Laotian
+.Hmong
+.Malaysian
+.Thai
+.Taiwanese
+.Vietnamese
+.Eurasian
+.Amerasian
+.Asian
+.Other Asian
+.Austrailian
+.New Zealander
+.Polynesian
+.Hawaiian
+.Samoan
+.Tongan
+.Micronesian
+.Guamanian
+.Chamorro Islander
+.Fijian
+.Pacific Islander
+.Other Pacific
+.Afro American
+.Afro
+.African American
+.Black
+.Negro
+.Creole
+.Central American Indian
+.South American Indian
+.Native American
+.Indian
+.Cherokee
+.American Indian
+.Aleut
+.Eskimo
+.White
+.Anglo
+.Appalachian
+.Pennsylvania German
+.Canadian
+.French Canadian
+.Acadian
+.Cajun
+.American or United States
+.Texas
+.North American
+.Mixture
+.Uncodable entries
+.Other groups
+.Other responses
+
+999 .Not reported
+ANC2P
+3
+Recoded Detailed Ancestry - second entry
+001 .Alsatian
+003 .Austrian
+005 .Basque
+008 .Belgian
+009 .Flemish
+011 .British
+012 .British Isles
+020 .Danish
+021 .Dutch
+022 .English
+024 .Finnish
+026 .French
+032 .German
+040 .Prussian
+046 .Greek
+049 .Icelander
+050 .Irish
+051 .Italian
+068 .Sicilian
+077 .Luxemburger
+078 .Maltese
+082 .Norwegian
+084 .Portuguese
+087 .Scotch Irish
+088 .Scottish
+089 .Swedish
+091 .Swiss
+097 .Welsh
+098 .Scandinavian
+099 .Celtic
+100 .Albanian
+102 .Belorussian
+103 .Bulgarian
+109 .Croatian
+111 .Czech
+112 .Bohemian
+114 .Czechoslovakian
+115 .Estonian
+122 .German Russian
+124 .Rom
+125 .Hungarian
+128 .Latvian
+129 .Lithuanian
+130 .Macedonian
+142 .Polish
+144 .Romanian
+148 .Russian
+152 .Serbian
+153 .Slovak
+154 .Slovene
+170 .Georgia CIS
+171 .Ukrainian
+176 .Yugoslavian
+177 .Herzegovinian
+178 .Slavic
+179 .Slavonian
+183 .Northern European
+
+187
+190
+195
+200
+210
+211
+212
+213
+215
+218
+221
+222
+223
+224
+225
+226
+227
+231
+232
+233
+234
+235
+236
+237
+238
+239
+249
+250
+251
+252
+261
+271
+275
+290
+291
+295
+300
+301
+302
+308
+310
+314
+322
+325
+329
+330
+331
+335
+336
+359
+360
+370
+400
+402
+406
+416
+417
+419
+421
+425
+429
+
+.Western European
+.Eastern European
+.European
+.Spaniard
+.Mexican
+.Mexican American
+.Mexicano
+.Chicano
+.Mexican American Indian
+.Mexican State
+.Costa Rican
+.Guatemalan
+.Honduran
+.Nicaraguan
+.Panamanian
+.Salvadoran
+.Central American
+.Argentinean
+.Bolivian
+.Chilean
+.Colombian
+.Ecuadorian
+.Paraguayan
+.Peruvian
+.Uruguayan
+.Venezuelan
+.South American
+.Latin American
+.Latin
+.Latino
+.Puerto Rican
+.Cuban
+.Dominican
+.Hispanic
+.Spanish
+.Spanish American
+.Bahamian
+.Barbadian
+.Belizean
+.Jamaican
+.Dutch West Indian
+.Trinidadian Tobagonian
+.British West Indian
+.Antigua and Barbuda
+.Grenadian
+.Vincent-Grenadine Islander
+.St Lucia Islander
+.West Indian
+.Haitian
+.Other West Indian
+.Brazilian
+.Guyanese
+.Algerian
+.Egyptian
+.Moroccan
+.Iranian
+.Iraqi
+.Israeli
+.Jordanian
+.Lebanese
+.Syrian
+
+431
+434
+435
+442
+465
+483
+484
+490
+495
+496
+499
+508
+510
+522
+523
+529
+534
+541
+553
+564
+566
+568
+570
+576
+587
+598
+599
+600
+603
+609
+615
+618
+620
+650
+680
+690
+700
+703
+706
+707
+712
+720
+730
+740
+748
+750
+765
+768
+770
+776
+782
+785
+793
+794
+795
+799
+800
+803
+808
+811
+814
+
+.Armenian
+.Turkish
+.Yemeni
+.Kurdish
+.Palestinian
+.Assyrian
+.Chaldean
+.Mideast
+.Arab
+.Arabic
+.Other Arab
+.Cameroon
+.Cape Verdean
+.Ethiopian
+.Eritrean
+.Ghanian
+.Kenyan
+.Liberian
+.Nigerian
+.Senegalese
+.Sierra Leonean
+.Somalian
+.South African
+.Sudanese
+.Other Subsaharan African
+.Western African
+.African
+.Afghan
+.Bangladeshi
+.Nepali
+.Asian Indian
+.Bengali
+.East Indian
+.Punjab
+.Pakistani
+.Sri Lankan
+.Burmese
+.Cambodian
+.Chinese
+.Cantonese
+.Mongolian
+.Filipino
+.Indonesian
+.Japanese
+.Okinawan
+.Korean
+.Laotian
+.Hmong
+.Malaysian
+.Thai
+.Taiwanese
+.Vietnamese
+.Eurasian
+.Amerasian
+.Asian
+.Other Asian
+.Austrailian
+.New Zealander
+.Polynesian
+.Hawaiian
+.Samoan
+
+815
+820
+821
+822
+841
+850
+899
+900
+901
+902
+903
+904
+907
+913
+914
+917
+918
+919
+920
+921
+922
+924
+925
+927
+929
+931
+935
+936
+937
+939
+983
+994
+995
+996
+997
+998
+999
+
+.Tongan
+.Micronesian
+.Guamanian
+.Chamorro Islander
+.Fijian
+.Pacific Islander
+.Other Pacific
+.Afro American
+.Afro
+.African American
+.Black
+.Negro
+.Creole
+.Central American Indian
+.South American Indian
+.Native American
+.Indian
+.Cherokee
+.American Indian
+.Aleut
+.Eskimo
+.White
+.Anglo
+.Appalachian
+.Pennsylvania German
+.Canadian
+.French Canadian
+.Acadian
+.Cajun
+.American or United States
+.Texas
+.North American
+.Mixture
+.Uncodable entries
+.Other groups
+.Other responses
+.Not reported
+
+DECADE
+1
+Decade of entry
+b .N/A (Born in the US)
+1 .Before 1950
+2 .1950 - 1959
+3 .1960 - 1969
+4 .1970 - 1979
+5 .1980 - 1989
+6 .1990 - 1999
+7 .2000 - 2009
+DRIVESP
+1
+Number of vehicles calculated from JWRI
+b .N/A (Nonworker or worker who does not drive to work)
+1 .1.000 vehicles (Drove alone)
+2 .0.500 vehicles (In a 2-person carpool)
+3 .0.333 vehicles (In a 3-person carpool)
+4 .0.250 vehicles (In a 4-person carpool)
+5 .0.200 vehicles (In a 5- or 6-person carpool)
+6 .0.143 vehicles (In a 7-or-more person carpool)
+DS
+
+1
+Disability recode
+
+b .N/A (Less than 5 years old)
+1 .With a disability
+2 .Without a disability
+ESP
+
+1
+Employment status of parents
+b .N/A (not own child of householder, and not
+.child in subfamily)
+.Living with two parents:
+1 .Both parents in labor force
+2 .Father only in labor force
+3 .Mother only in labor force
+4 .Neither parent in labor force
+.Living with one parent:
+.Living with father:
+5 .Father in the labor force
+6 .Father not in labor force
+.Living with mother:
+7 .Mother in the labor force
+8 .Mother not in labor force
+
+ESR
+
+1
+Employment status recode
+b .N/A (less than 16 years old)
+1 .Civilian employed, at work
+2 .Civilian employed, with a job but not at work
+3 .Unemployed
+4 .Armed forces, at work
+5 .Armed forces, with a job but not at work
+6 .Not in labor force
+
+HISP
+
+2
+Recoded detailed Hispanic origin
+01 .Not Spanish/Hispanic/Latino
+02 .Mexican
+03 .Puerto Rican
+04 .Cuban
+05 .Dominican
+06 .Costa Rican
+07 .Guatemalan
+08 .Honduran
+09 .Nicaraguan
+10 .Panamanian
+11 .Salvadoran
+12 .Other Central American
+13 .Argentinean
+14 .Bolivian
+15 .Chilean
+16 .Colombian
+17 .Ecuadorian
+18 .Paraguayan
+19 .Peruvian
+20 .Uruguayan
+21 .Venezuelan
+22 .Other South American
+23 .Spaniard
+24 .All Other Spanish/Hispanic/Latino
+
+INDP
+
+4
+Industry recode
+bbbb .N/A (less than 16 years old/unemployed who
+
+0170
+0180
+0190
+0270
+0280
+0290
+0370
+0380
+0390
+0470
+0480
+0490
+0570
+0580
+0590
+0670
+0680
+0690
+0770
+1070
+1080
+1090
+1170
+1180
+1190
+1270
+1280
+1290
+1370
+1390
+1470
+1480
+1490
+1570
+1590
+1670
+1680
+1690
+1770
+1790
+1870
+1880
+1890
+1990
+2070
+2090
+2170
+2180
+2190
+2270
+2280
+2290
+2370
+2380
+2390
+2470
+2480
+2490
+
+.never worked/NILF who last worked more than
+.5 years ago)
+.AGR-CROP PRODUCTION
+.AGR-ANIMAL PRODUCTION
+.AGR-FORESTRY EXCEPT LOGGING
+.AGR-LOGGING
+.AGR-FISHING, HUNTING, AND TRAPPING
+.AGR-SUPPORT ACTIVITIES FOR AGRICULTURE AND FORESTRY
+.EXT-OIL AND GAS EXTRACTION
+.EXT-COAL MINING
+.EXT-METAL ORE MINING
+.EXT-NONMETALLIC MINERAL MINING AND QUARRYING
+.EXT-NOT SPECIFIED TYPE OF MINING
+.EXT-SUPPORT ACTIVITIES FOR MINING
+.UTL-ELECTRIC POWER GENERATION, TRANSMISSION AND
+.DISTRIBUTION
+.UTL-NATURAL GAS DISTRIBUTION
+.UTL-ELECTRIC AND GAS, AND OTHER COMBINATIONS
+.UTL-WATER, STEAM, AIR CONDITIONING, AND IRRIGATION SYSTEMS
+.UTL-SEWAGE TREATMENT FACILITIES
+.UTL-NOT SPECIFIED UTILITIES
+.CON-CONSTRUCTION, INCL CLEANING DURING AND IMM AFTER
+.MFG-ANIMAL FOOD, GRAIN AND OILSEED MILLING
+.MFG-SUGAR AND CONFECTIONERY PRODUCTS
+.MFG-FRUIT AND VEGETABLE PRESERVING AND SPECIALTY FOODS
+.MFG-DAIRY PRODUCTS
+.MFG-ANIMAL SLAUGHTERING AND PROCESSING
+.MFG-RETAIL BAKERIES
+.MFG-BAKERIES, EXCEPT RETAIL
+.MFG-SEAFOOD AND OTHER MISCELLANEOUS FOODS, N.E.C.
+.MFG-NOT SPECIFIED FOOD INDUSTRIES
+.MFG-BEVERAGE
+.MFG-TOBACCO
+.MFG-FIBER, YARN, AND THREAD MILLS
+.MFG-FABRIC MILLS, EXCEPT KNITTING
+.MFG-TEXTILE AND FABRIC FINISHING AND COATING MILLS
+.MFG-CARPET AND RUG MILLS
+.MFG-TEXTILE PRODUCT MILLS, EXCEPT CARPET AND RUG
+.MFG-KNITTING MILLS
+.MFG-CUT AND SEW APPAREL
+.MFG-APPAREL ACCESSORIES AND OTHER APPAREL
+.MFG-FOOTWEAR
+.MFG-LEATHER TANNING AND PRODUCTS, EXCEPT FOOTWEAR
+.MFG-PULP, PAPER, AND PAPERBOARD MILLS
+.MFG-PAPERBOARD CONTAINERS AND BOXES
+.MFG-MISCELLANEOUS PAPER AND PULP PRODUCTS
+.MFG-PRINTING AND RELATED SUPPORT ACTIVITIES
+.MFG-PETROLEUM REFINING
+.MFG-MISCELLANEOUS PETROLEUM AND COAL PRODUCTS
+.MFG-RESIN, SYNTHETIC RUBBER AND FIBERS, AND FILAMENTS
+.MFG-AGRICULTURAL CHEMICALS
+.MFG-PHARMACEUTICALS AND MEDICINES
+.MFG-PAINT, COATING, AND ADHESIVES
+.MFG-SOAP, CLEANING COMPOUND, AND COSMETICS
+.MFG-INDUSTRIAL AND MISCELLANEOUS CHEMICALS
+.MFG-PLASTICS PRODUCTS
+.MFG-TIRES
+.MFG-RUBBER PRODUCTS, EXCEPT TIRES
+.MFG-POTTERY, CERAMICS, AND RELATED PRODUCTS
+.MFG-STRUCTURAL CLAY PRODUCTS
+.MFG-GLASS AND GLASS PRODUCTS
+
+2570
+2590
+2670
+2680
+2690
+2770
+2780
+2790
+2870
+2880
+2890
+2970
+2980
+2990
+3070
+3080
+3090
+3170
+3180
+3190
+3290
+3360
+3370
+3380
+3390
+3470
+3490
+3570
+3580
+3590
+3670
+3680
+3690
+3770
+3780
+3790
+3870
+3890
+3960
+3970
+3980
+3990
+4070
+4080
+4090
+4170
+4180
+4190
+4260
+4270
+4280
+4290
+4370
+4380
+
+.MFG-CEMENT, CONCRETE, LIME, AND GYPSUM PRODUCTS
+.MFG-MISCELLANEOUS NONMETALLIC MINERAL PRODUCTS
+.MFG-IRON AND STEEL MILLS AND STEEL PRODUCTS
+.MFG-ALUMINUM PRODUCTION AND PROCESSING
+.MFG-NONFERROUS METAL, EXCEPT ALUMINUM, PRODUCTION AND
+.PROCESSING
+.MFG-FOUNDRIES
+.MFG-METAL FORGINGS AND STAMPINGS
+.MFG-CUTLERY AND HAND TOOLS
+.MFG-STRUCTURAL METALS, AND TANK AND SHIPPING CONTAINERS
+.MFG-MACHINE SHOPS; TURNED PRODUCTS; SCREWS, NUTS AND BOLTS
+.MFG-COATING, ENGRAVING, HEAT TREATING AND ALLIED ACTIVITIES
+.MFG-ORDNANCE
+.MFG-MISCELLANEOUS FABRICATED METAL PRODUCTS
+.MFG-NOT SPECIFIED METAL INDUSTRIES
+.MFG-AGRICULTURAL IMPLEMENTS
+.MFG-CONSTRUCTION, MINING AND OIL FIELD MACHINERY
+.MFG-COMMERCIAL AND SERVICE INDUSTRY MACHINERY
+.MFG-METALWORKING MACHINERY
+.MFG-ENGINES, TURBINES, AND POWER TRANSMISSION EQUIPMENT
+.MFG-MACHINERY, N.E.C.
+.MFG-NOT SPECIFIED MACHINERY
+.MFG-COMPUTER AND PERIPHERAL EQUIPMENT
+.MFG-COMMUNICATIONS, AUDIO, AND VIDEO EQUIPMENT
+.MFG-NAVIGATIONAL, MEASURING, ELECTROMEDICAL, AND CONTROL
+.INSTRUMENTS
+.MFG-ELECTRONIC COMPONENTS AND PRODUCTS, N.E.C.
+.MFG-HOUSEHOLD APPLIANCES
+.MFG-ELECTRICAL LIGHTING, EQUIPMENT, AND SUPPLIES, N.E.C.
+.MFG-MOTOR VEHICLES AND MOTOR VEHICLE EQUIPMENT
+.MFG-AIRCRAFT AND PARTS
+.MFG-AEROSPACE PRODUCTS AND PARTS
+.MFG-RAILROAD ROLLING STOCK
+.MFG-SHIP AND BOAT BUILDING
+.MFG-OTHER TRANSPORTATION EQUIPMENT
+.MFG-SAWMILLS AND WOOD PRESERVATION
+.MFG-VENEER, PLYWOOD, AND ENGINEERED WOOD PRODUCTS
+.MFG-PREFABRICATED WOOD BUILDINGS AND MOBILE HOMES
+.MFG-MISCELLANEOUS WOOD PRODUCTS
+.MFG-FURNITURE AND RELATED PRODUCTS
+.MFG-MEDICAL EQUIPMENT AND SUPPLIES
+.MFG-TOYS, AMUSEMENT, AND SPORTING GOODS
+.MFG-MISCELLANEOUS MANUFACTURING, N.E.C.
+.MFG-NOT SPECIFIED MANUFACTURING INDUSTRIES
+.WHL-MOTOR VEHICLES PARTS AND SUPPLIES MERCHANT WHOLESALERS
+.WHL-FURNITURE AND HOME FURNISHING MERCHANT WHOLESALERS
+.WHL-LUMBER AND OTHER CONSTRUCTION MATERIALS MERCHANT
+.WHOLESALERS
+.WHL-PROFESSIONAL AND COMMERCIAL EQUIPMENT AND SUPPLIES
+.MERCHANT WHOLESALERS
+.WHL-METALS AND MINERALS, EXCEPT PETROLEUM, MERCHANT
+.WHOLESALERS
+.WHL-ELECTRICAL GOODS MERCHANT WHOLESALERS
+.WHL-HARDWARE, PLUMBING AND HEATING EQUIPMENT, AND SUPPLIES
+.MERCHANT WHOLESALERS
+.WHL-MACHINERY, EQUIPMENT, AND SUPPLIES MERCHANT WHOLESALERS
+.WHL-RECYCLABLE MATERIAL MERCHANT WHOLESALERS
+.WHL-MISCELLANEOUS DURABLE GOODS MERCHANT WHOLESALERS
+.WHL-PAPER AND PAPER PRODUCTS MERCHANT WHOLESALERS
+.WHL-DRUGS, SUNDRIES, AND CHEMICAL AND ALLIED PRODUCTS
+.MERCHANT WHOLESALERS
+
+4390
+4470
+4480
+4490
+4560
+4570
+4580
+4585
+4590
+4670
+4680
+4690
+4770
+4780
+4790
+4870
+4880
+4890
+4970
+4980
+4990
+5070
+5080
+5090
+5170
+5180
+5190
+5270
+5280
+5290
+5370
+5380
+5390
+5470
+5480
+5490
+5570
+5580
+5590
+5591
+5592
+5670
+5680
+5690
+5790
+6070
+6080
+6090
+6170
+6180
+6190
+6270
+6280
+6290
+6370
+6380
+6390
+6470
+6480
+6490
+6570
+
+.WHL-APPAREL, FABRICS, AND NOTIONS MERCHANT WHOLESALERS
+.WHL-GROCERIES AND RELATED PRODUCTS MERCHANT WHOLESALERS
+.WHL-FARM PRODUCT RAW MATERIALS MERCHANT WHOLESALERS
+.WHL-PETROLEUM AND PETROLEUM PRODUCTS MERCHANT WHOLESALERS
+.WHL-ALCOHOLIC BEVERAGES MERCHANT WHOLESALERS
+.WHL-FARM SUPPLIES MERCHANT WHOLESALERS
+.WHL-MISCELLANEOUS NONDURABLE GOODS MERCHANT WHOLESALERS
+.WHL-ELECTRONIC MARKETS AGENTS AND BROKERS
+.WHL-NOT SPECIFIED WHOLESALE TRADE
+.RET-AUTOMOBILE DEALERS
+.RET-OTHER MOTOR VEHICLE DEALERS
+.RET-AUTO PARTS, ACCESSORIES, AND TIRE STORES
+.RET-FURNITURE AND HOME FURNISHINGS STORES
+.RET-HOUSEHOLD APPLIANCE STORES
+.RET-RADIO, TV, AND COMPUTER STORES
+.RET-BUILDING MATERIAL AND SUPPLIES DEALERS
+.RET-HARDWARE STORES
+.RET-LAWN AND GARDEN EQUIPMENT AND SUPPLIES STORES
+.RET-GROCERY STORES
+.RET-SPECIALTY FOOD STORES
+.RET-BEER, WINE, AND LIQUOR STORES
+.RET-PHARMACIES AND DRUG STORES
+.RET-HEALTH AND PERSONAL CARE, EXCEPT DRUG, STORES
+.RET-GASOLINE STATIONS
+.RET-CLOTHING AND ACCESSORIES, EXCEPT SHOE, STORES
+.RET-SHOE STORES
+.RET-JEWELRY, LUGGAGE,AND LEATHER GOODS STORES
+.RET-SPORTING GOODS, CAMERA, AND HOBBY AND TOY STORES
+.RET-SEWING, NEEDLEWORK AND PIECE GOODS STORES
+.RET-MUSIC STORES
+.RET-BOOK STORES AND NEWS DEALERS
+.RET-DEPARTMENT AND DISCOUNT STORES
+.RET-MISCELLANEOUS GENERAL MERCHANDISE STORES
+.RET-FLORISTS
+.RET-OFFICE SUPPLIES AND STATIONARY STORES
+.RET-USED MERCHANDISE STORES
+.RET-GIFT, NOVELTY, AND SOUVENIR SHOPS
+.RET-MISCELLANEOUS RETAIL STORES
+.RET-ELECTRONIC SHOPPING
+.RET-ELECTRONIC AUCTIONS
+.RET-MAIL-ORDER HOUSES
+.RET-VENDING MACHINE OPERATORS
+.RET-FUEL DEALERS
+.RET-OTHER DIRECT SELLING ESTABLISHMENTS
+.RET-NOT SPECIFIED RETAIL TRADE
+.TRN-AIR TRANSPORTATION
+.TRN-RAIL TRANSPORTATION
+.TRN-WATER TRANSPORTATION
+.TRN-TRUCK TRANSPORTATION
+.TRN-BUS SERVICE AND URBAN TRANSIT
+.TRN-TAXI AND LIMOUSINE SERVICE
+.TRN-PIPELINE TRANSPORTATION
+.TRN-SCENIC AND SIGHTSEEING TRANSPORTATION
+.TRN-SERVICES INCIDENTAL TO TRANSPORTATION
+.TRN-POSTAL SERVICE
+.TRN-COURIERS AND MESSENGERS
+.TRN-WAREHOUSING AND STORAGE
+.INF-NEWSPAPER PUBLISHERS
+.INF-PUBLISHING, EXCEPT NEWSPAPERS AND SOFTWARE
+.INF-SOFTWARE PUBLISHING
+.INF-MOTION PICTURES AND VIDEO INDUSTRIES
+
+6590
+6670
+6675
+6680
+6690
+6692
+6695
+6770
+6780
+6870
+6880
+6890
+6970
+6990
+7070
+7080
+7170
+7180
+7190
+7270
+7280
+7290
+7370
+7380
+7390
+7460
+7470
+7480
+7490
+7570
+7580
+7590
+7670
+7680
+7690
+7770
+7780
+7790
+7860
+7870
+7880
+7890
+7970
+7980
+7990
+8070
+8080
+8090
+8170
+8180
+8190
+8270
+8290
+8370
+8380
+8390
+8470
+
+.INF-SOUND RECORDING INDUSTRIES
+.INF-RADIO AND TELEVISION BROADCASTING AND CABLE
+.INF-INTERNET PUBLISHING AND BROADCASTING
+.INF-WIRED TELECOMMUNICATIONS CARRIERS
+.INF-OTHER TELECOMMUNICATION SERVICES
+.INF-INTERNET SERVICE PROVIDERS
+.INF-DATA PROCESSING, HOSTING, AND RELATED SERVICES
+.INF-LIBRARIES AND ARCHIVES
+.INF-OTHER INFORMATION SERVICES
+.FIN-BANKING AND RELATED ACTIVITIES
+.FIN-SAVINGS INSTITUTIONS, INCLUDING CREDIT UNIONS
+.FIN-NON-DEPOSITORY CREDIT AND RELATED ACTIVITIES
+.FIN-SECURITIES, COMMODITIES, FUNDS, TRUSTS, AND OTHER
+.FINANCIAL INVESTMENTS
+.FIN-INSURANCE CARRIERS AND RELATED ACTIVITIES
+.FIN-REAL ESTATE
+.FIN-AUTOMOTIVE EQUIPMENT RENTAL AND LEASING
+.FIN-VIDEO TAPE AND DISK RENTAL
+.FIN-OTHER CONSUMER GOODS RENTAL
+.FIN-COMMERCIAL, INDUSTRIAL, AND OTHER INTANGIBLE ASSETS
+.RENTAL AND LEASING
+.PRF-LEGAL SERVICES
+.PRF-ACCOUNTING, TAX PREPARATION, BOOKKEEPING AND PAYROLL
+.SERVICES
+.PRF-ARCHITECTURAL, ENGINEERING, AND RELATED SERVICES
+.PRF-SPECIALIZED DESIGN SERVICES
+.PRF-COMPUTER SYSTEMS DESIGN AND RELATED SERVICES
+.PRF-MANAGEMENT, SCIENTIFIC, AND TECHNICAL CONSULTING
+.SERVICES
+.PRF-SCIENTIFIC RESEARCH AND DEVELOPMENT SERVICES
+.PRF-ADVERTISING AND RELATED SERVICES
+.PRF-VETERINARY SERVICES
+.PRF-OTHER PROFESSIONAL, SCIENTIFIC, AND TECHNICAL SERVICES
+.PRF-MANAGEMENT OF COMPANIES AND ENTERPRISES
+.PRF-EMPLOYMENT SERVICES
+.PRF-BUSINESS SUPPORT SERVICES
+.PRF-TRAVEL ARRANGEMENTS AND RESERVATION SERVICES
+.PRF-INVESTIGATION AND SECURITY SERVICES
+.PRF-SERVICES TO BUILDINGS AND DWELLINGS, EX CONSTR CLN
+.PRF-LANDSCAPING SERVICES
+.PRF-OTHER ADMINISTRATIVE, AND OTHER SUPPORT SERVICES
+.PRF-WASTE MANAGEMENT AND REMEDIATION SERVICES
+.EDU-ELEMENTARY AND SECONDARY SCHOOLS
+.EDU-COLLEGES AND UNIVERSITIES, INCLUDING JUNIOR COLLEGES
+.EDU-BUSINESS, TECHNICAL, AND TRADE SCHOOLS AND TRAINING
+.EDU-OTHER SCHOOLS, INSTRUCTION, AND EDUCATIONAL SERVICES
+.MED-OFFICES OF PHYSICIANS
+.MED-OFFICES OF DENTISTS
+.MED-OFFICE OF CHIROPRACTORS
+.MED-OFFICES OF OPTOMETRISTS
+.MED-OFFICES OF OTHER HEALTH PRACTITIONERS
+.MED-OUTPATIENT CARE CENTERS
+.MED-HOME HEALTH CARE SERVICES
+.MED-OTHER HEALTH CARE SERVICES
+.MED-HOSPITALS
+.MED-NURSING CARE FACILITIES
+.MED-RESIDENTIAL CARE FACILITIES, WITHOUT NURSING
+.SCA-INDIVIDUAL AND FAMILY SERVICES
+.SCA-COMMUNITY FOOD AND HOUSING, AND EMERGENCY SERVICES
+.SCA-VOCATIONAL REHABILITATION SERVICES
+.SCA-CHILD DAY CARE SERVICES
+
+8560 .ENT-INDEPENDENT ARTISTS, PERFORMING ARTS, SPECTATOR SPORTS
+.AND RELATED INDUSTRIES
+8570 .ENT-MUSEUMS, ART GALLERIES, HISTORICAL SITES, AND SIMILAR
+.INSTITUTIONS
+8580 .ENT-BOWLING CENTERS
+8590 .ENT-OTHER AMUSEMENT, GAMBLING, AND RECREATION INDUSTRIES
+8660 .ENT-TRAVELER ACCOMMODATION
+8670 .ENT-RECREATIONAL VEHICLE PARKS AND CAMPS, AND ROOMING AND
+.BOARDING HOUSES
+8680 .ENT-RESTAURANTS AND OTHER FOOD SERVICES
+8690 .ENT-DRINKING PLACES, ALCOHOLIC BEVERAGES
+8770 .SRV-AUTOMOTIVE REPAIR AND MAINTENANCE
+8780 .SRV-CAR WASHES
+8790 .SRV-ELECTRONIC AND PRECISION EQUIPMENT REPAIR AND
+.MAINTENANCE
+8870 .SRV-COMMERCIAL AND INDUSTRIAL MACHINERY AND EQUIPMENT
+.REPAIR AND MAINTENANCE
+8880 .SRV-PERSONAL AND HOUSEHOLD GOODS REPAIR AND MAINTENANCE
+8970 .SRV-BARBER SHOPS
+8980 .SRV-BEAUTY SALONS
+8990 .SRV-NAIL SALONS AND OTHER PERSONAL CARE SERVICES
+9070 .SRV-DRYCLEANING AND LAUNDRY SERVICES
+9080 .SRV-FUNERAL HOMES, CEMETERIES AND CREMATORIES
+9090 .SRV-OTHER PERSONAL SERVICES
+9160 .SRV-RELIGIOUS ORGANIZATIONS
+9170 .SRV-CIVIC, SOCIAL, ADVOCACY ORGANIZATIONS, AND GRANTMAKING
+.AND GIVING SERVICES
+9180 .SRV-LABOR UNIONS
+9190 .SRV-BUSINESS, PROFESSIONAL, POLITICAL AND SIMILAR
+.ORGANIZATIONS
+9290 .SRV-PRIVATE HOUSEHOLDS
+9370 .ADM-EXECUTIVE OFFICES AND LEGISLATIVE BODIES
+9380 .ADM-PUBLIC FINANCE ACTIVITIES
+9390 .ADM-OTHER GENERAL GOVERNMENT AND SUPPORT
+9470 .ADM-JUSTICE, PUBLIC ORDER, AND SAFETY ACTIVITIES
+9480 .ADM-ADMINISTRATION OF HUMAN RESOURCE PROGRAMS
+9490 .ADM-ADMINISTRATION OF ENVIRONMENTAL QUALITY AND HOUSING
+.PROGRAMS
+9570 .ADM-ADMINISTRATION OF ECONOMIC PROGRAMS AND SPACE RESEARCH
+9590 .ADM-NATIONAL SECURITY AND INTERNATIONAL AFFAIRS
+9670 .MIL-U.S. ARMY
+9680 .MIL-U.S. AIR FORCE
+9690 .MIL-U.S. NAVY
+9770 .MIL-U.S. MARINES
+9780 .MIL-U.S. COAST GUARD
+9790 .MIL-U.S. ARMED FORCES, BRANCH NOT SPECIFIED
+9870 .MIL-MILITARY RESERVES OR NATIONAL GUARD
+9920 .UNEMPLOYED, WITH NO WORK EXPERIENCE IN THE LAST 5 YEARS **
+JWAP
+
+3
+Time of arrival at work - hour and minute
+bbb .N/A (not a worker; worker who worked at
+.home)
+001 .12:00 a.m. to 12:04 a.m.
+002 .12:05 a.m. to 12:09 a.m.
+003 .12:10 a.m. to 12:14 a.m.
+004 .12:15 a.m. to 12:19 a.m.
+005 .12:20 a.m. to 12:24 a.m.
+006 .12:25 a.m. to 12:29 a.m.
+007 .12:30 a.m. to 12:39 a.m.
+008 .12:40 a.m. to 12:44 a.m.
+
+009
+010
+011
+012
+013
+014
+015
+016
+017
+018
+019
+020
+021
+022
+023
+024
+025
+026
+027
+028
+029
+030
+031
+032
+033
+034
+035
+036
+037
+038
+039
+040
+041
+042
+043
+044
+045
+046
+047
+048
+049
+050
+051
+052
+053
+054
+055
+056
+057
+058
+059
+060
+061
+062
+063
+064
+065
+066
+067
+068
+069
+
+.12:45 a.m. to 12:49 a.m.
+.12:50 a.m. to 12:59 a.m.
+.1:00 a.m. to 1:04 a.m.
+.1:05 a.m. to 1:09 a.m.
+.1:10 a.m. to 1:14 a.m.
+.1:15 a.m. to 1:19 a.m.
+.1:20 a.m. to 1:24 a.m.
+.1:25 a.m. to 1:29 a.m.
+.1:30 a.m. to 1:34 a.m.
+.1:35 a.m. to 1:39 a.m.
+.1:40 a.m. to 1:44 a.m.
+.1:45 a.m. to 1:49 a.m.
+.1:50 a.m. to 1:59 a.m.
+.2:00 a.m. to 2:04 a.m.
+.2:05 a.m. to 2:09 a.m.
+.2:10 a.m. to 2:14 a.m.
+.2:15 a.m. to 2:19 a.m.
+.2:20 a.m. to 2:24 a.m.
+.2:25 a.m. to 2:29 a.m.
+.2:30 a.m. to 2:34 a.m.
+.2:35 a.m. to 2:39 a.m.
+.2:40 a.m. to 2:44 a.m.
+.2:45 a.m. to 2:49 a.m.
+.2:50 a.m. to 2:54 a.m.
+.2:55 a.m. to 2:59 a.m.
+.3:00 a.m. to 3:04 a.m.
+.3:05 a.m. to 3:09 a.m.
+.3:10 a.m. to 3:14 a.m.
+.3:15 a.m. to 3:19 a.m.
+.3:20 a.m. to 3:24 a.m.
+.3:25 a.m. to 3:29 a.m.
+.3:30 a.m. to 3:34 a.m.
+.3:35 a.m. to 3:39 a.m.
+.3:40 a.m. to 3:44 a.m.
+.3:45 a.m. to 3:49 a.m.
+.3:50 a.m. to 3:54 a.m.
+.3:55 a.m. to 3:59 a.m.
+.4:00 a.m. to 4:04 a.m.
+.4:05 a.m. to 4:09 a.m.
+.4:10 a.m. to 4:14 a.m.
+.4:15 a.m. to 4:19 a.m.
+.4:20 a.m. to 4:24 a.m.
+.4:25 a.m. to 4:29 a.m.
+.4:30 a.m. to 4:34 a.m.
+.4:35 a.m. to 4:39 a.m.
+.4:40 a.m. to 4:44 a.m.
+.4:45 a.m. to 4:49 a.m.
+.4:50 a.m. to 4:54 a.m.
+.4:55 a.m. to 4:59 a.m.
+.5:00 a.m. to 5:04 a.m.
+.5:05 a.m. to 5:09 a.m.
+.5:10 a.m. to 5:14 a.m.
+.5:15 a.m. to 5:19 a.m.
+.5:20 a.m. to 5:24 a.m.
+.5:25 a.m. to 5:29 a.m.
+.5:30 a.m. to 5:34 a.m.
+.5:35 a.m. to 5:39 a.m.
+.5:40 a.m. to 5:44 a.m.
+.5:45 a.m. to 5:49 a.m.
+.5:50 a.m. to 5:54 a.m.
+.5:55 a.m. to 5:59 a.m.
+
+070
+071
+072
+073
+074
+075
+076
+077
+078
+079
+080
+081
+082
+083
+084
+085
+086
+087
+088
+089
+090
+091
+092
+093
+094
+095
+096
+097
+098
+099
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+
+.6:00 a.m. to 6:04 a.m.
+.6:05 a.m. to 6:09 a.m.
+.6:10 a.m. to 6:14 a.m.
+.6:15 a.m. to 6:19 a.m.
+.6:20 a.m. to 6:24 a.m.
+.6:25 a.m. to 6:29 a.m.
+.6:30 a.m. to 6:34 a.m.
+.6:35 a.m. to 6:39 a.m.
+.6:40 a.m. to 6:44 a.m.
+.6:45 a.m. to 6:49 a.m.
+.6:50 a.m. to 6:54 a.m.
+.6:55 a.m. to 6:59 a.m.
+.7:00 a.m. to 7:04 a.m.
+.7:05 a.m. to 7:09 a.m.
+.7:10 a.m. to 7:14 a.m.
+.7:15 a.m. to 7:19 a.m.
+.7:20 a.m. to 7:24 a.m.
+.7:25 a.m. to 7:29 a.m.
+.7:30 a.m. to 7:34 a.m.
+.7:35 a.m. to 7:39 a.m.
+.7:40 a.m. to 7:44 a.m.
+.7:45 a.m. to 7:49 a.m.
+.7:50 a.m. to 7:54 a.m.
+.7:55 a.m. to 7:59 a.m.
+.8:00 a.m. to 8:04 a.m.
+.8:05 a.m. to 8:09 a.m.
+.8:10 a.m. to 8:14 a.m.
+.8:15 a.m. to 8:19 a.m.
+.8:20 a.m. to 8:24 a.m.
+.8:25 a.m. to 8:29 a.m.
+.8:30 a.m. to 8:34 a.m.
+.8:35 a.m. to 8:39 a.m.
+.8:40 a.m. to 8:44 a.m.
+.8:45 a.m. to 8:49 a.m.
+.8:50 a.m. to 8:54 a.m.
+.8:55 a.m. to 8:59 a.m.
+.9:00 a.m. to 9:04 a.m.
+.9:05 a.m. to 9:09 a.m.
+.9:10 a.m. to 9:14 a.m.
+.9:15 a.m. to 9:19 a.m.
+.9:20 a.m. to 9:24 a.m.
+.9:25 a.m. to 9:29 a.m.
+.9:30 a.m. to 9:34 a.m.
+.9:35 a.m. to 9:39 a.m.
+.9:40 a.m. to 9:44 a.m.
+.9:45 a.m. to 9:49 a.m.
+.9:50 a.m. to 9:54 a.m.
+.9:55 a.m. to 9:59 a.m.
+.10:00 a.m. to 10:04 a.m.
+.10:05 a.m. to 10:09 a.m.
+.10:10 a.m. to 10:14 a.m.
+.10:15 a.m. to 10:19 a.m.
+.10:20 a.m. to 10:24 a.m.
+.10:25 a.m. to 10:29 a.m.
+.10:30 a.m. to 10:34 a.m.
+.10:35 a.m. to 10:39 a.m.
+.10:40 a.m. to 10:44 a.m.
+.10:45 a.m. to 10:49 a.m.
+.10:50 a.m. to 10:54 a.m.
+.10:55 a.m. to 10:59 a.m.
+.11:00 a.m. to 11:04 a.m.
+
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168
+169
+170
+171
+172
+173
+174
+175
+176
+177
+178
+179
+180
+181
+182
+183
+184
+185
+186
+187
+188
+189
+190
+191
+
+.11:05 a.m. to 11:09 a.m.
+.11:10 a.m. to 11:14 a.m.
+.11:15 a.m. to 11:19 a.m.
+.11:20 a.m. to 11:24 a.m.
+.11:25 a.m. to 11:29 a.m.
+.11:30 a.m. to 11:34 a.m.
+.11:35 a.m. to 11:39 a.m.
+.11:40 a.m. to 11:44 a.m.
+.11:45 a.m. to 11:49 a.m.
+.11:50 a.m. to 11:54 a.m.
+.11:55 a.m. to 11:59 a.m.
+.12:00 p.m. to 12:04 p.m.
+.12:05 p.m. to 12:09 p.m.
+.12:10 p.m. to 12:14 p.m.
+.12:15 p.m. to 12:19 p.m.
+.12:20 p.m. to 12:24 p.m.
+.12:25 p.m. to 12:29 p.m.
+.12:30 p.m. to 12:34 p.m.
+.12:35 p.m. to 12:39 p.m.
+.12:40 p.m. to 12:44 p.m.
+.12:45 p.m. to 12:49 p.m.
+.12:50 p.m. to 12:54 p.m.
+.12:55 p.m. to 12:59 p.m.
+.1:00 p.m. to 1:04 p.m.
+.1:05 p.m. to 1:09 p.m.
+.1:10 p.m. to 1:14 p.m.
+.1:15 p.m. to 1:19 p.m.
+.1:20 p.m. to 1:24 p.m.
+.1:25 p.m. to 1:29 p.m.
+.1:30 p.m. to 1:34 p.m.
+.1:35 p.m. to 1:39 p.m.
+.1:40 p.m. to 1:44 p.m.
+.1:45 p.m. to 1:49 p.m.
+.1:50 p.m. to 1:54 p.m.
+.1:55 p.m. to 1:59 p.m.
+.2:00 p.m. to 2:04 p.m.
+.2:05 p.m. to 2:09 p.m.
+.2:10 p.m. to 2:14 p.m.
+.2:15 p.m. to 2:19 p.m.
+.2:20 p.m. to 2:24 p.m.
+.2:25 p.m. to 2:29 p.m.
+.2:30 p.m. to 2:34 p.m.
+.2:35 p.m. to 2:39 p.m.
+.2:40 p.m. to 2:44 p.m.
+.2:45 p.m. to 2:49 p.m.
+.2:50 p.m. to 2:54 p.m.
+.2:55 p.m. to 2:59 p.m.
+.3:00 p.m. to 3:04 p.m.
+.3:05 p.m. to 3:09 p.m.
+.3:10 p.m. to 3:14 p.m.
+.3:15 p.m. to 3:19 p.m.
+.3:20 p.m. to 3:24 p.m.
+.3:25 p.m. to 3:29 p.m.
+.3:30 p.m. to 3:34 p.m.
+.3:35 p.m. to 3:39 p.m.
+.3:40 p.m. to 3:44 p.m.
+.3:45 p.m. to 3:49 p.m.
+.3:50 p.m. to 3:54 p.m.
+.3:55 p.m. to 3:59 p.m.
+.4:00 p.m. to 4:04 p.m.
+.4:05 p.m. to 4:09 p.m.
+
+192
+193
+194
+195
+196
+197
+198
+199
+200
+201
+202
+203
+204
+205
+206
+207
+208
+209
+210
+211
+212
+213
+214
+215
+216
+217
+218
+219
+220
+221
+222
+223
+224
+225
+226
+227
+228
+229
+230
+231
+232
+233
+234
+235
+236
+237
+238
+239
+240
+241
+242
+243
+244
+245
+246
+247
+248
+249
+250
+251
+252
+
+.4:10
+.4:15
+.4:20
+.4:25
+.4:30
+.4:35
+.4:40
+.4:45
+.4:50
+.4:55
+.5:00
+.5:05
+.5:10
+.5:15
+.5:20
+.5:25
+.5:30
+.5:35
+.5:40
+.5:45
+.5:50
+.5:55
+.6:00
+.6:05
+.6:10
+.6:15
+.6:20
+.6:25
+.6:30
+.6:35
+.6:40
+.6:45
+.6:50
+.6:55
+.7:00
+.7:05
+.7:10
+.7:15
+.7:20
+.7:25
+.7:30
+.7:35
+.7:40
+.7:45
+.7:50
+.7:55
+.8:00
+.8:05
+.8:10
+.8:15
+.8:20
+.8:25
+.8:30
+.8:35
+.8:40
+.8:45
+.8:50
+.8:55
+.9:00
+.9:05
+.9:10
+
+p.m.
+p.m.
+p.m.
+p.m.
+p.m.
+p.m.
+p.m.
+p.m.
+p.m.
+p.m.
+p.m.
+p.m.
+p.m.
+p.m.
+p.m.
+p.m.
+p.m.
+p.m.
+p.m.
+p.m.
+p.m.
+p.m.
+p.m.
+p.m.
+p.m.
+p.m.
+p.m.
+p.m.
+p.m.
+p.m.
+p.m.
+p.m.
+p.m.
+p.m.
+p.m.
+p.m.
+p.m.
+p.m.
+p.m.
+p.m.
+p.m.
+p.m.
+p.m.
+p.m.
+p.m.
+p.m.
+p.m.
+p.m.
+p.m.
+p.m.
+p.m.
+p.m.
+p.m.
+p.m.
+p.m.
+p.m.
+p.m.
+p.m.
+p.m.
+p.m.
+p.m.
+
+to
+to
+to
+to
+to
+to
+to
+to
+to
+to
+to
+to
+to
+to
+to
+to
+to
+to
+to
+to
+to
+to
+to
+to
+to
+to
+to
+to
+to
+to
+to
+to
+to
+to
+to
+to
+to
+to
+to
+to
+to
+to
+to
+to
+to
+to
+to
+to
+to
+to
+to
+to
+to
+to
+to
+to
+to
+to
+to
+to
+to
+
+4:14
+4:19
+4:24
+4:29
+4:34
+4:39
+4:44
+4:49
+4:54
+4:59
+5:04
+5:09
+5:14
+5:19
+5:24
+5:29
+5:34
+5:39
+5:44
+5:49
+5:54
+5:59
+6:04
+6:09
+6:14
+6:19
+6:24
+6:29
+6:34
+6:39
+6:44
+6:49
+6:54
+6:59
+7:04
+7:09
+7:14
+7:19
+7:24
+7:29
+7:34
+7:39
+7:44
+7:49
+7:54
+7:59
+8:04
+8:09
+8:14
+8:19
+8:24
+8:29
+8:34
+8:39
+8:44
+8:49
+8:54
+8:59
+9:04
+9:09
+9:14
+
+p.m.
+p.m.
+p.m.
+p.m.
+p.m.
+p.m.
+p.m.
+p.m.
+p.m.
+p.m.
+p.m.
+p.m.
+p.m.
+p.m.
+p.m.
+p.m.
+p.m.
+p.m.
+p.m.
+p.m.
+p.m.
+p.m.
+p.m.
+p.m.
+p.m.
+p.m.
+p.m.
+p.m.
+p.m.
+p.m.
+p.m.
+p.m.
+p.m.
+p.m.
+p.m.
+p.m.
+p.m.
+p.m.
+p.m.
+p.m.
+p.m.
+p.m.
+p.m.
+p.m.
+p.m.
+p.m.
+p.m.
+p.m.
+p.m.
+p.m.
+p.m.
+p.m.
+p.m.
+p.m.
+p.m.
+p.m.
+p.m.
+p.m.
+p.m.
+p.m.
+p.m.
+
+253
+254
+255
+256
+257
+258
+259
+260
+261
+262
+263
+264
+265
+266
+267
+268
+269
+270
+271
+272
+273
+274
+275
+276
+277
+278
+279
+280
+281
+282
+283
+284
+285
+JWDP
+
+.9:15 p.m. to 9:19 p.m.
+.9:20 p.m. to 9:24 p.m.
+.9:25 p.m. to 9:29 p.m.
+.9:30 p.m. to 9:34 p.m.
+.9:35 p.m. to 9:39 p.m.
+.9:40 p.m. to 9:44 p.m.
+.9:45 p.m. to 9:49 p.m.
+.9:50 p.m. to 9:54 p.m.
+.9:55 p.m. to 9:59 p.m.
+.10:00 p.m. to 10:04 p.m.
+.10:05 p.m. to 10:09 p.m.
+.10:10 p.m. to 10:14 p.m.
+.10:15 p.m. to 10:19 p.m.
+.10:20 p.m. to 10:24 p.m.
+.10:25 p.m. to 10:29 p.m.
+.10:30 p.m. to 10:34 p.m.
+.10:35 p.m. to 10:39 p.m.
+.10:40 p.m. to 10:44 p.m.
+.10:45 p.m. to 10:49 p.m.
+.10:50 p.m. to 10:55 p.m.
+.10:55 p.m. to 10:59 p.m.
+.11:00 p.m. to 11:04 p.m.
+.11:05 p.m. to 11:09 p.m.
+.11:10 p.m. to 11:14 p.m.
+.11:15 p.m. to 11:19 p.m.
+.11:20 p.m. to 11:24 p.m.
+.11:25 p.m. to 11:29 p.m.
+.11:30 p.m. to 11:34 p.m.
+.11:35 p.m. to 11:39 p.m.
+.11:40 p.m. to 11:44 p.m.
+.11:45 p.m. to 11:49 p.m.
+.11:50 p.m. to 11:54 p.m.
+.11:55 p.m. to 11:59 p.m.
+
+3
+Time of departure for work - hour and minute
+bbb .N/A (not a worker; worker who worked at
+.home)
+001 .12:00 a.m. to 12:29 a.m.
+002 .12:30 a.m. to 12:59 a.m.
+003 .1:00 a.m. to 1:29 a.m.
+004 .1:30 a.m. to 1:59 a.m.
+005 .2:00 a.m. to 2:29 a.m.
+006 .2:30 a.m. to 2:59 a.m.
+007 .3:00 a.m. to 3:09 a.m.
+008 .3:10 a.m. to 3:19 a.m.
+009 .3:20 a.m. to 3:29 a.m.
+010 .3:30 a.m. to 3:39 a.m.
+011 .3:40 a.m. to 3:49 a.m.
+012 .3:50 a.m. to 3:59 a.m.
+013 .4:00 a.m. to 4:09 a.m.
+014 .4:10 a.m. to 4:19 a.m.
+015 .4:20 a.m. to 4:29 a.m.
+016 .4:30 a.m. to 4:39 a.m.
+017 .4:40 a.m. to 4:49 a.m.
+018 .4:50 a.m. to 4:59 a.m.
+019 .5:00 a.m. to 5:04 a.m.
+020 .5:05 a.m. to 5:09 a.m.
+021 .5:10 a.m. to 5:14 a.m.
+022 .5:15 a.m. to 5:19 a.m.
+023 .5:20 a.m. to 5:24 a.m.
+
+024
+025
+026
+027
+028
+029
+030
+031
+032
+033
+034
+035
+036
+037
+038
+039
+040
+041
+042
+043
+044
+045
+046
+047
+048
+049
+050
+051
+052
+053
+054
+055
+056
+057
+058
+059
+060
+061
+062
+063
+064
+065
+066
+067
+068
+069
+070
+071
+072
+073
+074
+075
+076
+077
+078
+079
+080
+081
+082
+083
+084
+
+.5:25 a.m. to 5:29 a.m.
+.5:30 a.m. to 5:34 a.m.
+.5:35 a.m. to 5:39 a.m.
+.5:40 a.m. to 5:44 a.m.
+.5:45 a.m. to 5:49 a.m.
+.5:50 a.m. to 5:54 a.m.
+.5:55 a.m. to 5:59 a.m.
+.6:00 a.m. to 6:04 a.m.
+.6:05 a.m. to 6:09 a.m.
+.6:10 a.m. to 6:14 a.m.
+.6:15 a.m. to 6:19 a.m.
+.6:20 a.m. to 6:24 a.m.
+.6:25 a.m. to 6:29 a.m.
+.6:30 a.m. to 6:34 a.m.
+.6:35 a.m. to 6:39 a.m.
+.6:40 a.m. to 6:44 a.m.
+.6:45 a.m. to 6:49 a.m.
+.6:50 a.m. to 6:54 a.m.
+.6:55 a.m. to 6:59 a.m.
+.7:00 a.m. to 7:04 a.m.
+.7:05 a.m. to 7:09 a.m.
+.7:10 a.m. to 7:14 a.m.
+.7:15 a.m. to 7:19 a.m.
+.7:20 a.m. to 7:24 a.m.
+.7:25 a.m. to 7:29 a.m.
+.7:30 a.m. to 7:34 a.m.
+.7:35 a.m. to 7:39 a.m.
+.7:40 a.m. to 7:44 a.m.
+.7:45 a.m. to 7:49 a.m.
+.7:50 a.m. to 7:54 a.m.
+.7:55 a.m. to 7:59 a.m.
+.8:00 a.m. to 8:04 a.m.
+.8:05 a.m. to 8:09 a.m.
+.8:10 a.m. to 8:14 a.m.
+.8:15 a.m. to 8:19 a.m.
+.8:20 a.m. to 8:24 a.m.
+.8:25 a.m. to 8:29 a.m.
+.8:30 a.m. to 8:34 a.m.
+.8:35 a.m. to 8:39 a.m.
+.8:40 a.m. to 8:44 a.m.
+.8:45 a.m. to 8:49 a.m.
+.8:50 a.m. to 8:54 a.m.
+.8:55 a.m. to 8:59 a.m.
+.9:00 a.m. to 9:04 a.m.
+.9:05 a.m. to 9:09 a.m.
+.9:10 a.m. to 9:14 a.m.
+.9:15 a.m. to 9:19 a.m.
+.9:20 a.m. to 9:24 a.m.
+.9:25 a.m. to 9:29 a.m.
+.9:30 a.m. to 9:34 a.m.
+.9:35 a.m. to 9:39 a.m.
+.9:40 a.m. to 9:44 a.m.
+.9:45 a.m. to 9:49 a.m.
+.9:50 a.m. to 9:54 a.m.
+.9:55 a.m. to 9:59 a.m.
+.10:00 a.m. to 10:09 a.m.
+.10:10 a.m. to 10:19 a.m.
+.10:20 a.m. to 10:29 a.m.
+.10:30 a.m. to 10:39 a.m.
+.10:40 a.m. to 10:49 a.m.
+.10:50 a.m. to 10:59 a.m.
+
+085
+086
+087
+088
+089
+090
+091
+092
+093
+094
+095
+096
+097
+098
+099
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+
+.11:00 a.m. to 11:09 a.m.
+.11:10 a.m. to 11:19 a.m.
+.11:20 a.m. to 11:29 a.m.
+.11:30 a.m. to 11:39 a.m.
+.11:40 a.m. to 11:49 a.m.
+.11:50 a.m. to 11:59 a.m.
+.12:00 p.m. to 12:09 p.m.
+.12:10 p.m. to 12:19 p.m.
+.12:20 p.m. to 12:29 p.m.
+.12:30 p.m. to 12:39 p.m.
+.12:40 p.m. to 12:49 p.m.
+.12:50 p.m. to 12:59 p.m.
+.1:00 p.m. to 1:09 p.m.
+.1:10 p.m. to 1:19 p.m.
+.1:20 p.m. to 1:29 p.m.
+.1:30 p.m. to 1:39 p.m.
+.1:40 p.m. to 1:49 p.m.
+.1:50 p.m. to 1:59 p.m.
+.2:00 p.m. to 2:09 p.m.
+.2:10 p.m. to 2:19 p.m.
+.2:20 p.m. to 2:29 p.m.
+.2:30 p.m. to 2:39 p.m.
+.2:40 p.m. to 2:49 p.m.
+.2:50 p.m. to 2:59 p.m.
+.3:00 p.m. to 3:09 p.m.
+.3:10 p.m. to 3:19 p.m.
+.3:20 p.m. to 3:29 p.m.
+.3:30 p.m. to 3:39 p.m.
+.3:40 p.m. to 3:49 p.m.
+.3:50 p.m. to 3:59 p.m.
+.4:00 p.m. to 4:09 p.m.
+.4:10 p.m. to 4:19 p.m.
+.4:20 p.m. to 4:29 p.m.
+.4:30 p.m. to 4:39 p.m.
+.4:40 p.m. to 4:49 p.m.
+.4:50 p.m. to 4:59 p.m.
+.5:00 p.m. to 5:09 p.m.
+.5:10 p.m. to 5:19 p.m.
+.5:20 p.m. to 5:29 p.m.
+.5:30 p.m. to 5:39 p.m.
+.5:40 p.m. to 5:49 p.m.
+.5:50 p.m. to 5:59 p.m.
+.6:00 p.m. to 6:09 p.m.
+.6:10 p.m. to 6:19 p.m.
+.6:20 p.m. to 6:29 p.m.
+.6:30 p.m. to 6:39 p.m.
+.6:40 p.m. to 6:49 p.m.
+.6:50 p.m. to 6:59 p.m.
+.7:00 p.m. to 7:29 p.m.
+.7:30 p.m. to 7:59 p.m.
+.8:00 p.m. to 8:29 p.m.
+.8:30 p.m. to 8:59 p.m.
+.9:00 p.m. to 9:09 p.m.
+.9:10 p.m. to 9:19 p.m.
+.9:20 p.m. to 9:29 p.m.
+.9:30 p.m. to 9:39 p.m.
+.9:40 p.m. to 9:49 p.m.
+.9:50 p.m. to 9:59 p.m.
+.10:00 p.m. to 10:09 p.m.
+.10:10 p.m. to 10:19 p.m.
+.10:20 p.m. to 10:29 p.m.
+
+146
+147
+148
+149
+150
+LANP
+
+.10:30
+.10:40
+.10:50
+.11:00
+.11:30
+
+p.m.
+p.m.
+p.m.
+p.m.
+p.m.
+
+to
+to
+to
+to
+to
+
+10:39
+10:49
+10:59
+11:29
+11:59
+
+p.m.
+p.m.
+p.m.
+p.m.
+p.m.
+
+3
+Language spoken at home
+bbb .N/A (less than 5 years old/speaks only English)
+601 .Jamaican Creole
+607 .German
+608 .Pennsylvania Dutch
+609 .Yiddish
+610 .Dutch
+611 .Afrikaans
+614 .Swedish
+615 .Danish
+616 .Norwegian
+619 .Italian
+620 .French
+622 .Patois
+623 .French Creole
+624 .Cajun
+625 .Spanish
+629 .Portuguese
+631 .Romanian
+635 .Irish Gaelic
+637 .Greek
+638 .Albanian
+639 .Russian
+641 .Ukrainian
+642 .Czech
+645 .Polish
+646 .Slovak
+647 .Bulgarian
+648 .Macedonian
+649 .Serbocroatian
+650 .Croatian
+651 .Serbian
+653 .Lithuanian
+654 .Lettish
+655 .Armenian
+656 .Persian
+657 .Pashto
+658 .Kurdish
+662 .India n.e.c.
+663 .Hindi
+664 .Bengali
+665 .Panjabi
+666 .Marathi
+667 .Gujarathi
+671 .Urdu
+674 .Nepali
+676 .Pakistan n.e.c.
+677 .Sinhalese
+679 .Finnish
+682 .Hungarian
+691 .Turkish
+701 .Telugu
+702 .Kannada
+703 .Malayalam
+
+704
+708
+711
+712
+714
+717
+720
+721
+722
+723
+724
+725
+726
+728
+732
+739
+742
+743
+744
+746
+752
+767
+768
+776
+777
+778
+779
+780
+783
+791
+792
+793
+794
+796
+799
+806
+862
+864
+907
+924
+933
+964
+966
+985
+986
+988
+989
+990
+992
+993
+994
+996
+
+.Tamil
+.Chinese
+.Cantonese
+.Mandarin
+.Formosan
+.Burmese
+.Thai
+.Miao-yao, Mien
+.Hmong
+.Japanese
+.Korean
+.Laotian
+.Mon-Khmer, Cambodian
+.Vietnamese
+.Indonesian
+.Malay
+.Tagalog
+.Bisayan
+.Sebuano
+.Ilocano
+.Chamorro
+.Samoan
+.Tongan
+.Hawaiian
+.Arabic
+.Hebrew
+.Syriac
+.Amharic
+.Cushite
+.Swahili
+.Bantu
+.Mande
+.Fulani
+.Kru, Ibo, Yoruba
+.African
+.Other Algonquian languages
+.Apache
+.Navaho
+.Dakota
+.Keres
+.Cherokee
+.Zuni
+.American Indian
+.Other Indo-European languages
+.Other Asian languages
+.Other Pacific Island languages
+.Other specified African languages
+.Aleut-Eskimo languages
+.South/Central American Indian languages
+.Other Specified North American Indian languages
+.Other languages
+.Uncodable
+
+MIGPUMA
+5
+Migration PUMA
+bbbbb .N/A (person less than 1 year old/lived in
+.same house 1 year ago)
+00001 .Did not live in the United States or in Puerto
+.Rico one year ago
+00002 .Lived in Puerto Rico one year ago and current
+
+.residence is in the U.S.
+00100..08200 .Assigned Migration PUMA.
+
+Use with MIGSP.
+
+MIGSP
+3
+Migration recode - State or foreign country code
+bbb .N/A (person less than 1 year old/lived in
+.same house 1 year ago)
+001 .Alabama/AL
+002 .Alaska/AK
+004 .Arizona/AZ
+005 .Arkansas/AR
+006 .California/CA
+008 .Colorado/CO
+009 .Connecticut/CT
+010 .Delaware/DE
+011 .District of Columbia/DC
+012 .Florida/FL
+013 .Georgia/GA
+015 .Hawaii/HI
+016 .Idaho/ID
+017 .Illinois/IL
+018 .Indiana/IN
+019 .Iowa/IA
+020 .Kansas/KS
+021 .Kentucky/KY
+022 .Louisiana/LA
+023 .Maine/ME
+024 .Maryland/MD
+025 .Massachusetts/MA
+026 .Michigan/MI
+027 .Minnesota/MN
+028 .Mississippi/MS
+029 .Missouri/MO
+030 .Montana/MT
+031 .Nebraska/NE
+032 .Nevada/NV
+033 .New Hampshire/NH
+034 .New Jersey/NJ
+035 .New Mexico/NM
+036 .New York/NY
+037 .North Carolina/NC
+038 .North Dakota/ND
+039 .Ohio/OH
+040 .Oklahoma/OK
+041 .Oregon/OR
+042 .Pennsylvania/PA
+044 .Rhode Island/RI
+045 .South Carolina/SC
+046 .South Dakota/SD
+047 .Tennessee/TN
+048 .Texas/TX
+049 .Utah/UT
+050 .Vermont/VT
+051 .Virginia/VA
+053 .Washington/WA
+054 .West Virginia/WV
+055 .Wisconsin/WI
+056 .Wyoming/WY
+072 .Puerto Rico
+096 .US Island Areas, Not Specified
+109 .France
+
+110
+111
+112
+113
+120
+128
+138
+139
+163
+164
+169
+207
+210
+213
+214
+215
+217
+233
+240
+242
+247
+251
+252
+253
+301
+303
+312
+313
+314
+317
+327
+329
+333
+344
+362
+364
+370
+374
+462
+463
+464
+467
+468
+501
+554
+MSP
+
+1
+Married,
+b
+1
+2
+3
+4
+5
+6
+
+.Germany
+.Northern Europe, Not Specified
+.Western Europe, Not Specified
+.Eastern Europe, Not Specified
+.Italy
+.Poland
+.United Kingdom, Excluding England
+.England
+.Russia
+.Ukraine
+.Other Europe, Not Specified
+.China, Hong Kong & Paracel Islands
+.India
+.Iraq
+.Israel
+.Japan
+.Korea
+.Philippines
+.Taiwan
+.Thailand
+.Vietnam
+.Eastern Asia, Not Specified
+.Western Asia, Not Specified
+.South Central Asia or Asia, Not Specified
+.Canada
+.Mexico
+.El Salvador
+.Guatemala
+.Honduras
+.Central America, Not Specified
+.Cuba
+.Domincan Republic
+.Jamaica
+.Caribbean and North America, Not Specified
+.Brazil
+.Colombia
+.Peru
+.South America, Not Specified
+.Africa
+.Eastern Africa, Not Specified
+.Northern Africa, Not Specified
+.Western Africa, Not Specified
+.Other Africa, Not Specified
+.Australia
+.Australian and New Zealand Subregions, Not Specified,
+.Oceania and at Sea
+
+spouse present/spouse absent
+.N/A (less than 15 years old)
+.Now married, spouse present
+.Now married, spouse absent
+.Widowed
+.Divorced
+.Separated
+.Never married
+
+NAICSP
+8
+NAICS Industry code
+bbbbbbbb .N/A (less than 16 years old/unemployed who
+.never worked/NILF who last worked more than
+
+111
+112
+1133
+113M
+114
+115
+211
+2121
+2122
+2123
+213
+21S
+2211P
+2212P
+22132
+2213M
+221MP
+22S
+23
+3113
+3114
+3115
+3116
+311811
+3118Z
+311M1
+311M2
+311S
+3121
+3122
+3131
+3132Z
+3133
+31411
+314Z
+3152
+3159
+3162
+316M
+31M
+3211
+3212
+32199M
+3219ZM
+3221
+32221
+3222M
+323
+32411
+3241M
+3252
+3253
+3254
+3255
+3256
+325M
+3261
+32621
+
+.5 years ago)
+.AGR-CROP PRODUCTION
+.AGR-ANIMAL PRODUCTION
+.AGR-LOGGING
+.AGR-FORESTRY EXCEPT LOGGING
+.AGR-FISHING, HUNTING, AND TRAPPING
+.AGR-SUPPORT ACTIVITIES FOR AGRICULTURE AND FORESTRY
+.EXT-OIL AND GAS EXTRACTION
+.EXT-COAL MINING
+.EXT-METAL ORE MINING
+.EXT-NONMETALLIC MINERAL MINING AND QUARRYING
+.EXT-SUPPORT ACTIVITIES FOR MINING
+.EXT-NOT SPECIFIED TYPE OF MINING
+.UTL-ELECTRIC POWER GENERATION, TRANSMISSION AND
+.DISTRIBUTION
+.UTL-NATURAL GAS DISTRIBUTION
+.UTL-SEWAGE TREATMENT FACILITIES
+.UTL-WATER, STEAM, AIR CONDITIONING, AND IRRIGATION
+.SYSTEMS
+.UTL-ELECTRIC AND GAS, AND OTHER COMBINATIONS
+.UTL-NOT SPECIFIED UTILITIES
+.CON-CONSTRUCTION, INCL CLEANING DURING AND IMM AFTER
+.MFG-SUGAR AND CONFECTIONERY PRODUCTS
+.MFG-FRUIT AND VEGETABLE PRESERVING AND SPECIALTY FOODS
+.MFG-DAIRY PRODUCTS
+.MFG-ANIMAL SLAUGHTERING AND PROCESSING
+.MFG-RETAIL BAKERIES
+.MFG-BAKERIES, EXCEPT RETAIL
+.MFG-ANIMAL FOOD, GRAIN AND OILSEED MILLING
+.MFG-SEAFOOD AND OTHER MISCELLANEOUS FOODS, N.E.C.
+.MFG-NOT SPECIFIED FOOD INDUSTRIES
+.MFG-BEVERAGE
+.MFG-TOBACCO
+.MFG-FIBER, YARN, AND THREAD MILLS
+.MFG-FABRIC MILLS, EXCEPT KNITTING
+.MFG-TEXTILE AND FABRIC FINISHING AND COATING MILLS
+.MFG-CARPETS AND RUGS
+.MFG-TEXTILE PRODUCT MILLS, EXCEPT CARPETS AND RUGS
+.MFG-CUT AND SEW APPAREL
+.MFG-APPAREL ACCESSORIES AND OTHER APPAREL
+.MFG-FOOTWEAR
+.MFG-LEATHER TANNING AND PRODUCTS, EXCEPT FOOTWEAR
+.MFG-KNITTING MILLS
+.MFG-SAWMILLS AND WOOD PRESERVATION
+.MFG-VENEER, PLYWOOD, AND ENGINEERED WOOD PRODUCTS
+.MFG-PREFABRICATED WOOD BUILDINGS AND MOBILE HOMES
+.MFG-MISCELLANEOUS WOOD PRODUCTS
+.MFG-PULP, PAPER, AND PAPERBOARD MILLS
+.MFG-PAPERBOARD CONTAINERS AND BOXES
+.MFG-MISCELLANEOUS PAPER AND PULP PRODUCTS
+.MFG-PRINTING AND RELATED SUPPORT ACTIVITIES
+.MFG-PETROLEUM REFINING
+.MFG-MISCELLANEOUS PETROLEUM AND COAL PRODUCTS
+.MFG-RESIN, SYNTHETIC RUBBER AND FIBERS, AND FILAMENTS
+.MFG-AGRICULTURAL CHEMICALS
+.MFG-PHARMACEUTICALS AND MEDICINES
+.MFG-PAINT, COATING, AND ADHESIVES
+.MFG-SOAP, CLEANING COMPOUND, AND COSMETICS
+.MFG-INDUSTRIAL AND MISCELLANEOUS CHEMICALS
+.MFG-PLASTICS PRODUCTS
+.MFG-TIRES
+
+3262M
+32711
+32712
+3272
+3279
+327M
+3313
+3314
+3315
+331M
+3321
+3322
+3327
+3328
+33299M
+332M
+332MZ
+33311
+3331M
+3333
+3335
+3336
+333M
+333S
+3341
+3345
+334M1
+334M2
+3352
+335M
+33641M1
+33641M2
+3365
+3366
+3369
+336M
+337
+3391
+3399M
+3399ZM
+33MS
+3MS
+4231
+4232
+4233
+4234
+4235
+4236
+4237
+4238
+42393
+
+.MFG-RUBBER PRODUCTS, EXCEPT TIRES
+.MFG-POTTERY, CERAMICS, AND RELATED PRODUCTS
+.MFG-STRUCTURAL CLAY PRODUCTS
+.MFG-GLASS AND GLASS PRODUCTS
+.MFG-MISCELLANEOUS NONMETALLIC MINERAL PRODUCTS
+.MFG-CEMENT, CONCRETE, LIME, AND GYPSUM PRODUCTS
+.MFG-ALUMINUM PRODUCTION AND PROCESSING
+.MFG-NONFERROUS METAL, EXCEPT ALUMINUM, PRODUCTION AND
+.PROCESSING
+.MFG-FOUNDRIES
+.MFG-IRON AND STEEL MILLS AND STEEL PRODUCTS
+.MFG-METAL FORGINGS AND STAMPINGS
+.MFG-CUTLERY AND HAND TOOLS
+.MFG-MACHINE SHOPS; TURNED PRODUCTS; SCREWS, NUTS AND
+.BOLTS
+.MFG-COATING, ENGRAVING, HEAT TREATING AND ALLIED
+.ACTIVITIES
+.MFG-ORDNANCE
+.MFG-STRUCTURAL METALS, AND TANK AND SHIPPING CONTAINERS
+.MFG-MISCELLANEOUS FABRICATED METAL PRODUCTS
+.MFG-AGRICULTURAL IMPLEMENTS
+.MFG-CONSTRUCTION, MINING AND OIL FIELD MACHINERY
+.MFG-COMMERCIAL AND SERVICE INDUSTRY MACHINERY
+.MFG-METALWORKING MACHINERY
+.MFG-ENGINES, TURBINES, AND POWER TRANSMISSION EQUIPMENT
+.MFG-MACHINERY, N.E.C.
+.MFG-NOT SPECIFIED MACHINERY
+.MFG-COMPUTER AND PERIPHERAL EQUIPMENT
+.MFG-NAVIGATIONAL, MEASURING, ELECTROMEDICAL, AND CONTROL
+.INSTRUMENTS
+.MFG-COMMUNICATIONS, AUDIO, AND VIDEO EQUIPMENT
+.MFG-ELECTRONIC COMPONENTS AND PRODUCTS, N.E.C.
+.MFG-HOUSEHOLD APPLIANCES
+.MFG-ELECTRICAL LIGHTING, EQUIPMENT, AND SUPPLIES, N.E.C.
+.MFG-AIRCRAFT AND PARTS
+.MFG-AEROSPACE PRODUCTS AND PARTS
+.MFG-RAILROAD ROLLING STOCK
+.MFG-SHIP AND BOAT BUILDING
+.MFG-OTHER TRANSPORTATION EQUIPMENT
+.MFG-MOTOR VEHICLES AND MOTOR VEHICLE EQUIPMENT
+.MFG-FURNITURE AND RELATED PRODUCTS
+.MFG-MEDICAL EQUIPMENT AND SUPPLIES
+.MFG-TOYS, AMUSEMENT, AND SPORTING GOODS
+.MFG-MISCELLANEOUS MANUFACTURING, N.E.C.
+.MFG-NOT SPECIFIED METAL INDUSTRIES
+.MFG-NOT SPECIFIED INDUSTRIES
+.WHL-MOTOR VEHICLES PARTS AND SUPPLIES MERCHANT
+.WHOLESALERS
+.WHL-FURNITURE AND HOME FURNISHING MERCHANT WHOLESALERS
+.WHL-LUMBER AND OTHER CONSTRUCTION MATERIALS MERCHANT
+.WHOLESALERS
+.WHL-PROFESSIONAL AND COMMERCIAL EQUIPMENT AND SUPPLIES
+.MERCHANT WHOLESALERS
+.WHL-METALS AND MINERALS, EXCEPT PETROLEUM, MERCHANT
+.WHOLESALERS
+.WHL-ELECTRICAL GOODS MERCHANT WHOLESALERS
+.WHL-HARDWARE, PLUMBING AND HEATING EQUIPMENT, AND
+.SUPPLIES MERCHANT WHOLESALERS
+.WHL-MACHINERY, EQUIPMENT, AND SUPPLIES MERCHANT
+.WHOLESALERS
+.WHL-RECYCLABLE MATERIAL MERCHANT WHOLESALERS
+
+4239Z
+4241
+4243
+4244
+4245
+4247
+4248
+42491
+4249Z
+424M
+4251
+42S
+4411
+4412
+4413
+442
+443111
+4431M
+44413
+4441Z
+4442
+4451
+4452
+4453
+44611
+446Z
+447
+44821
+4483
+448ZM
+45113
+45121
+451M
+45211
+4529
+4531
+45321
+45322
+4533
+4539
+454111
+454112
+454113
+4542
+45431
+45439
+4M
+4MS
+481
+482
+483
+484
+4853
+485M
+486
+487
+488
+491
+492
+493
+
+.WHL-MISCELLANEOUS DURABLE GOODS MERCHANT WHOLESALERS
+.WHL-PAPER AND PAPER PRODUCTS MERCHANT WHOLESALERS
+.WHL-APPAREL, FABRICS, AND NOTIONS MERCHANT WHOLESALERS
+.WHL-GROCERIES AND RELATED PRODUCTS MERCHANT WHOLESALERS
+.WHL-FARM PRODUCT RAW MATERIALS MERCHANT WHOLESALERS
+.WHL-PETROLEUM AND PETROLEUM PRODUCTS MERCHANT WHOLESALERS
+.WHL-ALCOHOLIC BEVERAGES MERCHANT WHOLESALERS
+.WHL-FARM SUPPLIES MERCHANT WHOLESALERS
+.WHL-MISCELLANEOUS NONDURABLE GOODS MERCHANT WHOLESALERS
+.WHL-DRUGS, SUNDRIES, AND CHEMICAL AND ALLIED PRODUCTS
+.MERCHANT WHOLESALERS
+.WHL-ELECTRONIC MARKETS AGENTS AND BROKERS
+.WHL-NOT SPECIFIED TRADE
+.RET-AUTOMOBILE DEALERS
+.RET-OTHER MOTOR VEHICLE DEALERS
+.RET-AUTO PARTS, ACCESSORIES, AND TIRE STORES
+.RET-FURNITURE AND HOME FURNISHINGS STORES
+.RET-HOUSEHOLD APPLIANCE STORES
+.RET-RADIO, TV, AND COMPUTER STORES
+.RET-HARDWARE STORES
+.RET-BUILDING MATERIAL AND SUPPLIES DEALERS
+.RET-LAWN AND GARDEN EQUIPMENT AND SUPPLIES STORES
+.RET-GROCERY STORES
+.RET-SPECIALTY FOOD STORES
+.RET-BEER, WINE, AND LIQUOR STORES
+.RET-PHARMACIES AND DRUG STORES
+.RET-HEALTH AND PERSONAL CARE, EXCEPT DRUG, STORES
+.RET-GASOLINE STATIONS
+.RET-SHOE STORES
+.RET-JEWELRY, LUGGAGE,AND LEATHER GOODS STORES
+.RET-CLOTHING AND ACCESSORIES, EXCEPT SHOE, STORES
+.RET-SEWING, NEEDLEWORK AND PIECE GOODS STORES
+.RET-BOOK STORES AND NEWS DEALERS
+.RET-MUSIC STORES
+.RET-DEPARTMENT AND DISCOUNT STORES
+.RET-MISCELLANEOUS GENERAL MERCHANDISE STORES
+.RET-FLORISTS
+.RET-OFFICE SUPPLIES AND STATIONARY STORES
+.RET-GIFT, NOVELTY, AND SOUVENIR SHOPS
+.RET-USED MERCHANDISE STORES
+.RET-MISCELLANEOUS STORES
+.RET-ELECTRONIC SHOPPING
+.RET-ELECTRONIC AUCTIONS
+.RET-MAIL-ORDER HOUSES
+.RET-VENDING MACHINE OPERATORS
+.RET-FUEL DEALERS
+.RET-OTHER DIRECT SELLING ESTABLISHMENTS
+.RET-SPORTING GOODS, CAMERA, AND HOBBY AND TOY STORES
+.RET-NOT SPECIFIED TRADE
+.TRN-AIR TRANSPORTATION
+.TRN-RAIL TRANSPORTATION
+.TRN-WATER TRANSPORTATION
+.TRN-TRUCK TRANSPORTATION
+.TRN-TAXI AND LIMOUSINE SERVICE
+.TRN-BUS SERVICE AND URBAN TRANSIT
+.TRN-PIPELINE TRANSPORTATION
+.TRN-SCENIC AND SIGHTSEEING TRANSPORTATION
+.TRN-SERVICES INCIDENTAL TO TRANSPORTATION
+.TRN-POSTAL SERVICE
+.TRN-COURIERS AND MESSENGERS
+.TRN-WAREHOUSING AND STORAGE
+
+51111
+5111Z
+5112
+5121
+5122
+5161
+5171
+517Z
+5181
+5182
+51912
+5191Z
+51M
+5221M
+522M
+524
+52M1
+52M2
+531
+5321
+53223
+532M
+53M
+5411
+5412
+5413
+5414
+5415
+5416
+5417
+5418
+54194
+5419Z
+55
+5613
+5614
+5615
+5616
+56173
+5617Z
+561M
+562
+6111
+611M1
+611M2
+611M3
+6211
+6212
+62131
+62132
+6213ZM
+6214
+6216
+621M
+622
+6231
+623M
+
+.INF-NEWSPAPER PUBLISHERS
+.INF-PUBLISHING, EXCEPT NEWSPAPERS AND SOFTWARE
+.INF-SOFTWARE PUBLISHING
+.INF-MOTION PICTURES AND VIDEO INDUSTRIES
+.INF-SOUND RECORDING INDUSTRIES
+.INF-INTERNET PUBLISHING AND BROADCASTING
+.INF-WIRED TELECOMMUNICATIONS CARRIERS
+.INF-OTHER TELECOMMUNICATION SERVICES
+.INF-INTERNET SERVICE PROVIDERS
+.INF-DATA PROCESSING, HOSTING, AND RELATED SERVICES
+.INF-LIBRARIES AND ARCHIVES
+.INF-OTHER INFORMATION SERVICES
+.INF-RADIO AND TELEVISION BROADCASTING AND CABLE
+.FIN-SAVINGS INSTITUTIONS, INCLUDING CREDIT UNIONS
+.FIN-NON-DEPOSITORY CREDIT AND RELATED ACTIVITIES
+.FIN-INSURANCE CARRIERS AND RELATED ACTIVITIES
+.FIN-BANKING AND RELATED ACTIVITIES
+.FIN-SECURITIES, COMMODITIES, FUNDS, TRUSTS, AND OTHER
+.FINANCIAL INVESTMENTS
+.FIN-REAL ESTATE
+.FIN-AUTOMOTIVE EQUIPMENT RENTAL AND LEASING
+.FIN-VIDEO TAPE AND DISK RENTAL
+.FIN-OTHER CONSUMER GOODS RENTAL
+.FIN-COMMERCIAL, INDUSTRIAL, AND OTHER INTANGIBLE ASSETS
+.RENTAL AND LEASING
+.PRF-LEGAL SERVICES
+.PRF-ACCOUNTING, TAX PREPARATION, BOOKKEEPING AND PAYROLL
+.SERVICES
+.PRF-ARCHITECTURAL, ENGINEERING, AND RELATED SERVICES
+.PRF-SPECIALIZED DESIGN SERVICES
+.PRF-COMPUTER SYSTEMS DESIGN AND RELATED SERVICES
+.PRF-MANAGEMENT, SCIENTIFIC AND TECHNICAL CONSULTING
+.SERVICES
+.PRF-SCIENTIFIC RESEARCH AND DEVELOPMENT SERVICES
+.PRF-ADVERTISING AND RELATED SERVICES
+.PRF-VETERINARY SERVICES
+.PRF-OTHER PROFESSIONAL, SCIENTIFIC AND TECHNICAL SERVICES
+.PRF-MANAGEMENT OF COMPANIES AND ENTERPRISES
+.PRF-EMPLOYMENT SERVICES
+.PRF-BUSINESS SUPPORT SERVICES
+.PRF-TRAVEL ARRANGEMENTS AND RESERVATION SERVICES
+.PRF-INVESTIGATION AND SECURITY SERVICES
+.PRF-LANDSCAPING SERVICES
+.PRF-SERVICES TO BUILDINGS AND DWELLINGS, EX CONSTR CLN
+.PRF-OTHER ADMINISTRATIVE, AND OTHER SUPPORT SERVICES
+.PRF-WASTE MANAGEMENT AND REMEDIATION SERVICES
+.EDU-ELEMENTARY AND SECONDARY SCHOOLS
+.EDU-COLLEGES AND UNIVERSITIES, INCLUDING JUNIOR COLLEGES
+.EDU-BUSINESS, TECHNICAL, AND TRADE SCHOOLS AND TRAINING
+.EDU-OTHER SCHOOLS, INSTRUCTION, AND EDUCATIONAL SERVICES
+.MED-OFFICES OF PHYSICIANS
+.MED-OFFICES OF DENTISTS
+.MED-OFFICE OF CHIROPRACTORS
+.MED-OFFICES OF OPTOMETRISTS
+.MED-OFFICES OF OTHER HEALTH PRACTITIONERS
+.MED-OUTPATIENT CARE CENTERS
+.MED-HOME HEALTH CARE SERVICES
+.MED-OTHER HEALTH CARE SERVICES
+.MED-HOSPITALS
+.MED-NURSING CARE FACILITIES
+.MED-RESIDENTIAL CARE FACILITIES, WITHOUT NURSING
+
+6241
+6242
+6243
+6244
+711
+712
+71395
+713Z
+7211
+721M
+7224
+722Z
+811192
+8111Z
+8112
+8113
+8114
+812111
+812112
+8121M
+8122
+8123
+8129
+8131
+81393
+8139Z
+813M
+814
+92113
+92119
+9211MP
+923
+928110P1
+928110P2
+928110P3
+928110P4
+928110P5
+928110P6
+928110P7
+928P
+92M1
+92M2
+92MP
+9920
+
+.SCA-INDIVIDUAL AND FAMILY SERVICES
+.SCA-COMMUNITY FOOD AND HOUSING, AND EMERGENCY SERVICES
+.SCA-VOCATIONAL REHABILITATION SERVICES
+.SCA-CHILD DAY CARE SERVICES
+.ENT-INDEPENDENT ARTISTS, PERFORMING ARTS, SPECTATOR
+.SPORTS AND RELATED INDUSTRIES
+.ENT-MUSEUMS, ART GALLERIES, HISTORICAL SITES, AND SIMILAR
+.INSTITUTIONS
+.ENT-BOWLING CENTERS
+.ENT-OTHER AMUSEMENT, GAMBLING, AND RECREATION INDUSTRIES
+.ENT-TRAVELER ACCOMMODATION
+.ENT-RECREATIONAL VEHICLE PARKS AND CAMPS, AND ROOMING AND
+.BOARDING HOUSES
+.ENT-DRINKING PLACES, ALCOHOLIC BEVERAGES
+.ENT-RESTAURANTS AND OTHER FOOD SERVICES
+.SRV-CAR WASHES
+.SRV-AUTOMOTIVE REPAIR AND MAINTENANCE
+.SRV-ELECTRONIC AND PRECISION EQUIPMENT REPAIR AND
+.MAINTENANCE
+.SRV-COMMERCIAL AND INDUSTRIAL MACHINERY AND EQUIPMENT
+.REPAIR AND MAINTENANCE
+.SRV-PERSONAL AND HOUSEHOLD GOODS REPAIR AND MAINTENANCE
+.SRV-BARBER SHOPS
+.SRV-BEAUTY SALONS
+.SRV-NAIL SALONS AND OTHER PERSONAL CARE SERVICES
+.SRV-FUNERAL HOMES, CEMETERIES AND CREMATORIES
+.SRV-DRYCLEANING AND LAUNDRY SERVICES
+.SRV-OTHER PERSONAL SERVICES
+.SRV-RELIGIOUS ORGANIZATIONS
+.SRV-LABOR UNIONS
+.SRV-BUSINESS, PROFESSIONAL, POLITICAL AND SIMILAR
+.ORGANIZATIONS
+.SRV-CIVIC, SOCIAL, ADVOCACY ORGANIZATIONS, AND
+.GRANTMAKING AND GIVING SERVICES
+.SRV-PRIVATE HOUSEHOLDS
+.ADM-PUBLIC FINANCE ACTIVITIES
+.ADM-OTHER GENERAL GOVERNMENT AND SUPPORT
+.ADM-EXECUTIVE OFFICES AND LEGISLATIVE BODIES
+.ADM-ADMINISTRATION OF HUMAN RESOURCE PROGRAMS
+.MIL-U.S. ARMY
+.MIL-U.S. AIR FORCE
+.MIL-U.S. NAVY
+.MIL-U.S. MARINES
+.MIL-U.S. COAST GUARD
+.MIL-U.S. ARMED FORCES, BRANCH NOT SPECIFIED
+.MIL-MILITARY RESERVES OR NATIONAL GUARD
+.ADM-NATIONAL SECURITY AND INTERNATIONAL AFFAIRS
+.ADM-ADMINISTRATION OF ENVIRONMENTAL QUALITY AND HOUSING
+.PROGRAMS
+.ADM-ADMINISTRATION OF ECONOMIC PROGRAMS AND SPACE
+.RESEARCH
+.ADM-JUSTICE, PUBLIC ORDER, AND SAFETY ACTIVITIES
+.UNEMPLOYED, WITH NO WORK EXPERIENCE IN THE LAST 5 YEARS
+.**
+
+NATIVITY
+1
+Nativity
+1 .Native
+2 .Foreign born
+NOP
+
+1
+
+Nativity of parent
+b .N/A (greater than 17 years old/not an own child of householder,
+.and not child in subfamily)
+1 .Living with two parents: Both parents NATIVE
+2 .Living with two parents: Father only FOREIGN BORN
+3 .Living with two parents: Mother only FOREIGN BORN
+4 .Living with two parents: BOTH parents FOREIGN BORN
+5 .Living with father only: Father NATIVE
+6 .Living with father only: Father FOREIGN BORN
+7 .Living with mother only: Mother NATIVE
+8 .Living with mother only: Mother FOREIGN BORN
+OC
+
+1
+Own child
+0 .No (includes GQ)
+1 .Yes
+
+OCCP
+
+4
+Occupation recode
+bbbb .N/A (less than 16 years old/unemployed who
+.never worked/NILF who last worked more than
+.5 years ago)
+0010 .MGR-CHIEF EXECUTIVES AND LEGISLATORS
+0020 .MGR-GENERAL AND OPERATIONS MANAGERS
+0040 .MGR-ADVERTISING AND PROMOTIONS MANAGERS
+0050 .MGR-MARKETING AND SALES MANAGERS
+0060 .MGR-PUBLIC RELATIONS MANAGERS
+0100 .MGR-ADMINISTRATIVE SERVICES MANAGERS
+0110 .MGR-COMPUTER AND INFORMATION SYSTEMS MANAGERS
+0120 .MGR-FINANCIAL MANAGERS
+0130 .MGR-HUMAN RESOURCES MANAGERS
+0140 .MGR-INDUSTRIAL PRODUCTION MANAGERS
+0150 .MGR-PURCHASING MANAGERS
+0160 .MGR-TRANSPORTATION, STORAGE, AND DISTRIBUTION MANAGERS
+0200 .MGR-FARM, RANCH, AND OTHER AGRICULTURAL MANAGERS
+0210 .MGR-FARMERS AND RANCHERS
+0220 .MGR-CONSTRUCTION MANAGERS
+0230 .MGR-EDUCATION ADMINISTRATORS
+0300 .MGR-ENGINEERING MANAGERS
+0310 .MGR-FOOD SERVICE MANAGERS
+0320 .MGR-FUNERAL DIRECTORS
+0330 .MGR-GAMING MANAGERS
+0340 .MGR-LODGING MANAGERS
+0350 .MGR-MEDICAL AND HEALTH SERVICES MANAGERS
+0360 .MGR-NATURAL SCIENCES MANAGERS
+0410 .MGR-PROPERTY, REAL ESTATE, AND COMMUNITY ASSOCIATION
+.MANAGERS
+0420 .MGR-SOCIAL AND COMMUNITY SERVICE MANAGERS
+0430 .MGR-MISCELLANEOUS MANAGERS, INCLUDING POSTMASTERS AND MAIL
+.SUPERINTENDENTS
+0500 .BUS-AGENTS AND BUSINESS MANAGERS OF ARTISTS, PERFORMERS,
+.AND ATHLETES
+0510 .BUS-PURCHASING AGENTS AND BUYERS, FARM PRODUCTS
+0520 .BUS-WHOLESALE AND RETAIL BUYERS, EXCEPT FARM PRODUCTS
+0530 .BUS-PURCHASING AGENTS, EXCEPT WHOLESALE, RETAIL, AND FARM
+.PRODUCTS
+0540 .BUS-CLAIMS ADJUSTERS, APPRAISERS, EXAMINERS, AND
+.INVESTIGATORS
+0560 .BUS-COMPLIANCE OFFICERS, EXCEPT AGRICULTURE, CONSTRUCTION,
+.HEALTH AND SAFETY, AND TRANSPORTATION
+0600 .BUS-COST ESTIMATORS
+
+0620 .BUS-HUMAN RESOURCES, TRAINING, AND LABOR RELATIONS
+.SPECIALISTS
+0700 .BUS-LOGISTICIANS
+0710 .BUS-MANAGEMENT ANALYSTS
+0720 .BUS-MEETING AND CONVENTION PLANNERS
+0730 .BUS-OTHER BUSINESS OPERATIONS SPECIALISTS
+0800 .FIN-ACCOUNTANTS AND AUDITORS
+0810 .FIN-APPRAISERS AND ASSESSORS OF REAL ESTATE
+0820 .FIN-BUDGET ANALYSTS
+0830 .FIN-CREDIT ANALYSTS
+0840 .FIN-FINANCIAL ANALYSTS
+0850 .FIN-PERSONAL FINANCIAL ADVISORS
+0860 .FIN-INSURANCE UNDERWRITERS
+0900 .FIN-FINANCIAL EXAMINERS
+0910 .FIN-LOAN COUNSELORS AND OFFICERS
+0930 .FIN-TAX EXAMINERS, COLLECTORS, AND REVENUE AGENTS
+0940 .FIN-TAX PREPARERS
+0950 .FIN-FINANCIAL SPECIALISTS, ALL OTHER
+1000 .CMM-COMPUTER SCIENTISTS AND SYSTEMS ANALYSTS
+1010 .CMM-COMPUTER PROGRAMMERS
+1020 .CMM-COMPUTER SOFTWARE ENGINEERS
+1040 .CMM-COMPUTER SUPPORT SPECIALISTS
+1060 .CMM-DATABASE ADMINISTRATORS
+1100 .CMM-NETWORK AND COMPUTER SYSTEMS ADMINISTRATORS
+1110 .CMM-NETWORK SYSTEMS AND DATA COMMUNICATIONS ANALYSTS
+1200 .CMM-ACTUARIES
+1220 .CMM-OPERATIONS RESEARCH ANALYSTS
+1240 .CMM-MISCELLANEOUS MATHEMATICAL SCIENCE OCCUPATIONS,
+.INCLUDING MATHEMATICIANS AND STATISTICIANS
+1300 .ENG-ARCHITECTS, EXCEPT NAVAL
+1310 .ENG-SURVEYORS, CARTOGRAPHERS, AND PHOTOGRAMMETRISTS
+1320 .ENG-AEROSPACE ENGINEERS
+1340 .ENG-BIOMEDICAL AND AGRICULTURAL ENGINEERS
+1350 .ENG-CHEMICAL ENGINEERS
+1360 .ENG-CIVIL ENGINEERS
+1400 .ENG-COMPUTER HARDWARE ENGINEERS
+1410 .ENG-ELECTRICAL AND ELECTRONICS ENGINEERS
+1420 .ENG-ENVIRONMENTAL ENGINEERS
+1430 .ENG-INDUSTRIAL ENGINEERS, INCLUDING HEALTH AND SAFETY
+1440 .ENG-MARINE ENGINEERS AND NAVAL ARCHITECTS
+1450 .ENG-MATERIALS ENGINEERS
+1460 .ENG-MECHANICAL ENGINEERS
+1520 .ENG-PETROLEUM, MINING AND GEOLOGICAL ENGINEERS, INCLUDING
+.MINING SAFETY ENGINEERS
+1530 .ENG-MISCELLANEOUS ENGINEERS, INCLUDING NUCLEAR ENGINEERS
+1540 .ENG-DRAFTERS
+1550 .ENG-ENGINEERING TECHNICIANS, EXCEPT DRAFTERS
+1560 .ENG-SURVEYING AND MAPPING TECHNICIANS
+1600 .SCI-AGRICULTURAL AND FOOD SCIENTISTS
+1610 .SCI-BIOLOGICAL SCIENTISTS
+1640 .SCI-CONSERVATION SCIENTISTS AND FORESTERS
+1650 .SCI-MEDICAL SCIENTISTS
+1700 .SCI-ASTRONOMERS AND PHYSICISTS
+1710 .SCI-ATMOSPHERIC AND SPACE SCIENTISTS
+1720 .SCI-CHEMISTS AND MATERIALS SCIENTISTS
+1740 .SCI-ENVIRONMENTAL SCIENTISTS AND GEOSCIENTISTS
+1760 .SCI-PHYSICAL SCIENTISTS, ALL OTHER
+1800 .SCI-ECONOMISTS
+1810 .SCI-MARKET AND SURVEY RESEARCHERS
+1820 .SCI-PSYCHOLOGISTS
+1840 .SCI-URBAN AND REGIONAL PLANNERS
+
+1860
+1900
+1910
+1920
+1930
+1960
+2000
+2010
+2020
+2040
+2050
+2060
+2100
+2140
+2150
+2200
+2300
+2310
+2320
+2330
+2340
+2400
+2430
+2440
+2540
+2550
+2600
+2630
+2700
+2710
+2720
+2740
+2750
+2760
+2800
+2810
+2820
+2830
+2840
+2850
+2860
+2900
+2910
+2920
+3000
+3010
+3030
+3040
+3050
+3060
+3110
+3120
+3130
+3140
+
+.SCI-MISCELLANEOUS SOCIAL SCIENTISTS, INCLUDING SOCIOLOGISTS
+.SCI-AGRICULTURAL AND FOOD SCIENCE TECHNICIANS
+.SCI-BIOLOGICAL TECHNICIANS
+.SCI-CHEMICAL TECHNICIANS
+.SCI-GEOLOGICAL AND PETROLEUM TECHNICIANS
+.SCI-MISCELLANEOUS LIFE, PHYSICAL, AND SOCIAL SCIENCE
+.TECHNICIANS, INCLUDING SOCIAL SCIENCE RESEARCH ASSISTANTS
+.AND NUCLEAR TECHNICIANS
+.CMS-COUNSELORS
+.CMS-SOCIAL WORKERS
+.CMS-MISCELLANEOUS COMMUNITY AND SOCIAL SERVICE SPECIALISTS
+.CMS-CLERGY
+.CMS-DIRECTORS, RELIGIOUS ACTIVITIES AND EDUCATION
+.CMS-RELIGIOUS WORKERS, ALL OTHER
+.LGL-LAWYERS AND JUDGES, MAGISTRATES, AND OTHER JUDICIAL
+.WORKERS
+.LGL-PARALEGALS AND LEGAL ASSISTANTS
+.LGL-MISCELLANEOUS LEGAL SUPPORT WORKERS
+.EDU-POSTSECONDARY TEACHERS
+.EDU-PRESCHOOL AND KINDERGARTEN TEACHERS
+.EDU-ELEMENTARY AND MIDDLE SCHOOL TEACHERS
+.EDU-SECONDARY SCHOOL TEACHERS
+.EDU-SPECIAL EDUCATION TEACHERS
+.EDU-OTHER TEACHERS AND INSTRUCTORS
+.EDU-ARCHIVISTS, CURATORS, AND MUSEUM TECHNICIANS
+.EDU-LIBRARIANS
+.EDU-LIBRARY TECHNICIANS
+.EDU-TEACHER ASSISTANTS
+.EDU-OTHER EDUCATION, TRAINING, AND LIBRARY WORKERS
+.ENT-ARTISTS AND RELATED WORKERS
+.ENT-DESIGNERS
+.ENT-ACTORS
+.ENT-PRODUCERS AND DIRECTORS
+.ENT-ATHLETES, COACHES, UMPIRES, AND RELATED WORKERS
+.ENT-DANCERS AND CHOREOGRAPHERS
+.ENT-MUSICIANS, SINGERS, AND RELATED WORKERS
+.ENT-ENTERTAINERS AND PERFORMERS, SPORTS AND RELATED
+.WORKERS, ALL OTHER
+.ENT-ANNOUNCERS
+.ENT-NEWS ANALYSTS, REPORTERS AND CORRESPONDENTS
+.ENT-PUBLIC RELATIONS SPECIALISTS
+.ENT-EDITORS
+.ENT-TECHNICAL WRITERS
+.ENT-WRITERS AND AUTHORS
+.ENT-MISCELLANEOUS MEDIA AND COMMUNICATION WORKERS
+.ENT-BROADCAST AND SOUND ENGINEERING TECHNICIANS AND RADIO
+.OPERATORS, AND MEDIA AND COMMUNICATION EQUIPMENT WORKERS,
+.ALL OTHER
+.ENT-PHOTOGRAPHERS
+.ENT-TELEVISION, VIDEO, AND MOTION PICTURE CAMERA OPERATORS
+.AND EDITORS
+.MED-CHIROPRACTORS
+.MED-DENTISTS
+.MED-DIETITIANS AND NUTRITIONISTS
+.MED-OPTOMETRISTS
+.MED-PHARMACISTS
+.MED-PHYSICIANS AND SURGEONS
+.MED-PHYSICIAN ASSISTANTS
+.MED-PODIATRISTS
+.MED-REGISTERED NURSES
+.MED-AUDIOLOGISTS
+
+3150
+3160
+3200
+3210
+3220
+3230
+3240
+3250
+3260
+3300
+3310
+3320
+3400
+3410
+3500
+3510
+3520
+3530
+3540
+3600
+3610
+3620
+3630
+3640
+3650
+3700
+3710
+3720
+3730
+3740
+3750
+3800
+3820
+3840
+3850
+3900
+3910
+3920
+3940
+3950
+4000
+4010
+4020
+4030
+4040
+4050
+4060
+4110
+4120
+4130
+
+.MED-OCCUPATIONAL THERAPISTS
+.MED-PHYSICAL THERAPISTS
+.MED-RADIATION THERAPISTS
+.MED-RECREATIONAL THERAPISTS
+.MED-RESPIRATORY THERAPISTS
+.MED-SPEECH-LANGUAGE PATHOLOGISTS
+.MED-THERAPISTS, ALL OTHER
+.MED-VETERINARIANS
+.MED-HEALTH DIAGNOSING AND TREATING PRACTITIONERS, ALL OTHER
+.MED-CLINICAL LABORATORY TECHNOLOGISTS AND TECHNICIANS
+.MED-DENTAL HYGIENISTS
+.MED-DIAGNOSTIC RELATED TECHNOLOGISTS AND TECHNICIANS
+.MED-EMERGENCY MEDICAL TECHNICIANS AND PARAMEDICS
+.MED-HEALTH DIAGNOSING AND TREATING PRACTITIONER SUPPORT
+.TECHNICIANS
+.MED-LICENSED PRACTICAL AND LICENSED VOCATIONAL NURSES
+.MED-MEDICAL RECORDS AND HEALTH INFORMATION TECHNICIANS
+.MED-OPTICIANS, DISPENSING
+.MED-MISCELLANEOUS HEALTH TECHNOLOGISTS AND TECHNICIANS
+.MED-OTHER HEALTHCARE PRACTITIONERS AND TECHNICAL
+.OCCUPATIONS
+.HLS-NURSING, PSYCHIATRIC, AND HOME HEALTH AIDES
+.HLS-OCCUPATIONAL THERAPIST ASSISTANTS AND AIDES
+.HLS-PHYSICAL THERAPIST ASSISTANTS AND AIDES
+.HLS-MASSAGE THERAPISTS
+.HLS-DENTAL ASSISTANTS
+.HLS-MEDICAL ASSISTANTS AND OTHER HEALTHCARE SUPPORT
+.OCCUPATIONS, EXCEPT DENTAL ASSISTANTS
+.PRT-FIRST-LINE SUPERVISORS/MANAGERS OF CORRECTIONAL
+.OFFICERS
+.PRT-FIRST-LINE SUPERVISORS/MANAGERS OF POLICE AND
+.DETECTIVES
+.PRT-FIRST-LINE SUPERVISORS/MANAGERS OF FIRE FIGHTING AND
+.PREVENTION WORKERS
+.PRT-SUPERVISORS, PROTECTIVE SERVICE WORKERS, ALL OTHER
+.PRT-FIRE FIGHTERS
+.PRT-FIRE INSPECTORS
+.PRT-BAILIFFS, CORRECTIONAL OFFICERS, AND JAILERS
+.PRT-DETECTIVES AND CRIMINAL INVESTIGATORS
+.PRT-MISCELLANEOUS LAW ENFORCEMENT WORKERS
+.PRT-POLICE OFFICERS
+.PRT-ANIMAL CONTROL WORKERS
+.PRT-PRIVATE DETECTIVES AND INVESTIGATORS
+.PRT-SECURITY GUARDS AND GAMING SURVEILLANCE OFFICERS
+.PRT-CROSSING GUARDS
+.PRT-LIFEGUARDS AND OTHER PROTECTIVE SERVICE WORKERS
+.EAT-CHEFS AND HEAD COOKS
+.EAT-FIRST-LINE SUPERVISORS/MANAGERS OF FOOD PREPARATION AND
+.SERVING WORKERS
+.EAT-COOKS
+.EAT-FOOD PREPARATION WORKERS
+.EAT-BARTENDERS
+.EAT-COMBINED FOOD PREPARATION AND SERVING WORKERS,
+.INCLUDING FAST FOOD
+.EAT-COUNTER ATTENDANTS, CAFETERIA, FOOD CONCESSION, AND
+.COFFEE SHOP
+.EAT-WAITERS AND WAITRESSES
+.EAT-FOOD SERVERS, NONRESTAURANT
+.EAT-MISCELLANEOUS FOOD PREPARATION AND SERVING RELATED
+.WORKERS, INCLUDING DINING ROOM AND CAFETERIA ATTENDANTS AND
+.BARTENDER HELPERS
+
+4140 .EAT-DISHWASHERS
+4150 .EAT-HOSTS AND HOSTESSES, RESTAURANT, LOUNGE, AND COFFEE
+.SHOP
+4200 .CLN-FIRST-LINE SUPERVISORS/MANAGERS OF HOUSEKEEPING AND
+.JANITORIAL WORKERS
+4210 .CLN-FIRST-LINE SUPERVISORS/MANAGERS OF LANDSCAPING, LAWN
+.SERVICE, AND GROUNDSKEEPING WORKERS
+4220 .CLN-JANITORS AND BUILDING CLEANERS
+4230 .CLN-MAIDS AND HOUSEKEEPING CLEANERS
+4240 .CLN-PEST CONTROL WORKERS
+4250 .CLN-GROUNDS MAINTENANCE WORKERS
+4300 .PRS-FIRST-LINE SUPERVISORS/MANAGERS OF GAMING WORKERS
+4320 .PRS-FIRST-LINE SUPERVISORS/MANAGERS OF PERSONAL SERVICE
+.WORKERS
+4340 .PRS-ANIMAL TRAINERS
+4350 .PRS-NONFARM ANIMAL CARETAKERS
+4400 .PRS-GAMING SERVICES WORKERS
+4410 .PRS-MOTION PICTURE PROJECTIONISTS
+4420 .PRS-USHERS, LOBBY ATTENDANTS, AND TICKET TAKERS
+4430 .PRS-MISCELLANEOUS ENTERTAINMENT ATTENDANTS AND RELATED
+.WORKERS
+4460 .PRS-FUNERAL SERVICE WORKERS
+4500 .PRS-BARBERS
+4510 .PRS-HAIRDRESSERS, HAIRSTYLISTS, AND COSMETOLOGISTS
+4520 .PRS-MISCELLANEOUS PERSONAL APPEARANCE WORKERS
+4530 .PRS-BAGGAGE PORTERS, BELLHOPS, AND CONCIERGES
+4540 .PRS-TOUR AND TRAVEL GUIDES
+4550 .PRS-TRANSPORTATION ATTENDANTS
+4600 .PRS-CHILD CARE WORKERS
+4610 .PRS-PERSONAL AND HOME CARE AIDES
+4620 .PRS-RECREATION AND FITNESS WORKERS
+4640 .PRS-RESIDENTIAL ADVISORS
+4650 .PRS-PERSONAL CARE AND SERVICE WORKERS, ALL OTHER
+4700 .SAL-FIRST-LINE SUPERVISORS/MANAGERS OF RETAIL SALES WORKERS
+4710 .SAL-FIRST-LINE SUPERVISORS/MANAGERS OF NON-RETAIL SALES
+.WORKERS
+4720 .SAL-CASHIERS
+4740 .SAL-COUNTER AND RENTAL CLERKS
+4750 .SAL-PARTS SALESPERSONS
+4760 .SAL-RETAIL SALESPERSONS
+4800 .SAL-ADVERTISING SALES AGENTS
+4810 .SAL-INSURANCE SALES AGENTS
+4820 .SAL-SECURITIES, COMMODITIES, AND FINANCIAL SERVICES SALES
+.AGENTS
+4830 .SAL-TRAVEL AGENTS
+4840 .SAL-SALES REPRESENTATIVES, SERVICES, ALL OTHER
+4850 .SAL-SALES REPRESENTATIVES, WHOLESALE AND MANUFACTURING
+4900 .SAL-MODELS, DEMONSTRATORS, AND PRODUCT PROMOTERS
+4920 .SAL-REAL ESTATE BROKERS AND SALES AGENTS
+4930 .SAL-SALES ENGINEERS
+4940 .SAL-TELEMARKETERS
+4950 .SAL-DOOR-TO-DOOR SALES WORKERS, NEWS AND STREET VENDORS,
+.AND RELATED WORKERS
+4960 .SAL-SALES AND RELATED WORKERS, ALL OTHER
+5000 .OFF-FIRST-LINE SUPERVISORS/MANAGERS OF OFFICE AND
+.ADMINISTRATIVE SUPPORT WORKERS
+5010 .OFF-SWITCHBOARD OPERATORS, INCLUDING ANSWERING SERVICE
+5020 .OFF-TELEPHONE OPERATORS
+5030 .OFF-COMMUNICATIONS EQUIPMENT OPERATORS, ALL OTHER
+5100 .OFF-BILL AND ACCOUNT COLLECTORS
+5110 .OFF-BILLING AND POSTING CLERKS AND MACHINE OPERATORS
+
+5120
+5130
+5140
+5150
+5160
+5200
+5220
+5230
+5240
+5250
+5260
+5300
+5310
+5320
+5330
+5340
+5350
+5360
+5400
+5410
+5420
+5500
+5510
+5520
+5530
+5540
+5550
+5560
+5600
+5610
+5620
+5630
+5700
+5800
+5810
+5820
+5840
+5850
+5860
+5900
+5910
+5920
+5930
+6000
+6010
+6040
+6050
+6100
+6120
+6130
+6200
+6210
+
+.OFF-BOOKKEEPING, ACCOUNTING, AND AUDITING CLERKS
+.OFF-GAMING CAGE WORKERS
+.OFF-PAYROLL AND TIMEKEEPING CLERKS
+.OFF-PROCUREMENT CLERKS
+.OFF-TELLERS
+.OFF-BROKERAGE CLERKS
+.OFF-COURT, MUNICIPAL, AND LICENSE CLERKS
+.OFF-CREDIT AUTHORIZERS, CHECKERS, AND CLERKS
+.OFF-CUSTOMER SERVICE REPRESENTATIVES
+.OFF-ELIGIBILITY INTERVIEWERS, GOVERNMENT PROGRAMS
+.OFF-FILE CLERKS
+.OFF-HOTEL, MOTEL, AND RESORT DESK CLERKS
+.OFF-INTERVIEWERS, EXCEPT ELIGIBILITY AND LOAN
+.OFF-LIBRARY ASSISTANTS, CLERICAL
+.OFF-LOAN INTERVIEWERS AND CLERKS
+.OFF-NEW ACCOUNTS CLERKS
+.OFF-CORRESPONDENCE CLERKS AND ORDER CLERKS
+.OFF-HUMAN RESOURCES ASSISTANTS, EXCEPT PAYROLL AND
+.TIMEKEEPING
+.OFF-RECEPTIONISTS AND INFORMATION CLERKS
+.OFF-RESERVATION AND TRANSPORTATION TICKET AGENTS AND TRAVEL
+.CLERKS
+.OFF-INFORMATION AND RECORD CLERKS, ALL OTHER
+.OFF-CARGO AND FREIGHT AGENTS
+.OFF-COURIERS AND MESSENGERS
+.OFF-DISPATCHERS
+.OFF-METER READERS, UTILITIES
+.OFF-POSTAL SERVICE CLERKS
+.OFF-POSTAL SERVICE MAIL CARRIERS
+.OFF-POSTAL SERVICE MAIL SORTERS, PROCESSORS, AND PROCESSING
+.MACHINE OPERATORS
+.OFF-PRODUCTION, PLANNING, AND EXPEDITING CLERKS
+.OFF-SHIPPING, RECEIVING, AND TRAFFIC CLERKS
+.OFF-STOCK CLERKS AND ORDER FILLERS
+.OFF-WEIGHERS, MEASURERS, CHECKERS, AND SAMPLERS,
+.RECORDKEEPING
+.OFF-SECRETARIES AND ADMINISTRATIVE ASSISTANTS
+.OFF-COMPUTER OPERATORS
+.OFF-DATA ENTRY KEYERS
+.OFF-WORD PROCESSORS AND TYPISTS
+.OFF-INSURANCE CLAIMS AND POLICY PROCESSING CLERKS
+.OFF-MAIL CLERKS AND MAIL MACHINE OPERATORS, EXCEPT POSTAL
+.SERVICE
+.OFF-OFFICE CLERKS, GENERAL
+.OFF-OFFICE MACHINE OPERATORS, EXCEPT COMPUTER
+.OFF-PROOFREADERS AND COPY MARKERS
+.OFF-STATISTICAL ASSISTANTS
+.OFF-MISCELLANEOUS OFFICE AND ADMINISTRATIVE SUPPORT
+.WORKERS, INCLUDING DESKTOP PUBLISHERS
+.FFF-FIRST-LINE SUPERVISORS/MANAGERS OF FARMING, FISHING,
+.AND FORESTRY WORKERS
+.FFF-AGRICULTURAL INSPECTORS
+.FFF-GRADERS AND SORTERS, AGRICULTURAL PRODUCTS
+.FFF-MISCELLANEOUS AGRICULTURAL WORKERS, INCLUDING ANIMAL
+.BREEDERS
+.FFF-FISHING AND HUNTING WORKERS
+.FFF-FOREST AND CONSERVATION WORKERS
+.FFF-LOGGING WORKERS
+.CON-FIRST-LINE SUPERVISORS/MANAGERS OF CONSTRUCTION TRADES
+.AND EXTRACTION WORKERS
+.CON-BOILERMAKERS
+
+6220
+6230
+6240
+6250
+6260
+6300
+6320
+6330
+6350
+6360
+6400
+6420
+6430
+6440
+6460
+6500
+6510
+6520
+6530
+6600
+6660
+6700
+6710
+6720
+6730
+6740
+6760
+6800
+6820
+6830
+6840
+6940
+7000
+7010
+7020
+7030
+7040
+7100
+7110
+7120
+7130
+7140
+7150
+7160
+7200
+7210
+7220
+7240
+7260
+
+.CON-BRICKMASONS, BLOCKMASONS, AND STONEMASONS
+.CON-CARPENTERS
+.CON-CARPET, FLOOR, AND TILE INSTALLERS AND FINISHERS
+.CON-CEMENT MASONS, CONCRETE FINISHERS, AND TERRAZZO WORKERS
+.CON-CONSTRUCTION LABORERS
+.CON-PAVING, SURFACING, AND TAMPING EQUIPMENT OPERATORS
+.CON-CONSTRUCTION EQUIPMENT OPERATORS, EXCEPT PAVING,
+.SURFACING, AND TAMPING EQUIPMENT OPERATORS
+.CON-DRYWALL INSTALLERS, CEILING TILE INSTALLERS, AND TAPERS
+.CON-ELECTRICIANS
+.CON-GLAZIERS
+.CON-INSULATION WORKERS
+.CON-PAINTERS, CONSTRUCTION AND MAINTENANCE
+.CON-PAPERHANGERS
+.CON-PIPELAYERS, PLUMBERS, PIPEFITTERS, AND STEAMFITTERS
+.CON-PLASTERERS AND STUCCO MASONS
+.CON-REINFORCING IRON AND REBAR WORKERS
+.CON-ROOFERS
+.CON-SHEET METAL WORKERS
+.CON-STRUCTURAL IRON AND STEEL WORKERS
+.CON-HELPERS, CONSTRUCTION TRADES
+.CON-CONSTRUCTION AND BUILDING INSPECTORS
+.CON-ELEVATOR INSTALLERS AND REPAIRERS
+.CON-FENCE ERECTORS
+.CON-HAZARDOUS MATERIALS REMOVAL WORKERS
+.CON-HIGHWAY MAINTENANCE WORKERS
+.CON-RAIL-TRACK LAYING AND MAINTENANCE EQUIPMENT OPERATORS
+.CON-MISCELLANEOUS CONSTRUCTION WORKERS, INCLUDING SEPTIC
+.TANK SERVICERS AND SEWER PIPE CLEANERS
+.EXT-DERRICK, ROTARY DRILL, AND SERVICE UNIT OPERATORS, AND
+.ROUSTABOUTS, OIL, GAS, AND MINING
+.EXT-EARTH DRILLERS, EXCEPT OIL AND GAS
+.EXT-EXPLOSIVES WORKERS, ORDNANCE HANDLING EXPERTS, AND
+.BLASTERS
+.EXT-MINING MACHINE OPERATORS
+.EXT-MISCELLANEOUS EXTRACTION WORKERS, INCLUDING ROOF
+.BOLTERS AND HELPERS
+.RPR-FIRST-LINE SUPERVISORS/MANAGERS OF MECHANICS,
+.INSTALLERS, AND REPAIRERS
+.RPR-COMPUTER, AUTOMATED TELLER, AND OFFICE MACHINE
+.REPAIRERS
+.RPR-RADIO AND TELECOMMUNICATIONS EQUIPMENT INSTALLERS AND
+.REPAIRERS
+.RPR-AVIONICS TECHNICIANS
+.RPR-ELECTRIC MOTOR, POWER TOOL, AND RELATED REPAIRERS
+.RPR-ELECTRICAL AND ELECTRONICS REPAIRERS, TRANSPORTATION
+.EQUIPMENT, AND INDUSTRIAL AND UTILITY
+.RPR-ELECTRONIC EQUIPMENT INSTALLERS AND REPAIRERS, MOTOR
+.VEHICLES
+.RPR-ELECTRONIC HOME ENTERTAINMENT EQUIPMENT INSTALLERS AND
+.REPAIRERS
+.RPR-SECURITY AND FIRE ALARM SYSTEMS INSTALLERS
+.RPR-AIRCRAFT MECHANICS AND SERVICE TECHNICIANS
+.RPR-AUTOMOTIVE BODY AND RELATED REPAIRERS
+.RPR-AUTOMOTIVE GLASS INSTALLERS AND REPAIRERS
+.RPR-AUTOMOTIVE SERVICE TECHNICIANS AND MECHANICS
+.RPR-BUS AND TRUCK MECHANICS AND DIESEL ENGINE SPECIALISTS
+.RPR-HEAVY VEHICLE AND MOBILE EQUIPMENT SERVICE TECHNICIANS
+.AND MECHANICS
+.RPR-SMALL ENGINE MECHANICS
+.RPR-MISCELLANEOUS VEHICLE AND MOBILE EQUIPMENT MECHANICS,
+
+.INSTALLERS, AND REPAIRERS
+7300 .RPR-CONTROL AND VALVE INSTALLERS AND REPAIRERS
+7310 .RPR-HEATING, AIR CONDITIONING, AND REFRIGERATION MECHANICS
+.AND INSTALLERS
+7320 .RPR-HOME APPLIANCE REPAIRERS
+7330 .RPR-INDUSTRIAL AND REFRACTORY MACHINERY MECHANICS
+7340 .RPR-MAINTENANCE AND REPAIR WORKERS, GENERAL
+7350 .RPR-MAINTENANCE WORKERS, MACHINERY
+7360 .RPR-MILLWRIGHTS
+7410 .RPR-ELECTRICAL POWER-LINE INSTALLERS AND REPAIRERS
+7420 .RPR-TELECOMMUNICATIONS LINE INSTALLERS AND REPAIRERS
+7430 .RPR-PRECISION INSTRUMENT AND EQUIPMENT REPAIRERS
+7510 .RPR-COIN, VENDING, AND AMUSEMENT MACHINE SERVICERS AND
+.REPAIRERS
+7540 .RPR-LOCKSMITHS AND SAFE REPAIRERS
+7550 .RPR-MANUFACTURED BUILDING AND MOBILE HOME INSTALLERS
+7560 .RPR-RIGGERS
+7610 .RPR-HELPERS--INSTALLATION, MAINTENANCE, AND REPAIR WORKERS
+7620 .RPR-OTHER INSTALLATION, MAINTENANCE, AND REPAIR WORKERS,
+.INCLUDING COMMERCIAL DIVERS, AND SIGNAL AND TRACK SWITCH
+.REPAIRERS
+7700 .PRD-FIRST-LINE SUPERVISORS/MANAGERS OF PRODUCTION AND
+.OPERATING WORKERS
+7710 .PRD-AIRCRAFT STRUCTURE, SURFACES, RIGGING, AND SYSTEMS
+.ASSEMBLERS
+7720 .PRD-ELECTRICAL, ELECTRONICS, AND ELECTROMECHANICAL
+.ASSEMBLERS
+7730 .PRD-ENGINE AND OTHER MACHINE ASSEMBLERS
+7740 .PRD-STRUCTURAL METAL FABRICATORS AND FITTERS
+7750 .PRD-MISCELLANEOUS ASSEMBLERS AND FABRICATORS
+7800 .PRD-BAKERS
+7810 .PRD-BUTCHERS AND OTHER MEAT, POULTRY, AND FISH PROCESSING
+.WORKERS
+7830 .PRD-FOOD AND TOBACCO ROASTING, BAKING, AND DRYING MACHINE
+.OPERATORS AND TENDERS
+7840 .PRD-FOOD BATCHMAKERS
+7850 .PRD-FOOD COOKING MACHINE OPERATORS AND TENDERS
+7900 .PRD-COMPUTER CONTROL PROGRAMMERS AND OPERATORS
+7920 .PRD-EXTRUDING AND DRAWING MACHINE SETTERS, OPERATORS, AND
+.TENDERS, METAL AND PLASTIC
+7930 .PRD-FORGING MACHINE SETTERS, OPERATORS, AND TENDERS, METAL
+.AND PLASTIC
+7940 .PRD-ROLLING MACHINE SETTERS, OPERATORS, AND TENDERS, METAL
+.AND PLASTIC
+7950 .PRD-CUTTING, PUNCHING, AND PRESS MACHINE SETTERS,
+.OPERATORS, AND TENDERS, METAL AND PLASTIC
+7960 .PRD-DRILLING AND BORING MACHINE TOOL SETTERS, OPERATORS,
+.AND TENDERS, METAL AND PLASTIC
+8000 .PRD-GRINDING, LAPPING, POLISHING, AND BUFFING MACHINE TOOL
+.SETTERS, OPERATORS, AND TENDERS, METAL AND PLASTIC
+8010 .PRD-LATHE AND TURNING MACHINE TOOL SETTERS, OPERATORS, AND
+.TENDERS, METAL AND PLASTIC
+8030 .PRD-MACHINISTS
+8040 .PRD-METAL FURNACE AND KILN OPERATORS AND TENDERS
+8060 .PRD-MODEL MAKERS AND PATTERNMAKERS, METAL AND PLASTIC
+8100 .PRD-MOLDERS AND MOLDING MACHINE SETTERS, OPERATORS, AND
+.TENDERS, METAL AND PLASTIC
+8130 .PRD-TOOL AND DIE MAKERS
+8140 .PRD-WELDING, SOLDERING, AND BRAZING WORKERS
+8150 .PRD-HEAT TREATING EQUIPMENT SETTERS, OPERATORS, AND
+.TENDERS, METAL AND PLASTIC
+
+8200 .PRD-PLATING AND COATING MACHINE SETTERS, OPERATORS, AND
+.TENDERS, METAL AND PLASTIC
+8210 .PRD-TOOL GRINDERS, FILERS, AND SHARPENERS
+8220 .PRD-MISCELLANEOUS METAL WORKERS AND PLASTIC WORKERS,
+.INCLUDING MILLING AND PLANING MACHINE SETTERS, AND MULTIPLE
+.MACHINE TOOL SETTERS, AND LAY-OUT WORKERS
+8230 .PRD-BOOKBINDERS AND BINDERY WORKERS
+8240 .PRD-JOB PRINTERS
+8250 .PRD-PREPRESS TECHNICIANS AND WORKERS
+8260 .PRD-PRINTING MACHINE OPERATORS
+8300 .PRD-LAUNDRY AND DRY-CLEANING WORKERS
+8310 .PRD-PRESSERS, TEXTILE, GARMENT, AND RELATED MATERIALS
+8320 .PRD-SEWING MACHINE OPERATORS
+8330 .PRD-SHOE AND LEATHER WORKERS AND REPAIRERS
+8340 .PRD-SHOE MACHINE OPERATORS AND TENDERS
+8350 .PRD-TAILORS, DRESSMAKERS, AND SEWERS
+8400 .PRD-TEXTILE BLEACHING AND DYEING, AND CUTTING MACHINE
+.SETTERS, OPERATORS, AND TENDERS
+8410 .PRD-TEXTILE KNITTING AND WEAVING MACHINE SETTERS,
+.OPERATORS, AND TENDERS
+8420 .PRD-TEXTILE WINDING, TWISTING, AND DRAWING OUT MACHINE
+.SETTERS, OPERATORS, AND TENDERS
+8450 .PRD-UPHOLSTERERS
+8460 .PRD-MISCELLANEOUS TEXTILE, APPAREL, AND FURNISHINGS
+.WORKERS, EXCEPT UPHOLSTERERS
+8500 .PRD-CABINETMAKERS AND BENCH CARPENTERS
+8510 .PRD-FURNITURE FINISHERS
+8530 .PRD-SAWING MACHINE SETTERS, OPERATORS, AND TENDERS, WOOD
+8540 .PRD-WOODWORKING MACHINE SETTERS, OPERATORS, AND TENDERS,
+.EXCEPT SAWING
+8550 .PRD-MISCELLANEOUS WOODWORKERS, INCLUDING MODEL MAKERS AND
+.PATTERNMAKERS
+8600 .PRD-POWER PLANT OPERATORS, DISTRIBUTORS, AND DISPATCHERS
+8610 .PRD-STATIONARY ENGINEERS AND BOILER OPERATORS
+8620 .PRD-WATER AND LIQUID WASTE TREATMENT PLANT AND SYSTEM
+.OPERATORS
+8630 .PRD-MISCELLANEOUS PLANT AND SYSTEM OPERATORS
+8640 .PRD-CHEMICAL PROCESSING MACHINE SETTERS, OPERATORS, AND
+.TENDERS
+8650 .PRD-CRUSHING, GRINDING, POLISHING, MIXING, AND BLENDING
+.WORKERS
+8710 .PRD-CUTTING WORKERS
+8720 .PRD-EXTRUDING, FORMING, PRESSING, AND COMPACTING MACHINE
+.SETTERS, OPERATORS, AND TENDERS
+8730 .PRD-FURNACE, KILN, OVEN, DRIER, AND KETTLE OPERATORS AND
+.TENDERS
+8740 .PRD-INSPECTORS, TESTERS, SORTERS, SAMPLERS, AND WEIGHERS
+8750 .PRD-JEWELERS AND PRECIOUS STONE AND METAL WORKERS
+8760 .PRD-MEDICAL, DENTAL, AND OPHTHALMIC LABORATORY TECHNICIANS
+8800 .PRD-PACKAGING AND FILLING MACHINE OPERATORS AND TENDERS
+8810 .PRD-PAINTING WORKERS
+8830 .PRD-PHOTOGRAPHIC PROCESS WORKERS AND PROCESSING MACHINE
+.OPERATORS
+8850 .PRD-CEMENTING AND GLUING MACHINE OPERATORS AND TENDERS
+8860 .PRD-CLEANING, WASHING, AND METAL PICKLING EQUIPMENT
+.OPERATORS AND TENDERS
+8910 .PRD-ETCHERS AND ENGRAVERS
+8920 .PRD-MOLDERS, SHAPERS, AND CASTERS, EXCEPT METAL AND PLASTIC
+8930 .PRD-PAPER GOODS MACHINE SETTERS, OPERATORS, AND TENDERS
+8940 .PRD-TIRE BUILDERS
+8950 .PRD-HELPERS-PRODUCTION WORKERS
+
+8960 .PRD-OTHER PRODUCTION WORKERS, INCLUDING SEMICONDUCTOR
+.PROCESSORS AND COOLING AND FREEZING EQUIPMENT OPERATORS
+9000 .TRN-SUPERVISORS, TRANSPORTATION AND MATERIAL MOVING WORKERS
+9030 .TRN-AIRCRAFT PILOTS AND FLIGHT ENGINEERS
+9040 .TRN-AIR TRAFFIC CONTROLLERS AND AIRFIELD OPERATIONS
+.SPECIALISTS
+9110 .TRN-AMBULANCE DRIVERS AND ATTENDANTS, EXCEPT EMERGENCY
+.MEDICAL TECHNICIANS
+9120 .TRN-BUS DRIVERS
+9130 .TRN-DRIVER/SALES WORKERS AND TRUCK DRIVERS
+9140 .TRN-TAXI DRIVERS AND CHAUFFEURS
+9150 .TRN-MOTOR VEHICLE OPERATORS, ALL OTHER
+9200 .TRN-LOCOMOTIVE ENGINEERS AND OPERATORS
+9230 .TRN-RAILROAD BRAKE, SIGNAL, AND SWITCH OPERATORS
+9240 .TRN-RAILROAD CONDUCTORS AND YARDMASTERS
+9260 .TRN-SUBWAY, STREETCAR, AND OTHER RAIL TRANSPORTATION
+.WORKERS
+9300 .TRN-SAILORS AND MARINE OILERS, AND SHIP ENGINEERS
+9310 .TRN-SHIP AND BOAT CAPTAINS AND OPERATORS
+9350 .TRN-PARKING LOT ATTENDANTS
+9360 .TRN-SERVICE STATION ATTENDANTS
+9410 .TRN-TRANSPORTATION INSPECTORS
+9420 .TRN-MISCELLANEOUS TRANSPORTATION WORKERS, INCLUDING BRIDGE
+.AND LOCK TENDERS AND TRAFFIC TECHNICIANS
+9510 .TRN-CRANE AND TOWER OPERATORS
+9520 .TRN-DREDGE, EXCAVATING, AND LOADING MACHINE OPERATORS
+9560 .TRN-CONVEYOR OPERATORS AND TENDERS, AND HOIST AND WINCH
+.OPERATORS
+9600 .TRN-INDUSTRIAL TRUCK AND TRACTOR OPERATORS
+9610 .TRN-CLEANERS OF VEHICLES AND EQUIPMENT
+9620 .TRN-LABORERS AND FREIGHT, STOCK, AND MATERIAL MOVERS, HAND
+9630 .TRN-MACHINE FEEDERS AND OFFBEARERS
+9640 .TRN-PACKERS AND PACKAGERS, HAND
+9650 .TRN-PUMPING STATION OPERATORS
+9720 .TRN-REFUSE AND RECYCLABLE MATERIAL COLLECTORS
+9750 .TRN-MISCELLANEOUS MATERIAL MOVING WORKERS, INCLUDING
+.SHUTTLE CAR OPERATORS, AND TANK CAR, TRUCK, AND SHIP
+.LOADERS
+9800 .MIL-MILITARY OFFICER SPECIAL AND TACTICAL OPERATIONS
+.LEADERS/MANAGERS
+9810 .MIL-FIRST-LINE ENLISTED MILITARY SUPERVISORS/MANAGERS
+9820 .MIL-MILITARY ENLISTED TACTICAL OPERATIONS AND AIR/WEAPONS
+.SPECIALISTS AND CREW MEMBERS
+9830 .MIL-MILITARY, RANK NOT SPECIFIED **
+9920 .UNEMPLOYED, WITH NO WORK EXPERIENCE IN THE LAST 5 YEARS **
+PAOC
+
+1
+Presence
+b
+1
+2
+3
+4
+
+and age of own children
+.N/A (male/female under 16
+.With own children under 6
+.With own children 6 to 17
+.With own children under 6
+.No own children
+
+PERNP
+7
+Total person's earnings
+bbbbbbb
+0000000
+-009999
+-000001..-009998
+0000001
+
+years
+years
+years
+years
+
+old/GQ)
+only
+only
+and 6 to 17 years
+
+.N/A (less than 15 years old)
+.No earnings
+.Loss of $9999 or more
+.Loss $1 to $9998
+.$1 or breakeven
+
+0000002..9999999 .$2 to $9999999
+.(Rounded & top-coded components)
+PINCP
+7
+Total person's income (signed)
+bbbbbbb .N/A (less than 15 years old)
+0000000 .None
+-019998 .Loss of $19998 or more
+-000001..-019997 .Loss $1 to $19997
+0000001 .$1 or breakeven
+0000002..9999999 .$2 to $9999999
+.(Rounded & top-coded components)
+POBP
+
+3
+Place of birth (Recode)
+001 .Alabama/AL
+002 .Alaska/AK
+004 .Arizona/AZ
+005 .Arkansas/AR
+006 .California/CA
+008 .Colorado/CO
+009 .Connecticut/CT
+010 .Delaware/DE
+011 .District of Columbia/DC
+012 .Florida/FL
+013 .Georgia/GA
+015 .Hawaii/HI
+016 .Idaho/ID
+017 .Illinois/IL
+018 .Indiana/IN
+019 .Iowa/IA
+020 .Kansas/KS
+021 .Kentucky/KY
+022 .Louisiana/LA
+023 .Maine/ME
+024 .Maryland/MD
+025 .Massachusetts/MA
+026 .Michigan/MI
+027 .Minnesota/MN
+028 .Mississippi/MS
+029 .Missouri/MO
+030 .Montana/MT
+031 .Nebraska/NE
+032 .Nevada/NV
+033 .New Hampshire/NH
+034 .New Jersey/NJ
+035 .New Mexico/NM
+036 .New York/NY
+037 .North Carolina/NC
+038 .North Dakota/ND
+039 .Ohio/OH
+040 .Oklahoma/OK
+041 .Oregon/OR
+042 .Pennsylvania/PA
+044 .Rhode Island/RI
+045 .South Carolina/SC
+046 .South Dakota/SD
+047 .Tennessee/TN
+048 .Texas/TX
+049 .Utah/UT
+050 .Vermont/VT
+
+051
+053
+054
+055
+056
+060
+066
+072
+078
+100
+102
+103
+104
+105
+106
+108
+109
+110
+116
+117
+118
+119
+120
+126
+127
+128
+129
+130
+132
+134
+136
+137
+138
+139
+140
+142
+147
+148
+149
+150
+151
+152
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166
+169
+200
+202
+205
+206
+207
+209
+
+.Virginia/VA
+.Washington/WA
+.West Virginia/WV
+.Wisconsin/WI
+.Wyoming/WY
+.American Samoa
+.Guam
+.Puerto Rico
+.US Virgin Islands
+.Albania
+.Austria
+.Belgium
+.Bulgaria
+.Czechoslovakia
+.Denmark
+.Finland
+.France
+.Germany
+.Greece
+.Hungary
+.Iceland
+.Ireland
+.Italy
+.Netherlands
+.Norway
+.Poland
+.Portugal
+.Azores Islands
+.Romania
+.Spain
+.Sweden
+.Switzerland
+.United Kingdom, Not Specified
+.England
+.Scotland
+.Northern Ireland
+.Yugoslavia
+.Czech Republic
+.Slovakia
+.Bosnia and Herzegovina
+.Croatia
+.Macedonia
+.Estonia
+.Latvia
+.Lithuania
+.Armenia
+.Azerbaijan
+.Belarus
+.Georgia
+.Moldova
+.Russia
+.Ukraine
+.USSR
+.Europe, Not Specified
+.Other Europe, Not Specified
+.Afghanistan
+.Bangladesh
+.Myanmar
+.Cambodia
+.China
+.Hong Kong
+
+210
+211
+212
+213
+214
+215
+216
+217
+218
+222
+223
+224
+226
+229
+231
+233
+235
+236
+238
+239
+240
+242
+243
+246
+247
+248
+249
+251
+253
+254
+300
+301
+303
+310
+311
+312
+313
+314
+315
+316
+321
+323
+324
+327
+328
+329
+330
+332
+333
+338
+339
+340
+341
+343
+344
+360
+361
+362
+363
+364
+365
+
+.India
+.Indonesia
+.Iran
+.Iraq
+.Israel
+.Japan
+.Jordan
+.Korea
+.Kazakhstan
+.Kuwait
+.Laos
+.Lebanon
+.Malaysia
+.Nepal
+.Pakistan
+.Philippines
+.Saudi Arabia
+.Singapore
+.Sri Lanka
+.Syria
+.Taiwan
+.Thailand
+.Turkey
+.Uzbekistan
+.Vietnam
+.Yemen
+.Asia
+.Eastern Asia, Not Specified
+.Other South Central Asia, Not Specified
+.Other Asia, Not Specified
+.Bermuda
+.Canada
+.Mexico
+.Belize
+.Costa Rica
+.El Salvador
+.Guatemala
+.Honduras
+.Nicaragua
+.Panama
+.Antigua & Barbuda
+.Bahamas
+.Barbados
+.Cuba
+.Dominica
+.Dominican Republic
+.Grenada
+.Haiti
+.Jamaica
+.St. Kitts-Nevis
+.St. Lucia
+.St. Vincent & the Grenadines
+.Trinidad & Tobago
+.West Indies
+.Caribbean, Not Specified
+.Argentina
+.Bolivia
+.Brazil
+.Chile
+.Colombia
+.Ecuador
+
+368
+369
+370
+372
+373
+374
+399
+400
+407
+408
+414
+416
+417
+421
+423
+427
+429
+436
+440
+444
+447
+448
+449
+451
+453
+457
+461
+462
+463
+464
+467
+468
+501
+508
+512
+515
+523
+527
+554
+
+.Guyana
+.Paraguay
+.Peru
+.Uruguay
+.Venezuela
+.South America
+.Americas, Not Specified
+.Algeria
+.Cameroon
+.Cape Verde
+.Egypt
+.Ethiopia
+.Eritrea
+.Ghana
+.Guinea
+.Kenya
+.Liberia
+.Morocco
+.Nigeria
+.Senegal
+.Sierra Leone
+.Somalia
+.South Africa
+.Sudan
+.Tanzania
+.Uganda
+.Zimbabwe
+.Africa
+.Eastern Africa, Not Specified
+.Northern Africa, Not Specified
+.Western Africa, Not Specified
+.Other Africa, Not Specified
+.Australia
+.Fiji
+.Micronesia
+.New Zealand
+.Tonga
+.Samoa
+.Other US Island Areas, Oceania, Not Specified, or at Sea
+
+POVPIP
+3
+Person poverty status recode
+bbb .N/A
+000..500 .Percent of poverty status value
+501 .501 percent or more of poverty status value
+POWPUMA
+5
+Place of work PUMA
+bbbbb .N/A (not a worker--not in the labor force,
+.force, including persons under 16 years;
+.unemployed; civilian employed, with a job not
+.at work; Armed Forces, with a job but not at work)
+00001 .Did not work in the United States or in Puerto
+.Rico
+00100..08200 .Assigned Place of work PUMA.
+
+Use with POWSP.
+
+POWSP
+3
+Place of work - State or foreign country recode
+bbb .N/A (not a worker--not in the labor force,
+
+001
+002
+004
+005
+006
+008
+009
+010
+011
+012
+013
+015
+016
+017
+018
+019
+020
+021
+022
+023
+024
+025
+026
+027
+028
+029
+030
+031
+032
+033
+034
+035
+036
+037
+038
+039
+040
+041
+042
+044
+045
+046
+047
+048
+049
+050
+051
+053
+054
+055
+056
+072
+166
+213
+251
+254
+303
+399
+
+.including persons under 16 years; unemployed;
+.employed, with a job not at work; Armed Forces,
+.with a job but not at work)
+.Alabama/AL
+.Alaska/AK
+.Arizona/AZ
+.Arkansas/AR
+.California/CA
+.Colorado/CO
+.Connecticut/CT
+.Delaware/DE
+.District of Columbia/DC
+.Florida/FL
+.Georgia/GA
+.Hawaii/HI
+.Idaho/ID
+.Illinois/IL
+.Indiana/IN
+.Iowa/IA
+.Kansas/KS
+.Kentucky/KY
+.Louisiana/LA
+.Maine/ME
+.Maryland/MD
+.Massachusetts/MA
+.Michigan/MI
+.Minnesota/MN
+.Mississippi/MS
+.Missouri/MO
+.Montana/MT
+.Nebraska/NE
+.Nevada/NV
+.New Hampshire/NH
+.New Jersey/NJ
+.New Mexico/NM
+.New York/NY
+.North Carolina/NC
+.North Dakota/ND
+.Ohio/OH
+.Oklahoma/OK
+.Oregon/OR
+.Pennsylvania/PA
+.Rhode Island/RI
+.South Carolina/SC
+.South Dakota/SD
+.Tennessee/TN
+.Texas/TX
+.Utah/UT
+.Vermont/VT
+.Virginia/VA
+.Washington/WA
+.West Virginia/WV
+.Wisconsin/WI
+.Wyoming/WY
+.Puerto Rico
+.Europe
+.Iraq
+.Eastern Asia
+.Other Asia, Not Specified
+.Mexico
+.Americas, Not Specified
+
+555 .Other US Island Areas Not Specified, Africa, Oceania, at
+.Sea, or Abroad, Not Specified
+QTRBIR
+1
+Quarter of birth
+1 .January through March
+2 .April through June
+3 .July through September
+4 .October through December
+RAC1P
+1
+Recoded detailed race code
+1 .White alone
+2 .Black or African American alone
+3 .American Indian alone
+4 .Alaska Native alone
+5 .American Indian and Alaska Native tribes specified; or American
+.Indian or Alaska native, not specified and no other races
+6 .Asian alone
+7 .Native Hawaiian and Other Pacific Islander alone
+8 .Some other race alone
+9 .Two or more major race groups
+RAC2P
+2
+Recoded detailed race code
+01 .White alone
+02 .Black or African American alone
+03 .Apache alone
+04 .Blackfeet alone
+05 .Cherokee alone
+06 .Cheyenne alone
+07 .Chickasaw alone
+08 .Chippewa alone
+09 .Choctaw alone
+10 .Colville alone
+11 .Comanche alone
+12 .Creek alone
+13 .Crow alone
+14 .Delaware alone
+15 .Houma alone
+16 .Iroquois alone
+17 .Lumbee alone
+18 .Menominee alone
+19 .Navajo alone
+20 .Paiute alone
+21 .Pima alone
+22 .Potawatomi alone
+23 .Pueblo alone
+24 .Puget Sound Salish alone
+25 .Seminole alone
+26 .Sioux alone
+27 .Tohono O'Odham alone
+28 .Yakama alone
+29 .Yaqui alone
+30 .Yuman alone
+31 .Other specified American Indian tribes alone
+32 .Combinations of American Indian tribes only
+33 .American Indian or Alaska Native, tribe not specified, or
+.American Indian and Alaska Native
+34 .Alaska Athabascan alone
+35 .Aleut alone
+
+36 .Eskimo alone
+37 .Tlingit-Haida alone
+38 .Alaska Native tribes alone or in combination with other
+.Alaska Native tribes
+39 .American Indian and Alaska Native, not specified
+40 .Asian Indian alone
+41 .Bangladeshi alone
+42 .Cambodian alone
+43 .Chinese alone
+44 .Filipino alone
+45 .Hmong alone
+46 .Indonesian alone
+47 .Japanese alone
+48 .Korean alone
+49 .Laotian alone
+50 .Malaysian alone
+51 .Pakistani alone
+52 .Sri Lankan alone
+53 .Thai alone
+54 .Vietnamese alone
+55 .Other specified Asian alone
+56 .Asian, not specified
+57 .Combinations of Asian groups only
+58 .Native Hawaiian alone
+59 .Samoan alone
+60 .Tongan alone
+61 .Other Polynesian alone or in combination with other
+.Polynesian groups
+62 .Guamanian or Chamorro alone
+63 .Other Micronesian alone or in combination with other
+.Micronesian groups
+64 .Melanesian alone or in combination with other Melanesian
+.groups
+65 .Other Native Hawaiian and Other Pacific Islander groups
+.alone or in combination with other Native Hawaiian and Other
+.Pacific Islander groups only
+66 .Some other race alone
+67 .Two or more races
+RAC3P
+2
+Recoded detailed race code
+01 .Some other race alone
+02 .Other Pacific Islander alone
+03 .Samoan alone
+04 .Guamanian or Chamorro alone
+05 .Native Hawaiian alone
+06 .Native Hawaiian and Other Pacific Islander groups only
+07 .Other Asian; Some other race
+08 .Other Asian alone
+09 .Vietnamese alone
+10 .Korean alone
+11 .Japanese; Some other race
+12 .Japanese; Native Hawaiian
+13 .Japanese; Korean
+14 .Japanese alone
+15 .Filipino; Some other race
+16 .Filipino; Native Hawaiian
+17 .Filipino; Japanese
+18 .Filipino alone
+19 .Chinese; Some other race
+20 .Chinese; Native Hawaiian
+
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+
+.Chinese; Other Asian
+.Chinese; Vietnamese
+.Chinese; Japanese
+.Chinese; Filipino; Native Hawaiian
+.Chinese; Filipino
+.Chinese alone
+.Asian Indian; Some other race
+.Asian Indian; Other Asian
+.Asian Indian alone
+.Asian groups and/or Native Hawaiian and Other Pacific
+.Islander groups; Some other race
+.Asian groups; Native Hawaiian and Other Pacific Islander
+.groups
+.Asian groups only
+.American Indian and Alaska Native; Some other race
+.American Indian and Alaska Native alone
+.American Indian and Alaska Native race; Asian groups and/or
+.Native Hawaiian and Other Pacific Islander groups and/or
+.Some other race
+.Black or African American; Some other race
+.Black or African American; Other Asian
+.Black or African American; Korean
+.Black or African American; Japanese
+.Black or African American; Filipino
+.Black or African American; Chinese
+.Black or African American; Asian Indian
+.Black or African American; American Indian and Alaska Native
+.Black or African American alone
+.Black or African American race; Native Hawaiian and Other
+.Pacific Islander groups
+.Black or African American race; Asian groups and/or Native
+.Hawaiian and Other Pacific Islander groups and/or Some other
+.race
+.Black or African American race; American Indian and Alaska
+.Native race; Asian groups and/or Native Hawaiian and Other
+.Pacific Islander groups and/or Some other race
+.White; Some other race
+.White; Other Pacific Islander
+.White; Samoan
+.White; Guamanian or Chamorro
+.White; Native Hawaiian
+.White; Other Asian
+.White; Vietnamese
+.White; Korean
+.White; Japanese; Native Hawaiian
+.White; Japanese
+.White; Filipino; Native Hawaiian
+.White; Filipino
+.White; Chinese; Native Hawaiian
+.White; Chinese; Filipino; Native Hawaiian
+.White; Chinese
+.White; Asian Indian
+.White; American Indian and Alaska Native; Some other race
+.White; American Indian and Alaska Native
+.White; Black or African American; Some other race
+.White; Black or African American; American Indian and Alaska
+.Native
+.White; Black or African American
+.White alone
+.White race; two or more Asian groups
+.White race; Black or African American race and/or American
+
+.Indian and Alaska Native race and/or Asian groups and/or
+.Native Hawaiian and Other Pacific Islander groups
+72 .White race; Some other race; Black or African American race
+.and/or American Indian and Alaska Native race and/or Asian
+.groups and/or Native Hawaiian and Other Pacific Islander
+.groups
+RACAIAN
+1
+American Indian and Alaska Native recode (American Indian and
+Alaska Native alone or in combination with one or more other
+races)
+0 .No
+1 .Yes
+RACASN
+1
+Asian recode (Asian alone or in combination with one or more
+other races)
+0 .No
+1 .Yes
+RACBLK
+1
+Black or African American recode (Black alone or in
+combination with one or more other races)
+0 .No
+1 .Yes
+RACNHPI
+1
+Native Hawaiian and Other Pacific Islander recode (Native
+Hawaiian and Other Pacific Islander alone or in combination
+with one or more other races)
+0 .No
+1 .Yes
+RACNUM
+1
+Number of major race groups represented
+1..6 .Race groups
+RACSOR
+1
+Some other race recode (Some other race alone or in
+combination with one or more other races)
+0 .No
+1 .Yes
+RACWHT
+1
+White recode (White alone or in combination with one or more
+other races)
+0 .No
+1 .Yes
+RC
+
+1
+Related child
+0 .No (includes GQ)
+1 .Yes
+
+SFN
+
+1
+Subfamily number
+b .N/A (GQ/not in a subfamily)
+1 .In subfamily 1
+2 .In subfamily 2
+3 .In subfamily 3
+4 .In subfamily 4
+
+SFR
+
+1
+Subfamily relationship
+b .N/A (GQ/not in a subfamily)
+1 .Husband/wife no children
+2 .Husband/wife with children
+3 .Parent in a parent/child subfamily
+4 .Child in a married-couple subfamily
+5 .Child in a mother-child subfamily
+6 .Child in a father-child subfamily
+
+SOCP
+
+6
+SOC Occupation code
+bbbbbb .N/A (less than 16 years old/unemployed
+.who never worked/NILF who last worked
+.more than 5 years ago)
+111021 .MGR-GENERAL AND OPERATIONS MANAGERS
+1110XX .MGR-CHIEF EXECUTIVES AND LEGISLATORS *
+112011 .MGR-ADVERTISING AND PROMOTIONS MANAGERS
+112020 .MGR-MARKETING AND SALES MANAGERS
+112031 .MGR-PUBLIC RELATIONS MANAGERS
+113011 .MGR-ADMINISTRATIVE SERVICES MANAGERS
+113021 .MGR-COMPUTER AND INFORMATION SYSTEMS MANAGERS
+113031 .MGR-FINANCIAL MANAGERS
+113040 .MGR-HUMAN RESOURCES MANAGERS
+113051 .MGR-INDUSTRIAL PRODUCTION MANAGERS
+113061 .MGR-PURCHASING MANAGERS
+113071 .MGR-TRANSPORTATION, STORAGE, AND DISTRIBUTION MANAGERS
+119011 .MGR-FARM, RANCH, AND OTHER AGRICULTURAL MANAGERS
+119012 .MGR-FARMERS AND RANCHERS
+119021 .MGR-CONSTRUCTION MANAGERS
+119030 .MGR-EDUCATION ADMINISTRATORS
+119041 .MGR-ENGINEERING MANAGERS
+119051 .MGR-FOOD SERVICE MANAGERS
+119061 .MGR-FUNERAL DIRECTORS
+119071 .MGR-GAMING MANAGERS
+119081 .MGR-LODGING MANAGERS
+119111 .MGR-MEDICAL AND HEALTH SERVICES MANAGERS
+119121 .MGR-NATURAL SCIENCES MANAGERS
+119141 .MGR-PROPERTY, REAL ESTATE, AND COMMUNITY ASSOCIATION
+.MANAGERS
+119151 .MGR-SOCIAL AND COMMUNITY SERVICE MANAGERS
+1191XX .MGR-MISCELLANEOUS MANAGERS, INCLUDING POSTMASTERS AND MAIL
+.SUPERINTENDENTS
+131011 .BUS-AGENTS AND BUSINESS MANAGERS OF ARTISTS, PERFORMERS,
+.AND ATHLETES
+131021 .BUS-PURCHASING AGENTS AND BUYERS, FARM PRODUCTS
+131022 .BUS-WHOLESALE AND RETAIL BUYERS, EXCEPT FARM PRODUCTS
+131023 .BUS-PURCHASING AGENTS, EXCEPT WHOLESALE, RETAIL, AND FARM
+.PRODUCTS
+131030 .BUS-CLAIMS ADJUSTERS, APPRAISERS, EXAMINERS, AND
+.INVESTIGATORS
+131041 .BUS-COMPLIANCE OFFICERS, EXCEPT AGRICULTURE, CONSTRUCTION,
+.HEALTH AND SAFETY, AND TRANSPORTATION
+131051 .BUS-COST ESTIMATORS
+131070 .BUS-HUMAN RESOURCES, TRAINING, AND LABOR RELATIONS
+.SPECIALISTS
+131081 .BUS-LOGISTICIANS
+131111 .BUS-MANAGEMENT ANALYSTS
+131121 .BUS-MEETING AND CONVENTION PLANNERS
+131XXX .BUS-OTHER BUSINESS OPERATIONS SPECIALISTS *
+132011 .FIN-ACCOUNTANTS AND AUDITORS
+
+132021
+132031
+132041
+132051
+132052
+132053
+132061
+132070
+132081
+132082
+132099
+151021
+151030
+151041
+151061
+151071
+151081
+1510XX
+152011
+152031
+1520XX
+171010
+171020
+172011
+172041
+172051
+172061
+172070
+172081
+1720XX
+172110
+172121
+172131
+172141
+1721XX
+1721YY
+173010
+173020
+173031
+191010
+191020
+191030
+191040
+192010
+192021
+192030
+192040
+192099
+193011
+193020
+193030
+193051
+1930XX
+194011
+194021
+194031
+194041
+1940XX
+
+.FIN-APPRAISERS AND ASSESSORS OF REAL ESTATE
+.FIN-BUDGET ANALYSTS
+.FIN-CREDIT ANALYSTS
+.FIN-FINANCIAL ANALYSTS
+.FIN-PERSONAL FINANCIAL ADVISORS
+.FIN-INSURANCE UNDERWRITERS
+.FIN-FINANCIAL EXAMINERS
+.FIN-LOAN COUNSELORS AND OFFICERS
+.FIN-TAX EXAMINERS, COLLECTORS, AND REVENUE AGENTS
+.FIN-TAX PREPARERS
+.FIN-FINANCIAL SPECIALISTS, ALL OTHER
+.CMM-COMPUTER PROGRAMMERS
+.CMM-COMPUTER SOFTWARE ENGINEERS
+.CMM-COMPUTER SUPPORT SPECIALISTS
+.CMM-DATABASE ADMINISTRATORS
+.CMM-NETWORK AND COMPUTER SYSTEMS ADMINISTRATORS
+.CMM-NETWORK SYSTEMS AND DATA COMMUNICATIONS ANALYSTS
+.CMM-COMPUTER SCIENTISTS AND SYSTEMS ANALYSTS *
+.CMM-ACTUARIES
+.CMM-OPERATIONS RESEARCH ANALYSTS
+.CMM-MISCELLANEOUS MATHEMATICAL SCIENCE OCCUPATIONS,
+.INCLUDING MATHEMATICIANS AND STATISTICIANS *
+.ENG-ARCHITECTS, EXCEPT NAVAL
+.ENG-SURVEYORS, CARTOGRAPHERS, AND PHOTOGRAMMETRISTS
+.ENG-AEROSPACE ENGINEERS
+.ENG-CHEMICAL ENGINEERS
+.ENG-CIVIL ENGINEERS
+.ENG-COMPUTER HARDWARE ENGINEERS
+.ENG-ELECTRICAL AND ELECTRONICS ENGINEERS
+.ENG-ENVIRONMENTAL ENGINEERS
+.ENG-BIOMEDICAL AND AGRICULTURAL ENGINEERS *
+.ENG-INDUSTRIAL ENGINEERS, INCLUDING HEALTH AND SAFETY
+.ENG-MARINE ENGINEERS AND NAVAL ARCHITECTS
+.ENG-MATERIALS ENGINEERS
+.ENG-MECHANICAL ENGINEERS
+.ENG-PETROLEUM, MINING AND GEOLOGICAL ENGINEERS, INCLUDING
+.MINING SAFETY ENGINEERS *
+.ENG-MISCELLANEOUS ENGINEERS, INCLUDING NUCLEAR ENGINEERS *
+.ENG-DRAFTERS
+.ENG-ENGINEERING TECHNICIANS, EXCEPT DRAFTERS
+.ENG-SURVEYING AND MAPPING TECHNICIANS
+.SCI-AGRICULTURAL AND FOOD SCIENTISTS
+.SCI-BIOLOGICAL SCIENTISTS
+.SCI-CONSERVATION SCIENTISTS AND FORESTERS
+.SCI-MEDICAL SCIENTISTS
+.SCI-ASTRONOMERS AND PHYSICISTS
+.SCI-ATMOSPHERIC AND SPACE SCIENTISTS
+.SCI-CHEMISTS AND MATERIALS SCIENTISTS
+.SCI-ENVIRONMENTAL SCIENTISTS AND GEOSCIENTISTS
+.SCI-PHYSICAL SCIENTISTS, ALL OTHER
+.SCI-ECONOMISTS
+.SCI-MARKET AND SURVEY RESEARCHERS
+.SCI-PSYCHOLOGISTS
+.SCI-URBAN AND REGIONAL PLANNERS
+.SCI-MISCELLANEOUS SOCIAL SCIENTISTS, INCLUDING SOCIOLOGISTS
+.*
+.SCI-AGRICULTURAL AND FOOD SCIENCE TECHNICIANS
+.SCI-BIOLOGICAL TECHNICIANS
+.SCI-CHEMICAL TECHNICIANS
+.SCI-GEOLOGICAL AND PETROLEUM TECHNICIANS
+.SCI-MISCELLANEOUS LIFE, PHYSICAL, AND SOCIAL SCIENCE
+
+211010
+211020
+211090
+212011
+212021
+212099
+2310XX
+232011
+232090
+251000
+252010
+252020
+252030
+252040
+253000
+254010
+254021
+254031
+259041
+2590XX
+271010
+271020
+272011
+272012
+272020
+272030
+272040
+272099
+273010
+273020
+273031
+273041
+273042
+273043
+273090
+274021
+274030
+2740XX
+291011
+291020
+291031
+291041
+291051
+291060
+291071
+291081
+291111
+291121
+291122
+291123
+291124
+291125
+291126
+291127
+
+.TECHNICIANS, INCLUDING SOCIAL SCIENCE RESEARCH ASSISTANTS
+.AND NUCLEAR TECHNICIANS *
+.CMS-COUNSELORS
+.CMS-SOCIAL WORKERS
+.CMS-MISCELLANEOUS COMMUNITY AND SOCIAL SERVICE SPECIALISTS
+.CMS-CLERGY
+.CMS-DIRECTORS, RELIGIOUS ACTIVITIES AND EDUCATION
+.CMS-RELIGIOUS WORKERS, ALL OTHER
+.LGL-LAWYERS AND JUDGES, MAGISTRATES, AND OTHER JUDICIAL
+.WORKERS
+.LGL-PARALEGALS AND LEGAL ASSISTANTS
+.LGL-MISCELLANEOUS LEGAL SUPPORT WORKERS
+.EDU-POSTSECONDARY TEACHERS
+.EDU-PRESCHOOL AND KINDERGARTEN TEACHERS
+.EDU-ELEMENTARY AND MIDDLE SCHOOL TEACHERS
+.EDU-SECONDARY SCHOOL TEACHERS
+.EDU-SPECIAL EDUCATION TEACHERS
+.EDU-OTHER TEACHERS AND INSTRUCTORS
+.EDU-ARCHIVISTS, CURATORS, AND MUSEUM TECHNICIANS
+.EDU-LIBRARIANS
+.EDU-LIBRARY TECHNICIANS
+.EDU-TEACHER ASSISTANTS
+.EDU-OTHER EDUCATION, TRAINING, AND LIBRARY WORKERS *
+.ENT-ARTISTS AND RELATED WORKERS
+.ENT-DESIGNERS
+.ENT-ACTORS
+.ENT-PRODUCERS AND DIRECTORS
+.ENT-ATHLETES, COACHES, UMPIRES, AND RELATED WORKERS
+.ENT-DANCERS AND CHOREOGRAPHERS
+.ENT-MUSICIANS, SINGERS, AND RELATED WORKERS
+.ENT-ENTERTAINERS AND PERFORMERS, SPORTS AND RELATED
+.WORKERS, ALL OTHER
+.ENT-ANNOUNCERS
+.ENT-NEWS ANALYSTS, REPORTERS AND CORRESPONDENTS
+.ENT-PUBLIC RELATIONS SPECIALISTS
+.ENT-EDITORS
+.ENT-TECHNICAL WRITERS
+.ENT-WRITERS AND AUTHORS
+.ENT-MISCELLANEOUS MEDIA AND COMMUNICATION WORKERS
+.ENT-PHOTOGRAPHERS
+.ENT-TELEVISION, VIDEO, AND MOTION PICTURE CAMERA OPERATORS
+.AND EDITORS
+.ENT-BROADCAST AND SOUND ENGINEERING TECHNICIANS AND RADIO
+.OPERATORS, AND MEDIA AND COMMUNICATION EQUIPMENT WORKERS,
+.ALL OTHER *
+.MED-CHIROPRACTORS
+.MED-DENTISTS
+.MED-DIETITIANS AND NUTRITIONISTS
+.MED-OPTOMETRISTS
+.MED-PHARMACISTS
+.MED-PHYSICIANS AND SURGEONS
+.MED-PHYSICIAN ASSISTANTS
+.MED-PODIATRISTS
+.MED-REGISTERED NURSES
+.MED-AUDIOLOGISTS
+.MED-OCCUPATIONAL THERAPISTS
+.MED-PHYSICAL THERAPISTS
+.MED-RADIATION THERAPISTS
+.MED-RECREATIONAL THERAPISTS
+.MED-RESPIRATORY THERAPISTS
+.MED-SPEECH-LANGUAGE PATHOLOGISTS
+
+291129
+291131
+291199
+292010
+292021
+292030
+292041
+292050
+292061
+292071
+292081
+292090
+299000
+311010
+312010
+312020
+319011
+319091
+31909X
+331011
+331012
+331021
+331099
+332011
+332020
+333010
+333021
+333050
+3330XX
+339011
+339021
+339030
+339091
+33909X
+351011
+351012
+352010
+352021
+353011
+353021
+353022
+353031
+353041
+359021
+359031
+3590XX
+371011
+371012
+
+.MED-THERAPISTS, ALL OTHER
+.MED-VETERINARIANS
+.MED-HEALTH DIAGNOSING AND TREATING PRACTITIONERS, ALL OTHER
+.MED-CLINICAL LABORATORY TECHNOLOGISTS AND TECHNICIANS
+.MED-DENTAL HYGIENISTS
+.MED-DIAGNOSTIC RELATED TECHNOLOGISTS AND TECHNICIANS
+.MED-EMERGENCY MEDICAL TECHNICIANS AND PARAMEDICS
+.MED-HEALTH DIAGNOSING AND TREATING PRACTITIONER SUPPORT
+.TECHNICIANS
+.MED-LICENSED PRACTICAL AND LICENSED VOCATIONAL NURSES
+.MED-MEDICAL RECORDS AND HEALTH INFORMATION TECHNICIANS
+.MED-OPTICIANS, DISPENSING
+.MED-MISCELLANEOUS HEALTH TECHNOLOGISTS AND TECHNICIANS
+.MED-OTHER HEALTHCARE PRACTITIONERS AND TECHNICAL
+.OCCUPATIONS
+.HLS-NURSING, PSYCHIATRIC, AND HOME HEALTH AIDES
+.HLS-OCCUPATIONAL THERAPIST ASSISTANTS AND AIDES
+.HLS-PHYSICAL THERAPIST ASSISTANTS AND AIDES
+.HLS-MASSAGE THERAPISTS
+.HLS-DENTAL ASSISTANTS
+.HLS-MEDICAL ASSISTANTS AND OTHER HEALTHCARE SUPPORT
+.OCCUPATIONS, EXCEPT DENTAL ASSISTANTS *
+.PRT-FIRST-LINE SUPERVISORS/MANAGERS OF CORRECTIONAL
+.OFFICERS
+.PRT-FIRST-LINE SUPERVISORS/MANAGERS OF POLICE AND
+.DETECTIVES
+.PRT-FIRST-LINE SUPERVISORS/MANAGERS OF FIRE FIGHTING AND
+.PREVENTION WORKERS
+.PRT-SUPERVISORS, PROTECTIVE SERVICE WORKERS, ALL OTHER
+.PRT-FIRE FIGHTERS
+.PRT-FIRE INSPECTORS
+.PRT-BAILIFFS, CORRECTIONAL OFFICERS, AND JAILERS
+.PRT-DETECTIVES AND CRIMINAL INVESTIGATORS
+.PRT-POLICE OFFICERS
+.PRT-MISCELLANEOUS LAW ENFORCEMENT WORKERS *
+.PRT-ANIMAL CONTROL WORKERS
+.PRT-PRIVATE DETECTIVES AND INVESTIGATORS
+.PRT-SECURITY GUARDS AND GAMING SURVEILLANCE OFFICERS
+.PRT-CROSSING GUARDS
+.PRT-LIFEGUARDS AND OTHER PROTECTIVE SERVICE WORKERS *
+.EAT-CHEFS AND HEAD COOKS
+.EAT-FIRST-LINE SUPERVISORS/MANAGERS OF FOOD PREPARATION AND
+.SERVING WORKERS
+.EAT-COOKS
+.EAT-FOOD PREPARATION WORKERS
+.EAT-BARTENDERS
+.EAT-COMBINED FOOD PREPARATION AND SERVING WORKERS,
+.INCLUDING FAST FOOD
+.EAT-COUNTER ATTENDANTS, CAFETERIA, FOOD CONCESSION, AND
+.COFFEE SHOP
+.EAT-WAITERS AND WAITRESSES
+.EAT-FOOD SERVERS, NONRESTAURANT
+.EAT-DISHWASHERS
+.EAT-HOSTS AND HOSTESSES, RESTAURANT, LOUNGE, AND COFFEE
+.SHOP
+.EAT-MISCELLANEOUS FOOD PREPARATION AND SERVING RELATED
+.WORKERS, INCLUDING DINING ROOM AND CAFETERIA ATTENDANTS AND
+.BARTENDER HELPERS *
+.CLN-FIRST-LINE SUPERVISORS/MANAGERS OF HOUSEKEEPING AND
+.JANITORIAL WORKERS
+.CLN-FIRST-LINE SUPERVISORS/MANAGERS OF LANDSCAPING, LAWN
+
+372012
+37201X
+372021
+373010
+391010
+391021
+392011
+392021
+393010
+393021
+393031
+393090
+394000
+395011
+395012
+395090
+396010
+396020
+396030
+399011
+399021
+399030
+399041
+399099
+411011
+411012
+412010
+412021
+412022
+412031
+413011
+413021
+413031
+413041
+413099
+414010
+419010
+419020
+419031
+419041
+419091
+419099
+431011
+432011
+432021
+432099
+433011
+433021
+433031
+433041
+433051
+433061
+433071
+434011
+
+.SERVICE, AND GROUNDSKEEPING WORKERS
+.CLN-MAIDS AND HOUSEKEEPING CLEANERS
+.CLN-JANITORS AND BUILDING CLEANERS *
+.CLN-PEST CONTROL WORKERS
+.CLN-GROUNDS MAINTENANCE WORKERS
+.PRS-FIRST-LINE SUPERVISORS/MANAGERS OF GAMING WORKERS
+.PRS-FIRST-LINE SUPERVISORS/MANAGERS OF PERSONAL SERVICE
+.WORKERS
+.PRS-ANIMAL TRAINERS
+.PRS-NONFARM ANIMAL CARETAKERS
+.PRS-GAMING SERVICES WORKERS
+.PRS-MOTION PICTURE PROJECTIONISTS
+.PRS-USHERS, LOBBY ATTENDANTS, AND TICKET TAKERS
+.PRS-MISCELLANEOUS ENTERTAINMENT ATTENDANTS AND RELATED
+.WORKERS
+.PRS-FUNERAL SERVICE WORKERS
+.PRS-BARBERS
+.PRS-HAIRDRESSERS, HAIRSTYLISTS, AND COSMETOLOGISTS
+.PRS-MISCELLANEOUS PERSONAL APPEARANCE WORKERS
+.PRS-BAGGAGE PORTERS, BELLHOPS, AND CONCIERGES
+.PRS-TOUR AND TRAVEL GUIDES
+.PRS-TRANSPORTATION ATTENDANTS
+.PRS-CHILD CARE WORKERS
+.PRS-PERSONAL AND HOME CARE AIDES
+.PRS-RECREATION AND FITNESS WORKERS
+.PRS-RESIDENTIAL ADVISORS
+.PRS-PERSONAL CARE AND SERVICE WORKERS, ALL OTHER
+.SAL-FIRST-LINE SUPERVISORS/MANAGERS OF RETAIL SALES WORKERS
+.SAL-FIRST-LINE SUPERVISORS/MANAGERS OF NON-RETAIL SALES
+.WORKERS
+.SAL-CASHIERS
+.SAL-COUNTER AND RENTAL CLERKS
+.SAL-PARTS SALESPERSONS
+.SAL-RETAIL SALESPERSONS
+.SAL-ADVERTISING SALES AGENTS
+.SAL-INSURANCE SALES AGENTS
+.SAL-SECURITIES, COMMODITIES, AND FINANCIAL SERVICES SALES
+.AGENTS
+.SAL-TRAVEL AGENTS
+.SAL-SALES REPRESENTATIVES, SERVICES, ALL OTHER
+.SAL-SALES REPRESENTATIVES, WHOLESALE AND MANUFACTURING
+.SAL-MODELS, DEMONSTRATORS, AND PRODUCT PROMOTERS
+.SAL-REAL ESTATE BROKERS AND SALES AGENTS
+.SAL-SALES ENGINEERS
+.SAL-TELEMARKETERS
+.SAL-DOOR-TO-DOOR SALES WORKERS, NEWS AND STREET VENDORS,
+.AND RELATED WORKERS
+.SAL-SALES AND RELATED WORKERS, ALL OTHER
+.OFF-FIRST-LINE SUPERVISORS/MANAGERS OF OFFICE AND
+.ADMINISTRATIVE SUPPORT WORKERS
+.OFF-SWITCHBOARD OPERATORS, INCLUDING ANSWERING SERVICE
+.OFF-TELEPHONE OPERATORS
+.OFF-COMMUNICATIONS EQUIPMENT OPERATORS, ALL OTHER
+.OFF-BILL AND ACCOUNT COLLECTORS
+.OFF-BILLING AND POSTING CLERKS AND MACHINE OPERATORS
+.OFF-BOOKKEEPING, ACCOUNTING, AND AUDITING CLERKS
+.OFF-GAMING CAGE WORKERS
+.OFF-PAYROLL AND TIMEKEEPING CLERKS
+.OFF-PROCUREMENT CLERKS
+.OFF-TELLERS
+.OFF-BROKERAGE CLERKS
+
+434031
+434041
+434051
+434061
+434071
+434081
+434111
+434121
+434131
+434141
+434161
+434171
+434181
+434199
+434XXX
+435011
+435021
+435030
+435041
+435051
+435052
+435053
+435061
+435071
+435081
+435111
+436010
+439011
+439021
+439022
+439041
+439051
+439061
+439071
+439081
+439111
+439XXX
+451010
+452011
+452041
+4520XX
+453000
+454011
+454020
+471011
+472011
+472020
+472031
+472040
+472050
+472061
+472071
+
+.OFF-COURT, MUNICIPAL, AND LICENSE CLERKS
+.OFF-CREDIT AUTHORIZERS, CHECKERS, AND CLERKS
+.OFF-CUSTOMER SERVICE REPRESENTATIVES
+.OFF-ELIGIBILITY INTERVIEWERS, GOVERNMENT PROGRAMS
+.OFF-FILE CLERKS
+.OFF-HOTEL, MOTEL, AND RESORT DESK CLERKS
+.OFF-INTERVIEWERS, EXCEPT ELIGIBILITY AND LOAN
+.OFF-LIBRARY ASSISTANTS, CLERICAL
+.OFF-LOAN INTERVIEWERS AND CLERKS
+.OFF-NEW ACCOUNTS CLERKS
+.OFF-HUMAN RESOURCES ASSISTANTS, EXCEPT PAYROLL AND
+.TIMEKEEPING
+.OFF-RECEPTIONISTS AND INFORMATION CLERKS
+.OFF-RESERVATION AND TRANSPORTATION TICKET AGENTS AND TRAVEL
+.CLERKS
+.OFF-INFORMATION AND RECORD CLERKS, ALL OTHER
+.OFF-CORRESPONDENCE CLERKS AND ORDER CLERKS *
+.OFF-CARGO AND FREIGHT AGENTS
+.OFF-COURIERS AND MESSENGERS
+.OFF-DISPATCHERS
+.OFF-METER READERS, UTILITIES
+.OFF-POSTAL SERVICE CLERKS
+.OFF-POSTAL SERVICE MAIL CARRIERS
+.OFF-POSTAL SERVICE MAIL SORTERS, PROCESSORS, AND PROCESSING
+.MACHINE OPERATORS
+.OFF-PRODUCTION, PLANNING, AND EXPEDITING CLERKS
+.OFF-SHIPPING, RECEIVING, AND TRAFFIC CLERKS
+.OFF-STOCK CLERKS AND ORDER FILLERS
+.OFF-WEIGHERS, MEASURERS, CHECKERS, AND SAMPLERS,
+.RECORDKEEPING
+.OFF-SECRETARIES AND ADMINISTRATIVE ASSISTANTS
+.OFF-COMPUTER OPERATORS
+.OFF-DATA ENTRY KEYERS
+.OFF-WORD PROCESSORS AND TYPISTS
+.OFF-INSURANCE CLAIMS AND POLICY PROCESSING CLERKS
+.OFF-MAIL CLERKS AND MAIL MACHINE OPERATORS, EXCEPT POSTAL
+.SERVICE
+.OFF-OFFICE CLERKS, GENERAL
+.OFF-OFFICE MACHINE OPERATORS, EXCEPT COMPUTER
+.OFF-PROOFREADERS AND COPY MARKERS
+.OFF-STATISTICAL ASSISTANTS
+.OFF-MISCELLANEOUS OFFICE AND ADMINISTRATIVE SUPPORT
+.WORKERS, INCLUDING DESKTOP PUBLISHERS *
+.FFF-FIRST-LINE SUPERVISORS/MANAGERS OF FARMING, FISHING,
+.AND FORESTRY WORKERS
+.FFF-AGRICULTURAL INSPECTORS
+.FFF-GRADERS AND SORTERS, AGRICULTURAL PRODUCTS
+.FFF-MISCELLANEOUS AGRICULTURAL WORKERS, INCLUDING ANIMAL
+.BREEDERS *
+.FFF-FISHING AND HUNTING WORKERS
+.FFF-FOREST AND CONSERVATION WORKERS
+.FFF-LOGGING WORKERS
+.CON-FIRST-LINE SUPERVISORS/MANAGERS OF CONSTRUCTION TRADES
+.AND EXTRACTION WORKERS
+.CON-BOILERMAKERS
+.CON-BRICKMASONS, BLOCKMASONS, AND STONEMASONS
+.CON-CARPENTERS
+.CON-CARPET, FLOOR, AND TILE INSTALLERS AND FINISHERS
+.CON-CEMENT MASONS, CONCRETE FINISHERS, AND TERRAZZO WORKERS
+.CON-CONSTRUCTION LABORERS
+.CON-PAVING, SURFACING, AND TAMPING EQUIPMENT OPERATORS
+
+47207X .CON-CONSTRUCTION EQUIPMENT OPERATORS, EXCEPT PAVING,
+.SURFACING, AND TAMPING EQUIPMENT OPERATORS *
+472080 .CON-DRYWALL INSTALLERS, CEILING TILE INSTALLERS, AND TAPERS
+472111 .CON-ELECTRICIANS
+472121 .CON-GLAZIERS
+472130 .CON-INSULATION WORKERS
+472141 .CON-PAINTERS, CONSTRUCTION AND MAINTENANCE
+472142 .CON-PAPERHANGERS
+472150 .CON-PIPELAYERS, PLUMBERS, PIPEFITTERS, AND STEAMFITTERS
+472161 .CON-PLASTERERS AND STUCCO MASONS
+472171 .CON-REINFORCING IRON AND REBAR WORKERS
+472181 .CON-ROOFERS
+472211 .CON-SHEET METAL WORKERS
+472221 .CON-STRUCTURAL IRON AND STEEL WORKERS
+473010 .CON-HELPERS, CONSTRUCTION TRADES
+474011 .CON-CONSTRUCTION AND BUILDING INSPECTORS
+474021 .CON-ELEVATOR INSTALLERS AND REPAIRERS
+474031 .CON-FENCE ERECTORS
+474041 .CON-HAZARDOUS MATERIALS REMOVAL WORKERS
+474051 .CON-HIGHWAY MAINTENANCE WORKERS
+474061 .CON-RAIL-TRACK LAYING AND MAINTENANCE EQUIPMENT OPERATORS
+4740XX .CON-MISCELLANEOUS CONSTRUCTION WORKERS, INCLUDING SEPTIC
+.TANK SERVICERS AND SEWER PIPE CLEANERS *
+475021 .EXT-EARTH DRILLERS, EXCEPT OIL AND GAS
+475031 .EXT-EXPLOSIVES WORKERS, ORDNANCE HANDLING EXPERTS, AND
+.BLASTERS
+475040 .EXT-MINING MACHINE OPERATORS
+4750XX .EXT-MISCELLANEOUS EXTRACTION WORKERS, INCLUDING ROOF
+.BOLTERS AND HELPERS *
+4750YY .EXT-DERRICK, ROTARY DRILL, AND SERVICE UNIT OPERATORS, AND
+.ROUSTABOUTS, OIL, GAS, AND MINING *
+491011 .RPR-FIRST-LINE SUPERVISORS/MANAGERS OF MECHANICS,
+.INSTALLERS, AND REPAIRERS
+492011 .RPR-COMPUTER, AUTOMATED TELLER, AND OFFICE MACHINE
+.REPAIRERS
+492020 .RPR-RADIO AND TELECOMMUNICATIONS EQUIPMENT INSTALLERS AND
+.REPAIRERS
+492091 .RPR-AVIONICS TECHNICIANS
+492092 .RPR-ELECTRIC MOTOR, POWER TOOL, AND RELATED REPAIRERS
+492096 .RPR-ELECTRONIC EQUIPMENT INSTALLERS AND REPAIRERS, MOTOR
+.VEHICLES
+492097 .RPR-ELECTRONIC HOME ENTERTAINMENT EQUIPMENT INSTALLERS AND
+.REPAIRERS
+492098 .RPR-SECURITY AND FIRE ALARM SYSTEMS INSTALLERS
+49209X .RPR-ELECTRICAL AND ELECTRONICS REPAIRERS, TRANSPORTATION
+.EQUIPMENT, AND INDUSTRIAL AND UTILITY *
+493011 .RPR-AIRCRAFT MECHANICS AND SERVICE TECHNICIANS
+493021 .RPR-AUTOMOTIVE BODY AND RELATED REPAIRERS
+493022 .RPR-AUTOMOTIVE GLASS INSTALLERS AND REPAIRERS
+493023 .RPR-AUTOMOTIVE SERVICE TECHNICIANS AND MECHANICS
+493031 .RPR-BUS AND TRUCK MECHANICS AND DIESEL ENGINE SPECIALISTS
+493040 .RPR-HEAVY VEHICLE AND MOBILE EQUIPMENT SERVICE TECHNICIANS
+.AND MECHANICS
+493050 .RPR-SMALL ENGINE MECHANICS
+493090 .RPR-MISCELLANEOUS VEHICLE AND MOBILE EQUIPMENT MECHANICS,
+.INSTALLERS, AND REPAIRERS
+499010 .RPR-CONTROL AND VALVE INSTALLERS AND REPAIRERS
+499021 .RPR-HEATING, AIR CONDITIONING, AND REFRIGERATION MECHANICS
+.AND INSTALLERS
+499031 .RPR-HOME APPLIANCE REPAIRERS
+499042 .RPR-MAINTENANCE AND REPAIR WORKERS, GENERAL
+
+499043
+499044
+49904X
+499051
+499052
+499060
+499091
+499094
+499095
+499096
+499098
+49909X
+511011
+512011
+512020
+512031
+512041
+512090
+513011
+513020
+513091
+513092
+513093
+514010
+514021
+514022
+514023
+514031
+514032
+514033
+514034
+514041
+514050
+514060
+514070
+514111
+514120
+514191
+514193
+514194
+514XXX
+
+.RPR-MAINTENANCE WORKERS, MACHINERY
+.RPR-MILLWRIGHTS
+.RPR-INDUSTRIAL AND REFRACTORY MACHINERY MECHANICS *
+.RPR-ELECTRICAL POWER-LINE INSTALLERS AND REPAIRERS
+.RPR-TELECOMMUNICATIONS LINE INSTALLERS AND REPAIRERS
+.RPR-PRECISION INSTRUMENT AND EQUIPMENT REPAIRERS
+.RPR-COIN, VENDING, AND AMUSEMENT MACHINE SERVICERS AND
+.REPAIRERS
+.RPR-LOCKSMITHS AND SAFE REPAIRERS
+.RPR-MANUFACTURED BUILDING AND MOBILE HOME INSTALLERS
+.RPR-RIGGERS
+.RPR-HELPERS--INSTALLATION, MAINTENANCE, AND REPAIR WORKERS
+.RPR-OTHER INSTALLATION, MAINTENANCE, AND REPAIR WORKERS,
+.INCLUDING COMMERCIAL DIVERS, AND SIGNAL AND TRACK SWITCH
+.REPAIRERS *
+.PRD-FIRST-LINE SUPERVISORS/MANAGERS OF PRODUCTION AND
+.OPERATING WORKERS
+.PRD-AIRCRAFT STRUCTURE, SURFACES, RIGGING, AND SYSTEMS
+.ASSEMBLERS
+.PRD-ELECTRICAL, ELECTRONICS, AND ELECTROMECHANICAL
+.ASSEMBLERS
+.PRD-ENGINE AND OTHER MACHINE ASSEMBLERS
+.PRD-STRUCTURAL METAL FABRICATORS AND FITTERS
+.PRD-MISCELLANEOUS ASSEMBLERS AND FABRICATORS
+.PRD-BAKERS
+.PRD-BUTCHERS AND OTHER MEAT, POULTRY, AND FISH PROCESSING
+.WORKERS
+.PRD-FOOD AND TOBACCO ROASTING, BAKING, AND DRYING MACHINE
+.OPERATORS AND TENDERS
+.PRD-FOOD BATCHMAKERS
+.PRD-FOOD COOKING MACHINE OPERATORS AND TENDERS
+.PRD-COMPUTER CONTROL PROGRAMMERS AND OPERATORS
+.PRD-EXTRUDING AND DRAWING MACHINE SETTERS, OPERATORS, AND
+.TENDERS, METAL AND PLASTIC
+.PRD-FORGING MACHINE SETTERS, OPERATORS, AND TENDERS, METAL
+.AND PLASTIC
+.PRD-ROLLING MACHINE SETTERS, OPERATORS, AND TENDERS, METAL
+.AND PLASTIC
+.PRD-CUTTING, PUNCHING, AND PRESS MACHINE SETTERS,
+.OPERATORS, AND TENDERS, METAL AND PLASTIC
+.PRD-DRILLING AND BORING MACHINE TOOL SETTERS, OPERATORS,
+.AND TENDERS, METAL AND PLASTIC
+.PRD-GRINDING, LAPPING, POLISHING, AND BUFFING MACHINE TOOL
+.SETTERS, OPERATORS, AND TENDERS, METAL AND PLASTIC
+.PRD-LATHE AND TURNING MACHINE TOOL SETTERS, OPERATORS, AND
+.TENDERS, METAL AND PLASTIC
+.PRD-MACHINISTS
+.PRD-METAL FURNACE AND KILN OPERATORS AND TENDERS
+.PRD-MODEL MAKERS AND PATTERNMAKERS, METAL AND PLASTIC
+.PRD-MOLDERS AND MOLDING MACHINE SETTERS, OPERATORS, AND
+.TENDERS, METAL AND PLASTIC
+.PRD-TOOL AND DIE MAKERS
+.PRD-WELDING, SOLDERING, AND BRAZING WORKERS
+.PRD-HEAT TREATING EQUIPMENT SETTERS, OPERATORS, AND
+.TENDERS, METAL AND PLASTIC
+.PRD-PLATING AND COATING MACHINE SETTERS, OPERATORS, AND
+.TENDERS, METAL AND PLASTIC
+.PRD-TOOL GRINDERS, FILERS, AND SHARPENERS
+.PRD-MISCELLANEOUS METAL WORKERS AND PLASTIC WORKERS,
+.INCLUDING MILLING AND PLANING MACHINE SETTERS, AND MULTIPLE
+.MACHINE TOOL SETTERS, AND LAY-OUT WORKERS *
+
+515010
+515021
+515022
+515023
+516011
+516021
+516031
+516041
+516042
+516050
+516063
+516064
+51606X
+516093
+51609X
+517011
+517021
+517041
+517042
+5170XX
+518010
+518021
+518031
+518090
+519010
+519020
+519030
+519041
+519051
+519061
+519071
+519080
+519111
+519120
+519130
+519191
+519192
+519194
+519195
+519196
+519197
+519198
+5191XX
+531000
+532010
+532020
+
+.PRD-BOOKBINDERS AND BINDERY WORKERS
+.PRD-JOB PRINTERS
+.PRD-PREPRESS TECHNICIANS AND WORKERS
+.PRD-PRINTING MACHINE OPERATORS
+.PRD-LAUNDRY AND DRY-CLEANING WORKERS
+.PRD-PRESSERS, TEXTILE, GARMENT, AND RELATED MATERIALS
+.PRD-SEWING MACHINE OPERATORS
+.PRD-SHOE AND LEATHER WORKERS AND REPAIRERS
+.PRD-SHOE MACHINE OPERATORS AND TENDERS
+.PRD-TAILORS, DRESSMAKERS, AND SEWERS
+.PRD-TEXTILE KNITTING AND WEAVING MACHINE SETTERS,
+.OPERATORS, AND TENDERS
+.PRD-TEXTILE WINDING, TWISTING, AND DRAWING OUT MACHINE
+.SETTERS, OPERATORS, AND TENDERS
+.PRD-TEXTILE BLEACHING AND DYEING, AND CUTTING MACHINE
+.SETTERS, OPERATORS, AND TENDERS *
+.PRD-UPHOLSTERERS
+.PRD-MISCELLANEOUS TEXTILE, APPAREL, AND FURNISHINGS
+.WORKERS, EXCEPT UPHOLSTERERS *
+.PRD-CABINETMAKERS AND BENCH CARPENTERS
+.PRD-FURNITURE FINISHERS
+.PRD-SAWING MACHINE SETTERS, OPERATORS, AND TENDERS, WOOD
+.PRD-WOODWORKING MACHINE SETTERS, OPERATORS, AND TENDERS,
+.EXCEPT SAWING
+.PRD-MISCELLANEOUS WOODWORKERS, INCLUDING MODEL MAKERS AND
+.PATTERNMAKERS *
+.PRD-POWER PLANT OPERATORS, DISTRIBUTORS, AND DISPATCHERS
+.PRD-STATIONARY ENGINEERS AND BOILER OPERATORS
+.PRD-WATER AND LIQUID WASTE TREATMENT PLANT AND SYSTEM
+.OPERATORS
+.PRD-MISCELLANEOUS PLANT AND SYSTEM OPERATORS
+.PRD-CHEMICAL PROCESSING MACHINE SETTERS, OPERATORS, AND
+.TENDERS
+.PRD-CRUSHING, GRINDING, POLISHING, MIXING, AND BLENDING
+.WORKERS
+.PRD-CUTTING WORKERS
+.PRD-EXTRUDING, FORMING, PRESSING, AND COMPACTING MACHINE
+.SETTERS, OPERATORS, AND TENDERS
+.PRD-FURNACE, KILN, OVEN, DRIER, AND KETTLE OPERATORS AND
+.TENDERS
+.PRD-INSPECTORS, TESTERS, SORTERS, SAMPLERS, AND WEIGHERS
+.PRD-JEWELERS AND PRECIOUS STONE AND METAL WORKERS
+.PRD-MEDICAL, DENTAL, AND OPHTHALMIC LABORATORY TECHNICIANS
+.PRD-PACKAGING AND FILLING MACHINE OPERATORS AND TENDERS
+.PRD-PAINTING WORKERS
+.PRD-PHOTOGRAPHIC PROCESS WORKERS AND PROCESSING MACHINE
+.OPERATORS
+.PRD-CEMENTING AND GLUING MACHINE OPERATORS AND TENDERS
+.PRD-CLEANING, WASHING, AND METAL PICKLING EQUIPMENT
+.OPERATORS AND TENDERS
+.PRD-ETCHERS AND ENGRAVERS
+.PRD-MOLDERS, SHAPERS, AND CASTERS, EXCEPT METAL AND PLASTIC
+.PRD-PAPER GOODS MACHINE SETTERS, OPERATORS, AND TENDERS
+.PRD-TIRE BUILDERS
+.PRD-HELPERS-PRODUCTION WORKERS
+.PRD-OTHER PRODUCTION WORKERS, INCLUDING SEMICONDUCTOR
+.PROCESSORS AND COOLING AND FREEZING EQUIPMENT OPERATORS *
+.TRN-SUPERVISORS, TRANSPORTATION AND MATERIAL MOVING WORKERS
+.TRN-AIRCRAFT PILOTS AND FLIGHT ENGINEERS
+.TRN-AIR TRAFFIC CONTROLLERS AND AIRFIELD OPERATIONS
+.SPECIALISTS
+
+533011 .TRN-AMBULANCE DRIVERS AND ATTENDANTS, EXCEPT EMERGENCY
+.MEDICAL TECHNICIANS
+533020 .TRN-BUS DRIVERS
+533030 .TRN-DRIVER/SALES WORKERS AND TRUCK DRIVERS
+533041 .TRN-TAXI DRIVERS AND CHAUFFEURS
+533099 .TRN-MOTOR VEHICLE OPERATORS, ALL OTHER
+534010 .TRN-LOCOMOTIVE ENGINEERS AND OPERATORS
+534021 .TRN-RAILROAD BRAKE, SIGNAL, AND SWITCH OPERATORS
+534031 .TRN-RAILROAD CONDUCTORS AND YARDMASTERS
+5340XX .TRN-SUBWAY, STREETCAR, AND OTHER RAIL TRANSPORTATION
+.WORKERS *
+535020 .TRN-SHIP AND BOAT CAPTAINS AND OPERATORS
+5350XX .TRN-SAILORS AND MARINE OILERS, AND SHIP ENGINEERS *
+536021 .TRN-PARKING LOT ATTENDANTS
+536031 .TRN-SERVICE STATION ATTENDANTS
+536051 .TRN-TRANSPORTATION INSPECTORS
+5360XX .TRN-MISCELLANEOUS TRANSPORTATION WORKERS, INCLUDING BRIDGE
+.AND LOCK TENDERS AND TRAFFIC TECHNICIANS *
+537021 .TRN-CRANE AND TOWER OPERATORS
+537030 .TRN-DREDGE, EXCAVATING, AND LOADING MACHINE OPERATORS
+537051 .TRN-INDUSTRIAL TRUCK AND TRACTOR OPERATORS
+537061 .TRN-CLEANERS OF VEHICLES AND EQUIPMENT
+537062 .TRN-LABORERS AND FREIGHT, STOCK, AND MATERIAL MOVERS, HAND
+537063 .TRN-MACHINE FEEDERS AND OFFBEARERS
+537064 .TRN-PACKERS AND PACKAGERS, HAND
+537070 .TRN-PUMPING STATION OPERATORS
+537081 .TRN-REFUSE AND RECYCLABLE MATERIAL COLLECTORS
+5370XX .TRN-CONVEYOR OPERATORS AND TENDERS, AND HOIST AND WINCH
+.OPERATORS *
+5371XX .TRN-MISCELLANEOUS MATERIAL MOVING WORKERS, INCLUDING
+.SHUTTLE CAR OPERATORS, AND TANK CAR, TRUCK, AND SHIP
+.LOADERS *
+551010 .MIL-MILITARY OFFICER SPECIAL AND TACTICAL OPERATIONS
+.LEADERS/MANAGERS
+552010 .MIL-FIRST-LINE ENLISTED MILITARY SUPERVISORS/MANAGERS
+553010 .MIL-MILITARY ENLISTED TACTICAL OPERATIONS AND AIR/WEAPONS
+.SPECIALISTS AND CREW MEMBERS
+559830 .MIL-MILITARY, RANK NOT SPECIFIED **
+999920 .UNEMPLOYED, WITH NO WORK EXPERIENCE IN THE LAST 5 YEARS **
+VPS
+
+2
+Veteran period of service
+bb .N/A (less than 18 years old, no active duty)
+.War Times:
+01 .Gulf War
+02 .Gulf War and Vietnam era
+03 .Vietnam era
+04 .Vietnam era and Korean War
+05 .Vietnam era, Korean War, and WWII
+06 .Korean War
+07 .Korean War and WWII
+08 .WWII
+.Peace Times:
+09 .Post-Vietnam era only
+10 .Between Vietnam and Korean War only
+11 .Between Korean War and WWII only
+12 .Pre-WWII only
+
+WAOB
+
+1
+World area of birth
+1 .US state (POB = 001-059)
+
+2
+3
+4
+5
+6
+7
+8
+
+.PR and US Island Areas (POB = 060-099)
+.Latin America (POB = 303,310-399)
+.Asia (POB = 158-159,161,200-299)
+.Europe (POB = 100-157,160,162-199)
+.Africa (POB = 400-499)
+.Northern America (POB = 300-302,304-309)
+.Oceania and at Sea (POB = 500-554)
+
+FAGEP
+1
+Age allocation flag
+0 .No
+1 .Yes
+FANCP
+1
+Ancestry allocation flag
+0 .No
+1 .Yes
+FCITP
+1
+Citizenship allocation flag
+0 .No
+1 .Yes
+FCOWP
+1
+Class of worker allocation flag
+0 .No
+1 .Yes
+FDDRSP
+1
+Difficulty dressing allocation flag
+0 .No
+1 .Yes
+FDEYEP
+1
+Vision difficulty allocation flag
+0 .No
+1 .Yes
+FDOUTP
+1
+Difficulty going out allocation flag
+0 .No
+1 .Yes
+FDPHYP
+1
+Physical difficulty allocation flag
+0 .No
+1 .Yes
+FDREMP
+1
+Difficulty remembering allocation flag
+0 .No
+1 .Yes
+FDWRKP
+1
+Difficulty working allocation flag
+0 .No
+1 .Yes
+FENGP
+1
+Ability to speak English allocation flag
+
+0 .No
+1 .Yes
+FESRP
+1
+Employment status recode allocation flag
+0 .No
+1 .Yes
+FFERP
+1
+Children born within the past 12 months allocation flag
+0 .No
+1 .Yes
+FGCLP
+1
+Grandchildren living in house allocation flag
+0 .No
+1 .Yes
+FGCMP
+1
+Months responsible for grandchildren allocation flag
+0 .No
+1 .Yes
+FGCRP
+1
+Responsible for grandchildren allocation flag
+0 .No
+1 .Yes
+FHISP
+1
+Detailed Hispanic origin allocation flag
+0 .No
+1 .Yes
+FINDP
+1
+Industry allocation flag
+0 .No
+1 .Yes
+FINTP
+1
+Interest, dividend, and net rental income allocation
+flag
+0 .No
+1 .Yes
+FJWDP
+1
+Time of departure to work allocation flag
+0 .No
+1 .Yes
+FJWMNP
+1
+Travel time to work allocation flag
+0 .No
+1 .Yes
+FJWRIP
+1
+Vehicle occupancy allocation flag
+0 .No
+1 .Yes
+FJWTRP
+1
+Means of transportation to work allocation flag
+
+0 .No
+1 .Yes
+FLANP
+1
+Language spoken at home allocation flag
+0 .No
+1 .Yes
+FLANXP
+1
+Language other than English allocation flag
+0 .No
+1 .Yes
+FMARP
+1
+Marital status allocation flag
+0 .No
+1 .Yes
+FMIGP
+1
+Mobility status allocation flag
+0 .No
+1 .Yes
+FMIGSP
+1
+Migration state allocation flag
+0 .No
+1 .Yes
+FMILPP
+1
+Military periods of service allocation flag
+0 .No
+1 .Yes
+FMILSP
+1
+Military service allocation flag
+0 .No
+1 .Yes
+FMILYP
+1
+Years of military service allocation flag
+0 .No
+1 .Yes
+FOCCP
+1
+Occupation allocation flag
+0 .No
+1 .Yes
+FOIP
+
+1
+All other income allocation flag
+0 .No
+1 .Yes
+
+FPAP
+
+1
+Public assistance income allocation flag
+0 .No
+1 .Yes
+
+FPOBP
+1
+Place of birth
+allocatin flag
+
+0 .No
+1 .Yes
+FPOWSP
+1
+Place of work state allocation flag
+0 .No
+1 .Yes
+FRACP
+1
+Detailed race allocation flag
+0 .No
+1 .Yes
+FRELP
+1
+Relationship allocation flag
+0 .No
+1 .Yes
+FRETP
+1
+Retirement income allocation flag
+0 .No
+1 .Yes
+FSCHGP
+1
+Grade attending allocation flag
+0 .No
+1 .Yes
+FSCHLP
+1
+Highest education allocation flag
+0 .No
+1 .Yes
+FSCHP
+1
+School enrollment allocation flag
+0 .No
+1 .Yes
+FSEMP
+1
+Self-employment income allocation flag
+0 .No
+1 .Yes
+FSEXP
+1
+Sex allocation flag
+0 .No
+1 .Yes
+FSSIP
+1
+Supplementary Security Income allocation flag
+0 .No
+1 .Yes
+FSSP
+
+1
+Social Security income allocation flag
+0 .No
+1 .Yes
+
+FWAGP
+1
+Wages and salary income allocation flag
+0 .No
+
+1 .Yes
+FWKHP
+1
+Usual hours worked per week past 12 months allocation flag
+0 .No
+1 .Yes
+FWKLP
+1
+Last worked allocation flag
+0 .No
+1 .Yes
+FWKWP
+1
+Weeks worked past 12 months allocation flag
+0 .No
+1 .Yes
+FYOEP
+1
+Year of entry allocation flag
+0 .No
+1 .Yes
+PWGTP1
+4
+Person's Weight replicate 1
+0001..9999 .Integer weight of person
+PWGTP2
+4
+Person's Weight replicate 2
+0001..9999 .Integer weight of person
+PWGTP3
+4
+Person's Weight replicate 3
+0001..9999 .Integer weight of person
+PWGTP4
+4
+Person's Weight replicate 4
+0001..9999 .Integer weight of person
+PWGTP5
+4
+Person's Weight replicate 5
+0001..9999 .Integer weight of person
+PWGTP6
+4
+Person's Weight replicate 6
+0001..9999 .Integer weight of person
+PWGTP7
+4
+Person's Weight replicate 7
+0001..9999 .Integer weight of person
+PWGTP8
+4
+Person's Weight replicate 8
+0001..9999 .Integer weight of person
+PWGTP9
+4
+Person's Weight replicate 9
+0001..9999 .Integer weight of person
+PWGTP10
+4
+Person's Weight replicate 10
+0001..9999 .Integer weight of person
+
+PWGTP11
+4
+Person's Weight replicate 11
+0001..9999 .Integer weight of person
+PWGTP12
+4
+Person's Weight replicate 12
+0001..9999 .Integer weight of person
+PWGTP13
+4
+Person's Weight replicate 13
+0001..9999 .Integer weight of person
+PWGTP14
+4
+Person's Weight replicate 14
+0001..9999 .Integer weight of person
+PWGTP15
+4
+Person's Weight replicate 15
+0001..9999 .Integer weight of person
+PWGTP16
+4
+Person's Weight replicate 16
+0001..9999 .Integer weight of person
+PWGTP17
+4
+Person's Weight replicate 17
+0001..9999 .Integer weight of person
+PWGTP18
+4
+Person's Weight replicate 18
+0001..9999 .Integer weight of person
+PWGTP19
+4
+Person's Weight replicate 19
+0001..9999 .Integer weight of person
+PWGTP20
+4
+Person's Weight replicate 20
+0001..9999 .Integer weight of person
+PWGTP21
+4
+Person's Weight replicate 21
+0001..9999 .Integer weight of person
+PWGTP22
+4
+Person's Weight replicate 22
+0001..9999 .Integer weight of person
+PWGTP23
+4
+Person's Weight replicate 23
+0001..9999 .Integer weight of person
+PWGTP24
+4
+Person's Weight replicate 24
+0001..9999 .Integer weight of person
+PWGTP25
+4
+Person's Weight replicate 25
+0001..9999 .Integer weight of person
+PWGTP26
+
+4
+
+Person's Weight replicate 26
+0001..9999 .Integer weight of person
+PWGTP27
+4
+Person's Weight replicate 27
+0001..9999 .Integer weight of person
+PWGTP28
+4
+Person's Weight replicate 28
+0001..9999 .Integer weight of person
+PWGTP29
+4
+Person's Weight replicate 29
+0001..9999 .Integer weight of person
+PWGTP30
+4
+Person's Weight replicate 30
+0001..9999 .Integer weight of person
+PWGTP31
+4
+Person's Weight replicate 31
+0001..9999 .Integer weight of person
+PWGTP32
+4
+Person's Weight replicate 32
+0001..9999 .Integer weight of person
+PWGTP33
+4
+Person's Weight replicate 33
+0001..9999 .Integer weight of person
+PWGTP34
+4
+Person's Weight replicate 34
+0001..9999 .Integer weight of person
+PWGTP35
+4
+Person's Weight replicate 35
+0001..9999 .Integer weight of person
+PWGTP36
+4
+Person's Weight replicate 36
+0001..9999 .Integer weight of person
+PWGTP37
+4
+Person's Weight replicate 37
+0001..9999 .Integer weight of person
+PWGTP38
+4
+Person's Weight replicate 38
+0001..9999 .Integer weight of person
+PWGTP39
+4
+Person's Weight replicate 39
+0001..9999 .Integer weight of person
+PWGTP40
+4
+Person's Weight replicate 40
+0001..9999 .Integer weight of person
+PWGTP41
+4
+Person's Weight replicate 41
+
+0001..9999 .Integer weight of person
+PWGTP42
+4
+Person's Weight replicate 42
+0001..9999 .Integer weight of person
+PWGTP43
+4
+Person's Weight replicate 43
+0001..9999 .Integer weight of person
+PWGTP44
+4
+Person's Weight replicate 44
+0001..9999 .Integer weight of person
+PWGTP45
+4
+Person's Weight replicate 45
+0001..9999 .Integer weight of person
+PWGTP46
+4
+Person's Weight replicate 46
+0001..9999 .Integer weight of person
+PWGTP47
+4
+Person's Weight replicate 47
+0001..9999 .Integer weight of person
+PWGTP48
+4
+Person's Weight replicate 48
+0001..9999 .Integer weight of person
+PWGTP49
+4
+Person's Weight replicate 49
+0001..9999 .Integer weight of person
+PWGTP50
+4
+Person's Weight replicate 50
+0001..9999 .Integer weight of person
+PWGTP51
+4
+Person's Weight replicate 51
+0001..9999 .Integer weight of person
+PWGTP52
+4
+Person's Weight replicate 52
+0001..9999 .Integer weight of person
+PWGTP53
+4
+Person's Weight replicate 53
+0001..9999 .Integer weight of person
+PWGTP54
+4
+Person's Weight replicate 54
+0001..9999 .Integer weight of person
+PWGTP55
+4
+Person's Weight replicate 55
+0001..9999 .Integer weight of person
+PWGTP56
+4
+Person's Weight replicate 56
+0001..9999 .Integer weight of person
+
+PWGTP57
+4
+Person's Weight replicate 57
+0001..9999 .Integer weight of person
+PWGTP58
+4
+Person's Weight replicate 58
+0001..9999 .Integer weight of person
+PWGTP59
+4
+Person's Weight replicate 59
+0001..9999 .Integer weight of person
+PWGTP60
+4
+Person's Weight replicate 60
+0001..9999 .Integer weight of person
+PWGTP61
+4
+Person's Weight replicate 61
+0001..9999 .Integer weight of person
+PWGTP62
+4
+Person's Weight replicate 62
+0001..9999 .Integer weight of person
+PWGTP63
+4
+Person's Weight replicate 63
+0001..9999 .Integer weight of person
+PWGTP64
+4
+Person's Weight replicate 64
+0001..9999 .Integer weight of person
+PWGTP65
+4
+Person's Weight replicate 65
+0001..9999 .Integer weight of person
+PWGTP66
+4
+Person's Weight replicate 66
+0001..9999 .Integer weight of person
+PWGTP67
+4
+Person's Weight replicate 67
+0001..9999 .Integer weight of person
+PWGTP68
+4
+Person's Weight replicate 68
+0001..9999 .Integer weight of person
+PWGTP69
+4
+Person's Weight replicate 69
+0001..9999 .Integer weight of person
+PWGTP70
+4
+Person's Weight replicate 70
+0001..9999 .Integer weight of person
+PWGTP71
+4
+Person's Weight replicate 71
+0001..9999 .Integer weight of person
+PWGTP72
+
+4
+
+Person's Weight replicate 72
+0001..9999 .Integer weight of person
+PWGTP73
+4
+Person's Weight replicate 73
+0001..9999 .Integer weight of person
+PWGTP74
+4
+Person's Weight replicate 74
+0001..9999 .Integer weight of person
+PWGTP75
+4
+Person's Weight replicate 75
+0001..9999 .Integer weight of person
+PWGTP76
+4
+Person's Weight replicate 76
+0001..9999 .Integer weight of person
+PWGTP77
+4
+Person's Weight replicate 77
+0001..9999 .Integer weight of person
+PWGTP78
+4
+Person's Weight replicate 78
+0001..9999 .Integer weight of person
+PWGTP79
+4
+Person's Weight replicate 79
+0001..9999 .Integer weight of person
+PWGTP80
+4
+Person's Weight replicate 80
+0001..9999 .Integer weight of person
+*
+
+For 35 Census codes that were aggregated or used the XX description for
+SOC, the Census description is used for the SOC title.
+
+** These codes are pseudo codes developed by the Census Bureau and are not
+official or equivalent NAICS or SOC codes.
+Legend to Identify NAICS Equivalents
+M = Multiple NAICS codes
+P = Part of a NAICS code - NAICS code split between two or more Census
+codes
+S = Not specified Industry in NAICS sector - Specific to Census codes
+only
+Z = Exception to NAICS code - Part of NAICS industry but has a unique
+Census code
+Note for both Industry and Occupation lists in Data Dictionary:
+NOTE: For additional information on NAICS and SOC groupings
+within major categories visit our website at:
+www.census.gov/hhes/www/ioindex.html.
+NOTE: The World Area of Birth (WAOB) in the PUMS dataset is based upon the
+Place of Birth (POB) variable in the full dataset, not the Place of Birth
+recode created for PUMS (POBP). POB contains more detailed place of birth
+
+information than POBP.
+
+Therefore, WAOB cannot be recoded from POBP.
+
+Data users should be aware that the area groupings for WAOB are based
+primarily upon United States administrative boundaries, not geographic
+boundaries. For example, Guam is grouped into "Puerto Rico and the U.S.
+Island Areas," although geographically it is located in Oceania. Not all
+places of birth are listed individually in POBP. Therefore the user
+cannot recreate an exact world area of birth variable from POBP based upon
+geographic location of birth.
+*** Refer to top-coding documentation at:
+http://www.census.gov/acs/www/Products/PUMS/C2SS/minmaxval6.htm
+
+
